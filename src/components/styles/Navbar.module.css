@@ -1,0 +1,50 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px 15px;
+}
+
+.logo img {
+    height: 28.6px;
+    width: 126.4px;
+}
+
+.play {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.play span {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 165%;
+    font-family: var(--family-specific);
+}
+
+.play img {
+    width: 48.684px;
+    height: 48.684px;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 1650px) {
+    .nav {
+        padding: 40px 60px 0;
+    }
+
+    .logo img {
+        width: 7vw;
+    }
+
+    .play span {
+        font-size: 1.25vw;
+    }
+
+    .play img {
+        width: 2.5vw;
+    }
+}

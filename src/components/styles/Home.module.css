@@ -1,0 +1,210 @@
+.home {
+    height: 100vh;
+}
+
+.hero {
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto 140px;
+}
+
+.left {
+    flex: 1;
+}
+
+.left img {
+    max-width: 654px;
+    aspect-ratio: 1;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.top .head {
+    color: #000;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-general);
+    font-size: 54.027px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -1.081px;
+}
+
+.top .bold_head {
+    font-feature-settings: 'liga' off;
+    text-shadow: 0px 7.7181220054626465px 24.119131088256836px rgba(46, 22, 244, 0.16);
+    font-weight: 600;
+    background: linear-gradient(to bottom right, #65184b, #2815e0, #1a0e77);
+    line-height: 110%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub_text {
+    color: #4E4E4E;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.cta a {
+    color: #000;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 165%;
+}
+
+.fixed_home {
+    position: fixed;
+    z-index: 2;
+    opacity: 0;
+    left: 327px;
+    max-width: 520px;
+    top: 0px;
+}
+
+.fixed_light {
+    position: fixed;
+    z-index: 1;
+    left: 226px;
+    max-width: 723px;
+    bottom: 2px;
+    mix-blend-mode: lighten;
+    opacity: .8;
+    opacity: 0;
+}
+
+.transform_section {
+    background: radial-gradient(81.32% 81.32% at 50% 50%, #030347, #020219 100%);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.t_main {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.extra {
+    flex: 1;
+    opacity: 0;
+}
+
+.t_content {
+    flex: 1;
+}
+
+.t_content h1 {
+    color: #FFF;
+    font-family: var(--family-general);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.12px;
+    margin-bottom: 35px;
+}
+
+.t_content p {
+    color: #FFF;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 165%;
+}
+
+.t_content p {
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1750px) {
+    .fixed_home {
+        left: 230px;
+    }
+
+    .fixed_light {
+        left: 120px;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .fixed_home {
+        width: 30vw;
+    }
+
+    .fixed_light {
+        width: 45vw;
+        top: 22vw;
+    }
+
+    .t_main {
+        padding-right: 2rem;
+    }
+
+    .t_content h1 {
+        font-size: 3vw;
+    }
+
+    .t_content p {
+        font-size: 1.1vw;
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    .hero {
+        padding: 0 2rem;
+    }
+
+    .left {
+        flex: 1;
+    }
+
+    .left img {
+        width: 80%;
+    }
+
+    .right {
+        flex: 1;
+    }
+
+    .top .head {
+        font-size: 3vw;
+    }
+
+    .sub_text {
+        font-size: 1.1vw;
+    }
+
+    .cta a {
+        font-size: 1.25vw;
+    }
+}

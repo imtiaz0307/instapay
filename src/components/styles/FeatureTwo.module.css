@@ -1,0 +1,135 @@
+.container {
+    background: radial-gradient(81.32% 81.32% at 50% 50%, #030347, #020219 100%);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 92px;
+    transform: translateY(50px);
+}
+
+.top {
+    width: 50%;
+    transform: translateX(90px);
+}
+
+.top h2 {
+    color: #FFF;
+    font-family: var(--family-general);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.12px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.top h2::before {
+    content: attr(data-feature);
+    position: absolute;
+    top: -60px;
+    left: -90px;
+    font-family: var(--family-general);
+    font-size: 116px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.32px;
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 64.08%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.top p {
+    color: #FFF;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 165%;
+}
+
+.bottom h3 {
+    color: #FFF;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 165%;
+}
+
+.bottom p {
+    color: rgba(255, 255, 255, 0.56);
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 165%;
+    /* 26.4px */
+}
+
+.navigators {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
+    transform: translate(200px, -50px);
+}
+
+.navigators img {
+    width: 58px;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1620px) {
+    .wrapper {
+        padding: 0 2rem;
+    }
+
+    .navigators {
+        transform: translate(0, -50px);
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    .wrapper {
+        padding-left: 10rem;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .top h2 {
+        font-size: 3vw;
+        margin-bottom: 10px;
+    }
+
+    .top h2::before {
+        font-size: 6vw;
+    }
+
+    .top p {
+        font-size: 1.18vw;
+    }
+
+    .bottom h3 {
+        font-size: 1.18vw;
+    }
+
+    .bottom p {
+        font-size: 1.1vw;
+    }
+}
