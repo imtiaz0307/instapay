@@ -7,33 +7,11 @@ import NavbarSecondary from './NavbarSecondary'
 import SidebarFixed from './SidebarFixed'
 import { useEffect, useRef, useState } from 'react'
 
-const Home = () => {
-    const [showImage, setShowImage] = useState(false)
+const Home = ({ showFixedImages }) => {
     const [animate, setAnimate] = useState(false)
 
     const transformRef = useRef(null)
     const heroRef = useRef(null)
-
-    const callback = () => {
-        const height = window.innerHeight;
-        const scrollY = window.scrollY;
-
-        if (scrollY >= height - 100) {
-            if (scrollY >= (height * 2) - 300) {
-                setShowImage(false)
-            } else {
-                setShowImage(true)
-            }
-        } else {
-            setShowImage(false)
-        }
-    }
-    useEffect(() => {
-
-        window.addEventListener("scroll", callback)
-        return () => window.removeEventListener("scroll", callback)
-
-    }, [])
 
     useEffect(() => {
 
@@ -48,13 +26,12 @@ const Home = () => {
                         behavior: "auto"
                     });
                 }
-                setShowImage(true)
             } else {
                 setAnimate(!e[0].isIntersecting)
             }
         }
         const options = {
-            threshold: 0.99
+            threshold: 0.9
         }
 
         const newObserver = new IntersectionObserver(insectionHandler, options)
@@ -68,8 +45,8 @@ const Home = () => {
 
     return (
         <div>
-            <img src={fixed_home} alt="fixed_home" className={`${styles.fixed_home} ${animate && showImage ? styles.home_in : styles.home_out}`} />
-            <img src={fixed_light} alt="fixed_light" className={`${styles.fixed_light} ${animate && showImage ? styles.light_in : styles.light_out}`} />
+            <img src={fixed_home} alt="fixed_home" className={`${styles.fixed_home} ${animate && showFixedImages ? styles.home_in : styles.home_out}`} />
+            <img src={fixed_light} alt="fixed_light" className={`${styles.fixed_light} ${animate && showFixedImages ? styles.light_in : styles.light_out}`} />
             <div className={styles.home} ref={heroRef}>
                 <Navbar />
                 <div className={styles.hero}>
@@ -96,30 +73,34 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{
-                    position: "absolute",
-                    height: "20px",
-                    width: "20px",
-                    background: "white",
-                    bottom: "5%",
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    zIndex: 100,
-                    cursor: "pointer",
-                    borderRadius: "10px"
-                }} onClick={() => {
-                    setAnimate(true)
-                    const element = transformRef.current;
-                    if (element) {
-                        const top = window.innerHeight;
-                        window.scrollTo({
-                            top,
-                            behavior: "auto"
-                        });
-                    }
-                    setShowImage(true)
-                }}>
-                </div>
+                {
+                    !animate
+                    &&
+                    <div style={{
+                        position: "absolute",
+                        height: "20px",
+                        width: "20px",
+                        background: "white",
+                        bottom: "5%",
+                        left: "50%",
+                        transform: "translateX(-50%)",
+                        zIndex: 100,
+                        cursor: "pointer",
+                        borderRadius: "10px"
+                    }} onClick={() => {
+                        setAnimate(true)
+                        const element = transformRef.current;
+                        element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
+                        if (element) {
+                            const top = window.innerHeight;
+                            window.scrollTo({
+                                top,
+                                behavior: "auto"
+                            });
+                        }
+                    }}>
+                    </div>
+                }
             </div>
 
             <div className={`${styles.transform_section} ${animate ? styles.in_view : styles.not_in_view}`} ref={transformRef}>

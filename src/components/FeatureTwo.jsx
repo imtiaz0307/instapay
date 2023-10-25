@@ -2,7 +2,6 @@ import NavbarSecondary from "./NavbarSecondary"
 import SidebarFixed from "./SidebarFixed"
 import styles from "./styles/FeatureTwo.module.css"
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation } from "swiper/modules"
 import 'swiper/css/navigation';
 import 'swiper/css/bundle';
 import "swiper/css"
