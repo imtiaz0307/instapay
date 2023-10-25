@@ -5,6 +5,7 @@ import { featuresData } from './data/FeaturesData'
 import FeatureTwo from './components/FeatureTwo'
 import styles from "./App.module.css"
 import Summarized from './components/Summarized'
+import Footer from './components/Footer'
 
 const App = () => {
   const [showFixedImages, setShowFixedImages] = useState(false)
@@ -57,6 +58,7 @@ const App = () => {
         />
       ))}
       <Summarized />
+      <Footer />
     </main>
   )
 }

@@ -32,7 +32,7 @@ const Summarized = () => {
     ];
 
     return (
-        <div style={{ minHeight: '100vh', position: 'sticky', top: 0, zIndex: 100, background: 'white', width: '100vw' }}>
+        <div style={{ minHeight: '100vh', top: 0, zIndex: 100, background: 'white', width: '100vw', position: "relative" }}>
             <Navbar showPlay={false} />
             <SidebarFixed />
             <div className={styles.wrapper}>
@@ -43,7 +43,7 @@ const Summarized = () => {
                         Experience the <span>InstaPay</span> Way!
                     </h2>
                     <div className={styles.timeline}>
-                        <VerticalTimeline layout={"1-column"}>
+                        <VerticalTimeline animate={true} layout={"1-column"}>
                             {fintechData.map((item, index) => (
                                 <VerticalTimelineElement
                                     className="vertical-timeline-element--education"
@@ -71,7 +71,7 @@ const Summarized = () => {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <video src={globe} autoPlay="true" loop controls={false}></video>
+                    <video src={globe} autoPlay={true} loop={true} controls={false}></video>
                 </div>
             </div>
         </div>
