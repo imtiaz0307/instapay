@@ -4,6 +4,7 @@ import FeatureRow from './components/FeatureRow'
 import { featuresData } from './data/FeaturesData'
 import FeatureTwo from './components/FeatureTwo'
 import styles from "./App.module.css"
+import Summarized from './components/Summarized'
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           />
         ))}
       </div>
+      <Summarized />
     </main>
   )
 }

@@ -76,7 +76,6 @@
 .fixed_home {
     position: fixed;
     z-index: 2;
-    opacity: 0;
     left: 327px;
     max-width: 520px;
     top: 0px;
@@ -89,8 +88,27 @@
     max-width: 723px;
     bottom: 2px;
     mix-blend-mode: lighten;
-    opacity: .8;
+    transition: 1000ms opacity 500ms;
+}
+
+.home_in {
+    opacity: 1;
+    transition: 2000ms opacity 500ms;
+}
+
+.home_out {
     opacity: 0;
+    transition: 100ms opacity;
+}
+
+.light_in {
+    opacity: .8;
+    transition: 1000ms opacity 500ms;
+}
+
+.light_out {
+    opacity: 0;
+    transition: 100ms opacity;
 }
 
 .transform_section {
@@ -100,6 +118,34 @@
     position: relative;
     display: flex;
     flex-direction: column;
+}
+
+.not_in_view {
+    width: 60vw;
+    transform: translateX(-50%) translateY(-10%);
+    left: 50%;
+    border-radius: 300px;
+    height: 200vh;
+    transition: 500ms all;
+}
+
+.in_view {
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(0%) translateY(0%);
+    left: 0;
+    border-radius: 0;
+    transition: 500ms all;
+}
+
+.fade_out {
+    opacity: 0;
+    transition: 500ms opacity;
+}
+
+.fade_in {
+    opacity: 1;
+    transition: 1000ms opacity 500ms;
 }
 
 .t_main {
@@ -177,6 +223,10 @@
     .t_content p {
         font-size: 1.1vw;
     }
+
+    .not_in_view {
+        border-radius: 200px;
+    }
 }
 
 @media screen and (max-width: 1520px) {
@@ -206,5 +256,9 @@
 
     .cta a {
         font-size: 1.25vw;
+    }
+
+    .not_in_view {
+        transform: translateX(-50%) translateY(-5%);
     }
 }

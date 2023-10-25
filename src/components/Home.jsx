@@ -5,13 +5,72 @@ import fixed_home from "../assets/fixed_home.png"
 import fixed_light from "../assets/fixed_light.png"
 import NavbarSecondary from './NavbarSecondary'
 import SidebarFixed from './SidebarFixed'
+import { useEffect, useRef, useState } from 'react'
 
 const Home = () => {
+    const [showImage, setShowImage] = useState(false)
+    const [animate, setAnimate] = useState(false)
+
+    const transformRef = useRef(null)
+    const heroRef = useRef(null)
+
+    const callback = () => {
+        const height = window.innerHeight;
+        const scrollY = window.scrollY;
+
+        if (scrollY >= height - 100) {
+            if (scrollY >= (height * 2) - 300) {
+                setShowImage(false)
+            } else {
+                setShowImage(true)
+            }
+        } else {
+            setShowImage(false)
+        }
+    }
+    useEffect(() => {
+
+        window.addEventListener("scroll", callback)
+        return () => window.removeEventListener("scroll", callback)
+
+    }, [])
+
+    useEffect(() => {
+
+        const insectionHandler = (e) => {
+            if (!e[0].isIntersecting) {
+                setAnimate(!e[0].isIntersecting)
+                const element = transformRef.current;
+                if (element) {
+                    const top = window.innerHeight;
+                    window.scrollTo({
+                        top,
+                        behavior: "auto"
+                    });
+                }
+                setShowImage(true)
+            } else {
+                setAnimate(!e[0].isIntersecting)
+            }
+        }
+        const options = {
+            threshold: 0.99
+        }
+
+        const newObserver = new IntersectionObserver(insectionHandler, options)
+        if (heroRef.current) {
+            newObserver.observe(heroRef.current)
+        }
+
+        return () => newObserver.unobserve(heroRef?.current)
+
+    }, [])
+
     return (
-        <>
-            <img src={fixed_home} alt="fixed_home" className={styles.fixed_home} />
-            <img src={fixed_light} alt="fixed_light" className={styles.fixed_light} />
-            <div className={styles.home}>
+        <div>
+            <img src={fixed_home} alt="fixed_home" className={`${styles.fixed_home} ${animate && showImage ? styles.home_in : styles.home_out}`} />
+            <img src={fixed_light} alt="fixed_light" className={`${styles.fixed_light} ${animate && showImage ? styles.light_in : styles.light_out}`} />
+            <div className={styles.home} ref={heroRef}>
                 <Navbar />
                 <div className={styles.hero}>
                     <div className={styles.left}>
@@ -37,15 +96,47 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <div style={{
+                    position: "absolute",
+                    height: "20px",
+                    width: "20px",
+                    background: "white",
+                    bottom: "5%",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    zIndex: 100,
+                    cursor: "pointer",
+                    borderRadius: "10px"
+                }} onClick={() => {
+                    setAnimate(true)
+                    const element = transformRef.current;
+                    if (element) {
+                        const top = window.innerHeight;
+                        window.scrollTo({
+                            top,
+                            behavior: "auto"
+                        });
+                    }
+                    setShowImage(true)
+                }}>
+                </div>
             </div>
 
-            <div className={`${styles.transform_section}`}>
-                <NavbarSecondary />
-                <SidebarFixed />
+            <div className={`${styles.transform_section} ${animate ? styles.in_view : styles.not_in_view}`} ref={transformRef}>
+                {
+                    animate
+                        ?
+                        <>
+                            <NavbarSecondary />
+                            <SidebarFixed />
+                        </>
+                        :
+                        ""
+                }
 
                 <div className={styles.t_main}>
                     <div className={styles.extra}>a</div>
-                    <div className={styles.t_content}>
+                    <div className={`${styles.t_content} ${animate ? styles.fade_in : styles.fade_out}`}>
                         <h1>
                             Elevate Your Social Media Transactions to Unparalleled Convenience.
                         </h1>
@@ -58,7 +149,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
