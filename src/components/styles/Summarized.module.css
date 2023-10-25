@@ -1,0 +1,108 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 4rem auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.left h3 {
+    flex: 1;
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 19.973px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.997px;
+}
+
+.left h2 {
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 62.138px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.243px;
+}
+
+.left h2 span {
+    background: radial-gradient(902.45% 103.01% at 25.29% 0%, #E64067 0%, #5926F0 55.65%, #4828A0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.left .timeline {
+    max-height: 400px;
+    aspect-ratio: 7.2/4;
+    overflow-y: auto;
+    background: #FAFAFA;
+    margin-top: 50px;
+}
+
+.left .timeline h3 {
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.left .timeline p {
+    color: #777;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    width: 30ch;
+    margin-bottom: 30px;
+    margin-top: 6px;
+}
+
+.left .timeline a {
+    color: #5926F0;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 27px */
+}
+
+.right {
+    flex: 1;
+    aspect-ratio: 9/17;
+    max-width: 468px;
+    max-height: 853px;
+    overflow: hidden;
+    border-radius: 30px;
+    transform: translateX(150px);
+}
+
+.right video {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+@media screen and (max-width: 1850px) {
+    .wrapper {
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+    .wrapper {
+        padding-left: 10rem;
+    }
+}

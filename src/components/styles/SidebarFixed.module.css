@@ -28,7 +28,7 @@
 .sidebar p {
     color: white;
     font-family: var(--family-specific);
-    writing-mode: sideways-lr;
+    writing-mode: vertical-rl;
 }
 
 @media screen and (max-width: 1650px) {

@@ -15,16 +15,12 @@ const Home = ({ showFixedImages }) => {
 
     useEffect(() => {
 
-        const insectionHandler = (e) => {
+        const intersectionHandler = (e) => {
             if (!e[0].isIntersecting) {
                 setAnimate(!e[0].isIntersecting)
                 const element = transformRef.current;
                 if (element) {
-                    const top = window.innerHeight;
-                    window.scrollTo({
-                        top,
-                        behavior: "auto"
-                    });
+                    element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
                 }
             } else {
                 setAnimate(!e[0].isIntersecting)
@@ -34,7 +30,7 @@ const Home = ({ showFixedImages }) => {
             threshold: 0.9
         }
 
-        const newObserver = new IntersectionObserver(insectionHandler, options)
+        const newObserver = new IntersectionObserver(intersectionHandler, options)
         if (heroRef.current) {
             newObserver.observe(heroRef.current)
         }
@@ -45,8 +41,6 @@ const Home = ({ showFixedImages }) => {
 
     return (
         <div>
-            <img src={fixed_home} alt="fixed_home" className={`${styles.fixed_home} ${animate && showFixedImages ? styles.home_in : styles.home_out}`} />
-            <img src={fixed_light} alt="fixed_light" className={`${styles.fixed_light} ${animate && showFixedImages ? styles.light_in : styles.light_out}`} />
             <div className={styles.home} ref={heroRef}>
                 <Navbar />
                 <div className={styles.hero}>
@@ -90,20 +84,15 @@ const Home = ({ showFixedImages }) => {
                     }} onClick={() => {
                         setAnimate(true)
                         const element = transformRef.current;
-                        element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
-                        if (element) {
-                            const top = window.innerHeight;
-                            window.scrollTo({
-                                top,
-                                behavior: "auto"
-                            });
-                        }
+                        element.scrollIntoView({ behavior: "smooth", block: "end", inline: "start" })
                     }}>
                     </div>
                 }
             </div>
 
             <div className={`${styles.transform_section} ${animate ? styles.in_view : styles.not_in_view}`} ref={transformRef}>
+                <img src={fixed_home} alt="fixed_home" className={`${styles.fixed_home} ${animate && showFixedImages ? styles.home_in : styles.home_out}`} />
+                <img src={fixed_light} alt="fixed_light" className={`${styles.fixed_light} ${animate && showFixedImages ? styles.light_in : styles.light_out}`} />
                 {
                     animate
                         ?

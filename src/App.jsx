@@ -13,8 +13,8 @@ const App = () => {
   const windowScrollHandler = () => {
     const height = window.innerHeight;
     const scrollY = mainRef.current.scrollTop;
-    if (scrollY >= height - 100) {
-      if (scrollY >= (height * 2) - 300) {
+    if (scrollY >= height - 300) {
+      if (scrollY >= (height * 2)) {
         setShowFixedImages(false)
       } else {
         setShowFixedImages(true)
@@ -35,9 +35,8 @@ const App = () => {
     }
   }, [])
   return (
-    <main style={{ overflowX: "hidden", maxHeight: "100vh", overflowY: "scroll" }} ref={mainRef}>
+    <main style={{ overflowX: "hidden", maxHeight: "100vh", overflowY: "auto" }} ref={mainRef}>
       <Home showFixedImages={showFixedImages} />
-      {/* <div className={styles.main}> */}
       <FeatureRow
         key={featuresData[0].count}
         count={featuresData[0].count}
@@ -57,7 +56,6 @@ const App = () => {
           styles={item.styles}
         />
       ))}
-      {/* </div> */}
       <Summarized />
     </main>
   )
