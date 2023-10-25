@@ -8,7 +8,7 @@
     justify-content: space-between;
 }
 
-.left h3 {
+.left>h3 {
     flex: 1;
     color: #000;
     font-family: var(--family-general);
@@ -19,7 +19,7 @@
     letter-spacing: 1.997px;
 }
 
-.left h2 {
+.left>h2 {
     color: #000;
     font-family: var(--family-general);
     font-size: 62.138px;
@@ -103,6 +103,37 @@
 
 @media screen and (max-width: 1600px) {
     .wrapper {
-        padding-left: 10rem;
+        padding-left: 6rem;
+    }
+
+    .left>h3 {
+        font-size: 1.15vw;
+    }
+
+    .left>h2 {
+        font-size: 3vw;
+    }
+
+    .left .timeline h3 {
+        font-size: 2.1vw;
+    }
+
+    .left .timeline p {
+        font-size: 1.15vw;
+    }
+
+    .left .timeline a {
+        font-size: 1.1vw;
+    }
+
+    .right {
+        transform: translateX(10%);
+        height: calc(100vh - 200px);
+        aspect-ratio: 9/16;
+    }
+
+    .timeline {
+        width: 100%;
+        aspect-ratio: 7/3;
     }
 }

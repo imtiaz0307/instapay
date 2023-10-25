@@ -32,7 +32,7 @@ const Summarized = () => {
     ];
 
     return (
-        <div style={{ minHeight: '100vh', position: 'relative', zIndex: 100, background: 'white', width: '100vw' }}>
+        <div style={{ minHeight: '100vh', position: 'sticky', top: 0, zIndex: 100, background: 'white', width: '100vw' }}>
             <Navbar showPlay={false} />
             <SidebarFixed />
             <div className={styles.wrapper}>
