@@ -3,6 +3,7 @@
     z-index: 1000;
     background-color: white;
     padding: 7rem 0 5rem;
+    width: 100vw;
 }
 
 .wrapper {
@@ -152,7 +153,11 @@
 
 @media screen and (max-width: 1500px) {
     .left {
-        flex: 4.5;
+        flex: 5;
+    }
+
+    .wrapper {
+        padding: 1rem 3rem;
     }
 }
 

@@ -6,6 +6,7 @@ import fixed_light from "../assets/fixed_light.png"
 import NavbarSecondary from './NavbarSecondary'
 import SidebarFixed from './SidebarFixed'
 import { useEffect, useRef, useState } from 'react'
+import chevron from "../assets/chevron.gif"
 
 const Home = ({ showFixedImages }) => {
     const [animate, setAnimate] = useState(false)
@@ -72,20 +73,23 @@ const Home = ({ showFixedImages }) => {
                     &&
                     <div style={{
                         position: "absolute",
-                        height: "20px",
-                        width: "20px",
-                        background: "white",
-                        bottom: "5%",
+                        height: "40px",
+                        width: "40px",
+                        bottom: "3%",
                         left: "50%",
                         transform: "translateX(-50%)",
                         zIndex: 100,
                         cursor: "pointer",
-                        borderRadius: "10px"
                     }} onClick={() => {
                         setAnimate(true)
                         const element = transformRef.current;
                         element.scrollIntoView({ behavior: "smooth", block: "end", inline: "start" })
                     }}>
+                        {/* <video src={chevron} autoPlay={true} loop={true} controls={false} style={{ height: "100%", width: "100%", mixBlendMode: "" }}></video> */}
+                        <img src={chevron} alt="chevron" style={{
+                            height: "100%",
+                            width: "100%"
+                        }} />
                     </div>
                 }
             </div>
