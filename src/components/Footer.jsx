@@ -3,6 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import styles from './styles/Footer.module.css';
 import logo from "../assets/logo.svg"
 import footer_right from "../assets/footer_right.png"
+import contact_us from "../assets/contact.svg"
 
 const Footer = () => {
     const links = [
@@ -72,7 +73,8 @@ const Footer = () => {
                             }
                         </div>
                         <div className={styles.contact_us}>
-                            <h3>CONTACT US</h3>
+                            {/* <h3>CONTACT US</h3> */}
+                            <img src={contact_us} alt="contact us" />
                             <p>Interested in diving deeper? Reach out to us. In case of genuine interest, we'll furnish you with all the necessary details, ensuring a transparent</p>
                         </div>
                     </div>

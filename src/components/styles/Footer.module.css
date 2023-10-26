@@ -2,6 +2,7 @@
     position: relative;
     z-index: 1000;
     background-color: white;
+    padding: 7rem 0 5rem;
 }
 
 .wrapper {
@@ -9,27 +10,158 @@
     margin: 0 auto;
     display: flex;
     gap: 100px;
+    padding: 1rem;
 }
 
 .left {
-    flex: 5;
+    flex: 4;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 60px;
 }
 
 .left .top {
     display: flex;
     gap: 60px;
+    justify-content: space-between;
 }
 
 .about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    padding: 1rem 0;
+    justify-content: space-between;
+}
+
+.about img {
+    width: 100%;
+    aspect-ratio: 203/57;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.links {
+    display: flex;
+    gap: 70px;
+}
+
+.links_item {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.links_item>* {
+    white-space: nowrap;
+}
+
+.links_item h4 {
+    color: #5926F0;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    letter-spacing: 0.14px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.links_item span {
+    color: #484848;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: .75rem;
+}
+
+.contact_us img {
+    max-width: 200px;
+    width: 100%;
+    aspect-ratio: 182/22.5;
+    margin-bottom: 40px;
+}
+
+.contact_us p {
+    color: #777;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+    max-width: 20ch;
+}
+
+.left .bottom {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bottom .b_left {
+    flex: 1;
+}
+
+.bottom .b_left span {
+    color: #777;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 27px */
+}
+
+.bottom .b_right {
+    flex: 2.5;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+
+.bottom .b_right span {
+    color: #777;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
 }
 
 .right {
-    flex: 1;
+    flex: 1.2;
+}
+
+.right img {
+    width: 100%;
+    aspect-ratio: 309.96/246.103;
+}
+
+@media screen and (max-width: 1500px) {
+    .left {
+        flex: 4.5;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .wrapper {
+        padding: 1rem 2rem;
+    }
+
+    .right {
+        display: none;
+    }
 }
