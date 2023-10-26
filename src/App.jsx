@@ -6,6 +6,7 @@ import FeatureTwo from './components/FeatureTwo'
 import styles from "./App.module.css"
 import Summarized from './components/Summarized'
 import Footer from './components/Footer'
+import AnimatedSection from './components/AnimatedSection'
 
 const App = () => {
   const [showFixedImages, setShowFixedImages] = useState(false)
@@ -35,9 +36,50 @@ const App = () => {
       }
     }
   }, [])
+
+
+  const [animate, setAnimate] = useState(false)
+
+  const transformRef = useRef(null)
+  const heroRef = useRef(null)
+
+
+  const scrollHandler = () => {
+    setAnimate(true)
+    const element = transformRef.current;
+    element.scrollIntoView({ behavior: "smooth", block: "end", inline: "start" })
+  }
+
+  useEffect(() => {
+
+    const intersectionHandler = (e) => {
+      if (!e[0].isIntersecting) {
+        setAnimate(!e[0].isIntersecting)
+        const element = transformRef.current;
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
+        }
+      } else {
+        setAnimate(!e[0].isIntersecting)
+      }
+    }
+    const options = {
+      threshold: 0.9
+    }
+
+    const newObserver = new IntersectionObserver(intersectionHandler, options)
+    if (heroRef.current) {
+      newObserver.observe(heroRef.current)
+    }
+
+    return () => newObserver.unobserve(heroRef?.current)
+
+  }, [])
+
   return (
     <main style={{ overflowX: "hidden", maxHeight: "100vh", overflowY: "auto" }} ref={mainRef}>
-      <Home showFixedImages={showFixedImages} />
+      <Home heroRef={heroRef} animate={animate} scrollHandler={scrollHandler} />
+      <AnimatedSection animate={animate} showFixedImages={showFixedImages} transformRef={transformRef} />
       <FeatureRow
         key={featuresData[0].count}
         count={featuresData[0].count}
