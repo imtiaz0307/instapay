@@ -120,9 +120,21 @@
     flex-direction: column;
 }
 
+.transform_section::before {
+    content: "";
+    position: absolute;
+    width: 60vw;
+    left: 50%;
+    top: -5%;
+    transform: translateX(-50%);
+    background: radial-gradient(81.32% 81.32% at 50% 50%, #030347, #020219 100%);
+    height: 100vh;
+    border-radius: 300px;
+}
+
 .not_in_view {
     width: 60vw;
-    transform: translateX(-50%) translateY(-5%);
+    transform: translateX(-50%);
     left: 50%;
     border-radius: 300px;
     height: 200vh;
@@ -132,10 +144,14 @@
 .in_view {
     width: 100vw;
     height: 100vh;
-    transform: translateX(0%) translateY(0%);
+    transform: translateX(0%);
     left: 0;
     border-radius: 0;
-    transition: 500ms all;
+    transition: 1000ms all;
+}
+
+.in_view::before {
+    opacity: 0;
 }
 
 .fade_out {
@@ -260,7 +276,7 @@
     }
 
     .not_in_view {
-        transform: translateX(-50%) translateY(-5%);
+        transform: translateX(-50%);
     }
 }
 
