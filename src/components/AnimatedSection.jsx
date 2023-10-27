@@ -1,10 +1,12 @@
 import fixed_home from "../assets/fixed_home.png"
 import fixed_light from "../assets/fixed_light.png"
+import { useAppState } from "../context/AppContext"
 import NavbarSecondary from './NavbarSecondary'
 import SidebarFixed from './SidebarFixed'
 import styles from "./styles/Home.module.css"
 
-const AnimatedSection = ({ showFixedImages, transformRef, animate }) => {
+const AnimatedSection = () => {
+    const { showFixedImages, transformRef, animate, mainRef } = useAppState()
     return (
         <div style={{
             position: "sticky",
@@ -18,7 +20,7 @@ const AnimatedSection = ({ showFixedImages, transformRef, animate }) => {
                         ?
                         <>
                             <NavbarSecondary />
-                            <SidebarFixed />
+                            <SidebarFixed mainRef={mainRef} />
                         </>
                         :
                         ""

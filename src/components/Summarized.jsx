@@ -34,7 +34,7 @@ const Summarized = () => {
     return (
         <div style={{ minHeight: '100vh', top: 0, zIndex: 100, background: 'white', width: '100vw', position: "relative" }}>
             <Navbar showPlay={false} />
-            <SidebarFixed />
+            <SidebarFixed color="#000" />
             <div className={styles.wrapper}>
                 <div className={styles.left}>
                     <h3>HOW IT WORKS</h3>

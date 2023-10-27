@@ -11,18 +11,10 @@
     z-index: 10;
 }
 
-.img_con {
+.progress {
     height: 88px;
     width: 88px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
-}
-
-.img_con img {
-    height: 60%;
+    position: relative;
 }
 
 .sidebar p {
@@ -32,8 +24,9 @@
 }
 
 @media screen and (max-width: 1650px) {
-    .img_con {
-        width: 4.3vw;
+    .progress {
         height: 4.3vw;
+        width: 4.3vw;
+        position: relative;
     }
 }

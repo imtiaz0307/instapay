@@ -2,8 +2,10 @@ import Navbar from './Navbar'
 import styles from "./styles/Home.module.css"
 import home from "../assets/home.png"
 import chevron from "../assets/chevron.gif"
+import { useAppState } from '../context/AppContext'
 
-const Home = ({ heroRef, animate, scrollHandler }) => {
+const Home = () => {
+    const { heroRef, animate, scrollHandler } = useAppState()
     return (
         <div className={styles.home} ref={heroRef}>
             <Navbar />
