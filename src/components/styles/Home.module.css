@@ -204,12 +204,13 @@
 
 @media screen and (max-width: 1650px) {
     .fixed_home {
-        width: 30vw;
+        width: 50vmin;
     }
 
     .fixed_light {
-        width: 45vw;
-        top: 22vw;
+        width: 56vmin;
+        bottom: 0;
+        left: 12vmax;
     }
 
     .t_main {
@@ -260,5 +261,12 @@
 
     .not_in_view {
         transform: translateX(-50%) translateY(-5%);
+    }
+}
+
+@media screen and (max-width : 1440px) {
+
+    .fixed_light {
+        left: 14vmax;
     }
 }

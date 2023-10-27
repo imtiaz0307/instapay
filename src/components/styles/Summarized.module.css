@@ -96,9 +96,8 @@
 
 @media screen and (max-width: 1850px) {
     .wrapper {
-        padding: 2rem;
+        padding: 0 0 0 2rem;
     }
-
 }
 
 @media screen and (max-width: 1600px) {
@@ -111,29 +110,36 @@
     }
 
     .left>h2 {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     .left .timeline h3 {
-        font-size: 2.1vw;
+        font-size: 1.7vw;
     }
 
     .left .timeline p {
-        font-size: 1.15vw;
-    }
-
-    .left .timeline a {
         font-size: 1.1vw;
     }
 
+    .left .timeline a {
+        font-size: 1vw;
+    }
+
     .right {
-        transform: translateX(10%);
-        height: calc(100vh - 200px);
-        aspect-ratio: 9/16;
+        transform: translateX(0%);
+        max-height: 600px;
+        max-width: 20vw;
+        flex: .5;
     }
 
     .timeline {
         width: 100%;
         aspect-ratio: 7/3;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .wrapper {
+        padding-left: 9rem;
     }
 }
