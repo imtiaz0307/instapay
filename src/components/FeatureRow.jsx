@@ -1,7 +1,8 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import styles from "./styles/FeatureRow.module.css";
 import NavbarSecondary from './NavbarSecondary';
 import SidebarFixed from './SidebarFixed';
+import sect_bg from "../assets/sec_bg.mp4"
 
 const FeatureRow = ({ head, text, count, img }) => {
     return (
@@ -9,6 +10,7 @@ const FeatureRow = ({ head, text, count, img }) => {
             position: "sticky",
             top: 0,
         }}>
+            <video src={sect_bg} autoPlay loop style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 10, mixBlendMode: "difference", pointerEvents: "none" }}></video>
             <div className={styles.container}>
                 <NavbarSecondary />
                 <SidebarFixed />

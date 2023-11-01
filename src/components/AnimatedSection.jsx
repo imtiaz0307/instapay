@@ -4,6 +4,7 @@ import { useAppState } from "../context/AppContext"
 import NavbarSecondary from './NavbarSecondary'
 import SidebarFixed from './SidebarFixed'
 import styles from "./styles/Home.module.css"
+import sect_bg from "../assets/sec_bg.mp4"
 
 const AnimatedSection = () => {
     const { showFixedImages, transformRef, animate, mainRef } = useAppState()
@@ -12,6 +13,7 @@ const AnimatedSection = () => {
             position: "sticky",
             top: 0
         }}>
+            <video src={sect_bg} autoPlay loop style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 10, mixBlendMode: "difference", pointerEvents: "none" }}></video>
             <div className={`${styles.transform_section} ${animate ? styles.in_view : styles.not_in_view}`} ref={transformRef}>
                 <img src={fixed_home} alt="fixed_home" className={`${styles.fixed_home} ${animate && showFixedImages ? styles.home_in : styles.home_out}`} />
                 <img src={fixed_light} alt="fixed_light" className={`${styles.fixed_light} ${animate && showFixedImages ? styles.light_in : styles.light_out}`} />

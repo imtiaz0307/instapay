@@ -7,10 +7,11 @@ import 'swiper/css/bundle';
 import "swiper/css"
 import chev_right from "../assets/chev_right.svg"
 import chev_left from "../assets/chev_left.svg"
-import { useRef } from "react";
+import { useState } from "react";
+import sect_bg from "../assets/sec_bg.mp4"
 
 const FeatureTwo = () => {
-    const swiperRef = useRef(null)
+    const [swiper, setSwiper] = useState()
     const cardsData = [
         {
             head: "Standard Payment Request:",
@@ -35,15 +36,18 @@ const FeatureTwo = () => {
     ]
 
     const nextSlideHandler = () => {
-        if (swiperRef.current) {
-            // swiperRef.current?.slideNext()
+        if (swiper) {
+            swiper.slideNext();
         }
-    }
+    };
+
+    // Function to go to the previous slide
     const prevSlideHandler = () => {
-        if (swiperRef.current) {
-            // swiperRef.current?.slidePrev()
+        if (swiper) {
+            swiper.slideTo(-1);
         }
-    }
+    };
+
 
     return (
         <div className={styles.container}>
@@ -55,10 +59,11 @@ const FeatureTwo = () => {
                     <p>Experience versatility in payment requests with INSTA-PAY. Here's what sets us apart:</p>
                 </div>
                 <Swiper
-                    ref={swiperRef}
                     className={styles.bottom}
                     slidesPerView={3}
                     spaceBetween={30}
+                    onSwiper={e => setSwiper(e)}
+                    loop={true}
                 >
                     {
                         cardsData.map(item => (
@@ -80,6 +85,7 @@ const FeatureTwo = () => {
                     <img src={chev_right} alt=">" onClick={nextSlideHandler} />
                 </div>
             </div>
+            <video src={sect_bg} autoPlay loop style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 10, mixBlendMode: "difference", pointerEvents: "none" }}></video>
         </div>
     )
 }

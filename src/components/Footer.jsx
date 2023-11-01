@@ -1,31 +1,37 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin, BiLogoWhatsapp, BiLogoYoutube } from "react-icons/bi"
 import styles from './styles/Footer.module.css';
 import logo from "../assets/logo.svg"
 import footer_right from "../assets/footer_right.png"
 import contact_us from "../assets/contact.svg"
+import { FaXTwitter } from "react-icons/fa6"
 
 const Footer = () => {
     const links = [
         {
             link: "#",
-            icon: <FaFacebook />
+            icon: <BiLogoInstagram color='black' size={20} />
         },
         {
             link: "#",
-            icon: <FaFacebook />
+            icon: <BiLogoLinkedin color='black' size={20} />
         },
         {
             link: "#",
-            icon: <FaFacebook />
+            icon: <BiLogoFacebook color='black' size={20} />
         },
         {
             link: "#",
-            icon: <FaFacebook />
+            icon: <BiLogoWhatsapp color='black' size={20} />
         },
         {
             link: "#",
-            icon: <FaFacebook />
+            icon: <BiLogoYoutube color='black' size={20} />
+        },
+        {
+            link: "#",
+            icon: <FaXTwitter color='black' size={20} />
+
         },
     ]
 

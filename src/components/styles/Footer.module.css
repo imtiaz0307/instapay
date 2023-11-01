@@ -43,7 +43,7 @@
 .socials {
     display: flex;
     justify-content: space-between;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .links {
@@ -152,6 +152,10 @@
 }
 
 @media screen and (max-width: 1500px) {
+    .socials {
+        gap: .5rem;
+    }
+
     .left {
         flex: 5;
     }
