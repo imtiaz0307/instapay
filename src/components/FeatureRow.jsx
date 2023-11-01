@@ -10,7 +10,7 @@ const FeatureRow = ({ head, text, count, img }) => {
             position: "sticky",
             top: 0,
         }}>
-            <video src={sect_bg} autoPlay={true} loop={true} muted={true} controls={false} style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 10, mixBlendMode: "difference", pointerEvents: "none" }}></video>
+            <video src={sect_bg} autoPlay={true} loop={true} muted={true} controls={false} style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 10, mixBlendMode: "difference", pointerEvents: "none", opacity: .3 }}></video>
             <div className={styles.container}>
                 <NavbarSecondary />
                 <SidebarFixed />

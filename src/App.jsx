@@ -27,9 +27,7 @@ const App = () => {
 
   return (
     <main style={{ overflowX: "hidden", maxHeight: "100vh", overflowY: "auto" }} ref={mainRef}>
-      {
-        loading && <Loader />
-      }
+      <Loader loading={loading} />
       <Home />
       <AnimatedSection />
       <FeatureRow
