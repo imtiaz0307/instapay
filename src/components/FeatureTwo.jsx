@@ -85,7 +85,7 @@ const FeatureTwo = () => {
                     <img src={chev_right} alt=">" onClick={nextSlideHandler} />
                 </div>
             </div>
-            <video src={sect_bg} autoPlay loop style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 10, mixBlendMode: "difference", pointerEvents: "none" }}></video>
+            <video src={sect_bg} autoPlay={true} loop={true} muted={true} controls={false} style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 10, mixBlendMode: "difference", pointerEvents: "none" }}></video>
         </div>
     )
 }

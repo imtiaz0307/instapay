@@ -7,11 +7,29 @@ import Summarized from './components/Summarized'
 import Footer from './components/Footer'
 import AnimatedSection from './components/AnimatedSection'
 import { useAppState } from './context/AppContext'
+import Loader from './components/Loader'
+import { useEffect, useState } from 'react'
 
 const App = () => {
   const { mainRef } = useAppState()
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const toggleLoad = () => {
+      setLoading(false)
+    }
+
+    window.addEventListener("load", toggleLoad)
+
+    return () => window.removeEventListener("load", toggleLoad)
+
+  }, [])
+
   return (
     <main style={{ overflowX: "hidden", maxHeight: "100vh", overflowY: "auto" }} ref={mainRef}>
+      {
+        loading && <Loader />
+      }
       <Home />
       <AnimatedSection />
       <FeatureRow

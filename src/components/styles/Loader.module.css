@@ -1,0 +1,41 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: url(../../assets/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: 999;
+}
+
+.container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.e_636 {
+    animation: 3s rotate forwards infinite linear;
+    width: 50vmax;
+}
+
+.e_499,
+.e_499_2 {
+    width: 23vmax;
+}
+
+.white_lg {
+    width: 12vmax;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
