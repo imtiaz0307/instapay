@@ -186,6 +186,8 @@
 
 .t_content {
     flex: 1;
+    position: relative;
+    z-index: 100;
 }
 
 .t_content h1 {

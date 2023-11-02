@@ -12,7 +12,7 @@ const AnimatedSection = () => {
     return (
         <div style={{
             position: "sticky",
-            top: 0
+            top: 0,
         }}>
             <div className={`${styles.transform_section} ${animate ? styles.in_view : styles.not_in_view}`} ref={transformRef}>
                 <img src={fixed_home} alt="fixed_home" className={`${styles.fixed_home} ${animate && showFixedImages ? styles.home_in : styles.home_out}`} />
@@ -42,17 +42,17 @@ const AnimatedSection = () => {
                         </p>
                     </div>
                 </div>
+                <video src={sect_bg} autoPlay={true} loop={true} muted={true} controls={false} style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 9, mixBlendMode: "difference", pointerEvents: "none", opacity: .3 }}></video>
+                <img src={sec_bg} alt="bg" style={{
+                    height: "100vh",
+                    width: "100vw",
+                    objectFit: "cover",
+                    position: "absolute",
+                    top: "0",
+                    left: "0",
+                    zIndex: 1
+                }} />
             </div>
-            <video src={sect_bg} autoPlay={true} loop={true} muted={true} controls={false} style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 9, mixBlendMode: "difference", pointerEvents: "none", opacity: .3 }}></video>
-            <img src={sec_bg} alt="bg" style={{
-                height: "100vh",
-                width: "100vw",
-                objectFit: "cover",
-                position: "absolute",
-                top: "0",
-                left: "0",
-                zIndex: 1
-            }} />
         </div>
     )
 }

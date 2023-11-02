@@ -9,7 +9,7 @@
 }
 
 .wrapper {
-    max-width: 1400px;
+    max-width: 1700px;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -22,7 +22,7 @@
 .left {
     flex: 1;
     width: 45%;
-    transform: translateX(70px);
+    transform: translateX(180px);
     position: relative;
     z-index: 10;
 }
@@ -79,7 +79,7 @@
     position: absolute;
     right: 0px;
     top: 50%;
-    transform: translateX(-80px) translateY(-50%);
+    transform: translateX(50px) translateY(-50%);
     flex: 1;
 }
 
@@ -93,11 +93,11 @@
     }
 
     .left {
-        transform: translateX(0);
+        /* transform: translateX(0); */
     }
 
     .right {
-        right: -100px;
+        /* right: -100px; */
     }
 }
 
@@ -107,11 +107,15 @@
     }
 
     .right {
-        right: 0;
+        right: -100px;
     }
 
     .right img {
-        width: 44vmax;
+        width: 46vmax;
+    }
+
+    .left {
+        transform: translateX(0);
     }
 
     .left h2 {
@@ -128,5 +132,11 @@
 
     .wrapper {
         padding-left: 11rem;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .right {
+        right: 0px;
     }
 }
