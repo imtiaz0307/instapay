@@ -87,6 +87,10 @@
     width: 100%;
 }
 
+.right img[alt="QR Code Payments"] {
+    transform: translateX(-80px);
+}
+
 @media screen and (max-width: 1850px) {
     .wrapper {
         padding: 2rem;
@@ -112,6 +116,11 @@
 
     .right img {
         width: 46vmax;
+    }
+
+    .right img[alt="QR Code Payments"] {
+        width: 35vmax;
+        transform: translateX(-40px);
     }
 
     .left {
