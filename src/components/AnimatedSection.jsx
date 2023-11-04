@@ -21,7 +21,7 @@ const AnimatedSection = () => {
                         ?
                         <>
                             <NavbarSecondary />
-                            <SidebarFixed mainRef={mainRef} />
+                            <SidebarFixed />
                         </>
                         :
                         ""

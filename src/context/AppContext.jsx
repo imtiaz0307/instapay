@@ -8,54 +8,61 @@ export function useAppState() {
 
 export const AppStateProvider = ({ children }) => {
     const [animate, setAnimate] = useState(false)
-    const [showFixedImages, setShowFixedImages] = useState(false)
+    const [showFixedImages, setShowFixedImages] = useState(true)
     const mainRef = useRef(null)
     const [scrollPercentage, setScrollPercentage] = useState(0);
     const transformRef = useRef(null)
     const heroRef = useRef(null)
 
 
-    const windowScrollHandler = () => {
-        const height = window.innerHeight;
-        const scrollY = mainRef.current.scrollTop;
-        if (scrollY >= height - 300) {
-            if (scrollY >= (height * 2)) {
-                setShowFixedImages(false)
-            } else {
-                setShowFixedImages(true)
-            }
-        } else {
-            setShowFixedImages(false)
-        }
-    }
+    // const windowScrollHandler = () => {
+    //     const height = window.innerHeight;
+    //     const scrollY = mainRef.current.scrollTop;
+    //     if (scrollY >= height - 300) {
+    //         if (scrollY >= (height * 2)) {
+    //             setShowFixedImages(false)
+    //         } else {
+    //             setShowFixedImages(true)
+    //         }
+    //     } else {
+    //         setShowFixedImages(false)
+    //     }
+    // }
 
-    useEffect(() => {
-        if (mainRef.current) {
-            mainRef.current.addEventListener("scroll", windowScrollHandler)
-        }
-        return () => {
-            if (mainRef.current) {
-                mainRef.current.removeEventListener("scroll", windowScrollHandler)
-            }
-        }
-    }, [])
+    // useEffect(() => {
+    //     if (mainRef.current) {
+    //         mainRef.current.addEventListener("scroll", windowScrollHandler)
+    //     }
+    //     return () => {
+    //         if (mainRef.current) {
+    //             mainRef.current.removeEventListener("scroll", windowScrollHandler)
+    //         }
+    //     }
+    // }, [])
 
 
     const scrollHandler = () => {
         setAnimate(true)
-        const element = transformRef.current;
-        element.scrollIntoView({ behavior: "smooth", block: "end", inline: "start" })
+        // const element = transformRef.current;
+        // element.scrollIntoView({ behavior: "smooth", block: "end", inline: "start" })
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: "smooth"
+        })
     }
 
     useEffect(() => {
-
         const intersectionHandler = (e) => {
             if (!e[0].isIntersecting) {
                 setAnimate(!e[0].isIntersecting)
-                const element = transformRef.current;
-                if (element) {
-                    element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
-                }
+                // const element = transformRef.current;
+                // if (element) {
+                //     element.scrollIntoView({ behavior: "smooth", block: "end", inline: "start" })
+                // }
+                window.scrollTo({
+                    top: window.innerHeight,
+                    behavior: "smooth"
+                })
             } else {
                 setAnimate(!e[0].isIntersecting)
             }
@@ -77,26 +84,19 @@ export const AppStateProvider = ({ children }) => {
     // scroll
     useEffect(() => {
         const handleScroll = () => {
-            if (mainRef.current) {
-                const element = mainRef.current;
-                const windowHeight = element.clientHeight;
-                const scrollY = element.scrollTop;
-                const contentHeight = element.scrollHeight - windowHeight;
-                const percentage = (scrollY / contentHeight) * 100;
-                setScrollPercentage(percentage);
-            }
+            const windowHeight = window.innerHeight;
+            const scrollY = window.scrollY;
+            const contentHeight = document.documentElement.scrollHeight - windowHeight;
+            const percentage = (scrollY / contentHeight) * 100;
+            setScrollPercentage(percentage);
         };
 
-        if (mainRef.current) {
-            mainRef.current.addEventListener('scroll', handleScroll);
-        }
+        window.addEventListener('scroll', handleScroll);
 
         return () => {
-            if (mainRef.current) {
-                mainRef.current.removeEventListener('scroll', handleScroll);
-            }
+            window.removeEventListener('scroll', handleScroll);
         };
-    }, [mainRef]);
+    }, []);
 
     return (
         <AppContext.Provider
