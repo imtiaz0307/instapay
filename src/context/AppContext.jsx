@@ -15,54 +15,68 @@ export const AppStateProvider = ({ children }) => {
     const heroRef = useRef(null)
 
 
-    // const windowScrollHandler = () => {
-    //     const height = window.innerHeight;
-    //     const scrollY = mainRef.current.scrollTop;
-    //     if (scrollY >= height - 300) {
-    //         if (scrollY >= (height * 2)) {
-    //             setShowFixedImages(false)
-    //         } else {
-    //             setShowFixedImages(true)
-    //         }
-    //     } else {
-    //         setShowFixedImages(false)
-    //     }
-    // }
+    const windowScrollHandler = () => {
+        const height = window.innerHeight;
+        const scrollY = window.scrollY;
+        if (scrollY >= height - 300) {
+            if (scrollY >= (height * 2)) {
+                setShowFixedImages(false)
+            } else {
+                setShowFixedImages(true)
+            }
+        } else {
+            setShowFixedImages(false)
+        }
+    }
 
-    // useEffect(() => {
-    //     if (mainRef.current) {
-    //         mainRef.current.addEventListener("scroll", windowScrollHandler)
-    //     }
-    //     return () => {
-    //         if (mainRef.current) {
-    //             mainRef.current.removeEventListener("scroll", windowScrollHandler)
-    //         }
-    //     }
-    // }, [])
+    useEffect(() => {
+        // if (mainRef.current) {
+        window.addEventListener("scroll", windowScrollHandler)
+        // }
+        return () => {
+            // if (mainRef.current) {
+            window.removeEventListener("scroll", windowScrollHandler)
+            // }
+        }
+    }, [])
 
 
     const scrollHandler = () => {
-        setAnimate(true)
-        // const element = transformRef.current;
-        // element.scrollIntoView({ behavior: "smooth", block: "end", inline: "start" })
-        window.scrollTo({
-            top: window.innerHeight,
-            behavior: "smooth"
-        })
-    }
+        setAnimate(true);
+
+        // the function i was using before
+        // const element = transformRef?.current
+        // element.scrollIntoView({ behavior: "smooth" })
+
+
+        // new functionality
+        // const scrollOffset = transformRef?.current?.offsetTop;
+
+        const duration = 500;
+        const intervals = 30;
+
+        const distance = window.innerHeight / 2;
+
+        const steps = Math.floor(duration / intervals);
+        const stepValue = distance / steps;
+
+
+        let step = 0;
+        const smoothScroll = setInterval(function () {
+            if (step <= steps) {
+                window.scrollBy(0, stepValue);
+                step++;
+            } else {
+                clearInterval(smoothScroll);
+            }
+        }, intervals);
+    };
 
     useEffect(() => {
         const intersectionHandler = (e) => {
             if (!e[0].isIntersecting) {
                 setAnimate(!e[0].isIntersecting)
-                // const element = transformRef.current;
-                // if (element) {
-                //     element.scrollIntoView({ behavior: "smooth", block: "end", inline: "start" })
-                // }
-                window.scrollTo({
-                    top: window.innerHeight,
-                    behavior: "smooth"
-                })
+                scrollHandler()
             } else {
                 setAnimate(!e[0].isIntersecting)
             }

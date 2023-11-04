@@ -3,8 +3,10 @@
   --family-specific: 'Satoshi', sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
+html,
+body {
+  scroll-behavior: initial;
+  scroll-snap-type: none;
 }
 
 * {
