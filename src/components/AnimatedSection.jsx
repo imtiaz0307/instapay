@@ -4,8 +4,7 @@ import { useAppState } from "../context/AppContext"
 import NavbarSecondary from './NavbarSecondary'
 import SidebarFixed from './SidebarFixed'
 import styles from "./styles/Home.module.css"
-import sect_bg from "../assets/sec_bg.mp4"
-import sec_bg from "../assets/sect_bg.png"
+import ParticlesBg from "./ParticlesBg"
 
 const AnimatedSection = () => {
     const { showFixedImages, transformRef, animate, mainRef } = useAppState()
@@ -42,16 +41,10 @@ const AnimatedSection = () => {
                         </p>
                     </div>
                 </div>
-                <video src={sect_bg} autoPlay={true} loop={true} muted={true} controls={false} style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 9, mixBlendMode: "difference", pointerEvents: "none", opacity: .3 }}></video>
-                <img src={sec_bg} alt="bg" style={{
-                    height: "100vh",
-                    width: "100vw",
-                    objectFit: "cover",
-                    position: "absolute",
-                    top: "0",
-                    left: "0",
-                    zIndex: 1
-                }} />
+                {
+                    animate &&
+                    <ParticlesBg />
+                }
             </div>
         </div>
     )

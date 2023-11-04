@@ -8,8 +8,7 @@ import "swiper/css"
 import chev_right from "../assets/chev_right.svg"
 import chev_left from "../assets/chev_left.svg"
 import { useState } from "react";
-import sect_bg from "../assets/sec_bg.mp4"
-import sec_bg from "../assets/sect_bg.png"
+import ParticlesBg from "./ParticlesBg";
 
 const FeatureTwo = () => {
     const [swiper, setSwiper] = useState()
@@ -86,16 +85,7 @@ const FeatureTwo = () => {
                     <img src={chev_right} alt=">" onClick={nextSlideHandler} />
                 </div>
             </div>
-            <video src={sect_bg} autoPlay={true} loop={true} muted={true} controls={false} style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 9, mixBlendMode: "difference", pointerEvents: "none", opacity: .3 }}></video>
-            <img src={sec_bg} alt="bg" style={{
-                height: "100vh",
-                width: "100vw",
-                objectFit: "cover",
-                position: "absolute",
-                top: "0",
-                left: "0",
-                zIndex: 1
-            }} />
+            <ParticlesBg />
         </div>
     )
 }
