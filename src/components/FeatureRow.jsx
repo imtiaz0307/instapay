@@ -13,7 +13,7 @@ const FeatureRow = ({ head, text, count, img }) => {
             <ParticlesBg />
             <div className={styles.container}>
                 <NavbarSecondary />
-                <SidebarFixed />
+                <SidebarFixed featureText={`${count} Feature`} />
                 <div className={styles.wrapper}>
                     <div className={styles.left}>
                         <h2 data-feature={count}>{head}</h2>

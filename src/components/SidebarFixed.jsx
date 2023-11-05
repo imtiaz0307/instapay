@@ -4,7 +4,7 @@ import styles from './styles/SidebarFixed.module.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-const SidebarFixed = ({ color = "#fff" }) => {
+const SidebarFixed = ({ color = "#fff", featureText }) => {
     const { scrollPercentage } = useAppState()
     return (
         <div className={styles.sidebar}>
@@ -41,7 +41,13 @@ const SidebarFixed = ({ color = "#fff" }) => {
                     />
                 </div>
             </div>
-            <p>02 Feature</p>
+            {
+                featureText
+                    ?
+                    <p>{featureText}</p>
+                    :
+                    <div></div>
+            }
         </div>
     );
 };

@@ -52,7 +52,7 @@ const FeatureTwo = () => {
     return (
         <div className={styles.container}>
             <NavbarSecondary />
-            <SidebarFixed />
+            <SidebarFixed featureText={"02 Feature"} />
             <div className={styles.wrapper}>
                 <div className={styles.top}>
                     <h2 data-feature={"02"}>Payment Request</h2>

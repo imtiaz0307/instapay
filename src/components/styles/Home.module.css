@@ -166,8 +166,8 @@
     width: 60%;
     margin: 0 auto;
     background: radial-gradient(81.32% 81.32% at 50% 50%, #030347, #020219 100%);
-    border-radius: 200px 200px 0 0;
-    transition: 1.5s;
+    border-radius: 300px 300px 0 0;
+    transition: 1s width, 1.5s border-radius;
 }
 
 .animated::before {
@@ -179,20 +179,20 @@
     background: radial-gradient(81.32% 81.32% at 50% 50%, #030347, #020219 100%);
     border-radius: 300px 300px 0 0;
     top: -15vh;
-    transition: 1.5s;
+    transition: 1s width, 1.5s border-radius;
 }
 
 .animated_view {
     width: 100vw;
     border-radius: 0;
-    transition: 1.5s;
+    transition: 1s width, 1.5s border-radius;
 }
 
 .animated_view::before {
     top: 0;
     width: 100%;
     opacity: 0;
-    transition: 1.5s;
+    transition: 1s width, 1.5s border-radius;
 }
 
 .fade_out {

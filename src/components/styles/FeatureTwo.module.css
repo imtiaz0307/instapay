@@ -22,13 +22,13 @@
 
 .top {
     width: 50%;
-    transform: translateX(70px);
+    transform: translateX(110px);
 }
 
 .top h2 {
     color: #FFF;
     font-family: var(--family-general);
-    font-size: 56px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -43,7 +43,7 @@
     top: -60px;
     left: -90px;
     font-family: var(--family-general);
-    font-size: 116px;
+    font-size: 92px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -58,10 +58,14 @@
     color: #FFF;
     font-feature-settings: 'liga' off;
     font-family: var(--family-specific);
-    font-size: 22px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 165%;
+}
+
+.bottom {
+    transform: translateX(30px)
 }
 
 .bottom h3 {
