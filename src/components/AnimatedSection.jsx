@@ -5,9 +5,16 @@ import NavbarSecondary from './NavbarSecondary'
 import SidebarFixed from './SidebarFixed'
 import styles from "./styles/Home.module.css"
 import ParticlesBg from "./ParticlesBg"
+import { useEffect, useState } from "react"
 
 const AnimatedSection = () => {
     const { showFixedImages, transformRef, animate } = useAppState()
+    const [radius, setRadius] = useState("300px")
+
+    useEffect(() => {
+        setRadius(animate ? "0px" : "300px")
+    }, [animate])
+
     return (
         <div className={`${styles.animated} ${animate ? styles.animated_view : ""}`} ref={transformRef}>
             {/* <div className={`${styles.transform_section} ${animate ? styles.in_view : styles.not_in_view}`} ref={transformRef}> */}
@@ -40,7 +47,7 @@ const AnimatedSection = () => {
             </div>
             {
                 animate &&
-                <ParticlesBg borderRadius={animate ? "0px" :"300px"} />
+                <ParticlesBg borderRadius={radius} />
             }
             {/* </div> */}
         </div>
