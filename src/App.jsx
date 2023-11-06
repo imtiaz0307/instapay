@@ -16,14 +16,23 @@ const App = () => {
 
   useEffect(() => {
     const toggleLoad = () => {
-      setLoading(false)
+      console.log("loaded")
+      setLoading(false);
     }
 
-    window.addEventListener("load", toggleLoad)
+    window.addEventListener("load", toggleLoad);
 
-    return () => window.removeEventListener("load", toggleLoad)
+    return () => window.removeEventListener("load", toggleLoad);
+  }, []);
 
-  }, [])
+  useEffect(() => {
+    const loaderTimeout = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(loaderTimeout);
+  }, []);
+
 
   return (
     <main ref={mainRef}>
