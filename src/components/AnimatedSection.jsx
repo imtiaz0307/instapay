@@ -40,7 +40,7 @@ const AnimatedSection = () => {
             </div>
             {
                 animate &&
-                <ParticlesBg />
+                <ParticlesBg borderRadius={animate ? "0px" :"300px"} />
             }
             {/* </div> */}
         </div>
