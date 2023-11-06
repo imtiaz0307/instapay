@@ -41,7 +41,7 @@
     content: attr(data-feature);
     position: absolute;
     top: -60px;
-    left: -90px;
+    left: -60px;
     font-family: var(--family-general);
     font-size: 92px;
     font-style: normal;
