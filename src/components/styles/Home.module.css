@@ -79,7 +79,7 @@
 }
 
 .fixed_home {
-    position: fixed;
+    position: absolute;
     left: 327px;
     max-width: 520px;
     top: 0px;
@@ -87,7 +87,7 @@
 }
 
 .fixed_light {
-    position: fixed;
+    position: absolute;
     left: 226px;
     max-width: 723px;
     bottom: 2px;
