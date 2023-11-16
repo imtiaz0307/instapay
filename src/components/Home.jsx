@@ -5,7 +5,7 @@ import chevron from "../assets/chevron.gif"
 import { useAppState } from '../context/AppContext'
 
 const Home = () => {
-    const { heroRef, animate, scrollHandler } = useAppState()
+    const { heroRef, animate } = useAppState()
     return (
         <div className={styles.home} ref={heroRef}>
             <Navbar />
@@ -45,7 +45,8 @@ const Home = () => {
                     transform: "translateX(-50%)",
                     zIndex: 100,
                     cursor: "pointer",
-                }} onClick={scrollHandler}>
+                    // }} onClick={scrollHandler}>
+                }} onClick={() => window.scrollTo({ top: 100, behavior: "smooth", })}>
                     {/* <video src={chevron} autoPlay={true} loop={true} controls={false} style={{ height: "100%", width: "100%", mixBlendMode: "" }}></video> */}
                     <img src={chevron} alt="chevron" style={{
                         height: "100%",

@@ -44,18 +44,10 @@ export const AppStateProvider = ({ children }) => {
     const scrollHandler = () => {
         setAnimate(true);
 
-        // the function i was using before
-        // const element = transformRef?.current
-        // element.scrollIntoView({ behavior: "smooth" })
-
-
-        // new functionality
-        // const scrollOffset = transformRef?.current?.offsetTop;
-
         const duration = 500;
         const intervals = 30;
 
-        const distance = window.innerHeight / 2;
+        const distance = window.innerHeight - 100;
 
         const steps = Math.floor(duration / intervals);
         const stepValue = distance / steps;
