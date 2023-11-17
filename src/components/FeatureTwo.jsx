@@ -66,8 +66,8 @@ const FeatureTwo = () => {
                     loop={true}
                 >
                     {
-                        cardsData.map(item => (
-                            <SwiperSlide key={item.head} style={{
+                        cardsData.map((item, ind) => (
+                            <SwiperSlide key={ind} style={{
                                 maxWidth: "400px",
                                 color: "white",
                                 padding: ".85rem 1rem",

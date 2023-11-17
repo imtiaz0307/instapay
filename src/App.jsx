@@ -33,6 +33,14 @@ const App = () => {
     return () => clearTimeout(loaderTimeout);
   }, []);
 
+  useEffect(() => {
+    (
+      async () => {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  }, [])
 
   return (
     <main ref={mainRef}>

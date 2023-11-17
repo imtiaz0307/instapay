@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div className={styles.home} ref={heroRef}>
             <Navbar />
-            <div className={styles.hero}>
+            <div className={styles.hero} data-scroll data-scroll-speed="0.9">
                 <div className={styles.left}>
                     <img src={home} alt="home" />
                 </div>
