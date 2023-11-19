@@ -47,7 +47,7 @@ export const AppStateProvider = ({ children }) => {
         const duration = 500;
         const intervals = 30;
 
-        const distance = window.innerHeight - 100;
+        const distance = window.innerHeight - 122;
 
         const steps = Math.floor(duration / intervals);
         const stepValue = distance / steps;

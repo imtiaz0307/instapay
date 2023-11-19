@@ -65,7 +65,7 @@
 .cta {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 14px;
 }
 
 .cta a {
@@ -76,6 +76,28 @@
     font-style: normal;
     font-weight: 700;
     line-height: 165%;
+}
+
+.cta a:nth-child(1) {
+    background: url(../../assets/cta_g.png);
+    border-radius: 22.582px;
+    background-blend-mode: normal, color-dodge, multiply, soft-light, normal;
+    box-shadow: 0px 12.41987px 23.71066px -7.90355px rgba(46, 22, 244, 0.41);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 9px 50px;
+}
+
+.cta a:nth-child(2) {
+    background: url(../../assets/cta_t.png);
+    border-radius: 22.582px;
+    box-shadow: 0px 12.41987px 23.71066px -7.90355px rgba(46, 22, 244, 0.41);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 9px 26px;
 }
 
 .fixed_home {
