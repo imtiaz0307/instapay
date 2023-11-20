@@ -4,6 +4,10 @@ import http from 'http'
 import https from 'https'
 import path from 'path'
 import fs from 'fs'
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 // const compression = require('compression')
 // const express = require('express');
 // const http = require('http');
