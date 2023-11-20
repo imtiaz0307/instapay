@@ -18,7 +18,7 @@ app.get('*', (req, res) => {
 const port = process.env.PORT || '3000';
 app.set('port', port);
 
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/afomedia.com/privkey.pem', 'utf8');
+// const privateKey = fs.readFileSync('/etc/letsencrypt/live/afomedia.com/privkey.pem', 'utf8');
 // const certificate = fs.readFileSync('/etc/letsencrypt/live/afomedia.com/cert.pem', 'utf8');
 // const ca = fs.readFileSync('/etc/letsencrypt/live/afomedia.com/fullchain.pem', 'utf8');
 // const credentials = {
