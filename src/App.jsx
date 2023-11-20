@@ -10,6 +10,7 @@ import FooterNew from './components/FooterNew'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Faq from './Pages/Faq'
 import PrivacyPolicy from './Pages/PrivacyPolicy'
+import TermsAndConditions from './Pages/TermsAndConditions'
 
 const App = () => {
   const [loading, setLoading] = useState(true)
@@ -76,6 +77,7 @@ const App = () => {
           } />
           <Route path='/faq' element={<Faq />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+          <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
         </Routes>
         <FooterNew />
       </BrowserRouter>

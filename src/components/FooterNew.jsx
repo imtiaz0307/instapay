@@ -42,7 +42,7 @@ const FooterNew = () => {
         },
         {
             name: "Terms and Conditions",
-            link: "/"
+            link: "/terms-and-conditions"
         },
         {
             name: "AFFILIATION CERTIFICATE",
