@@ -58,7 +58,7 @@ const FooterNew = () => {
         },
         {
             name: "PRIVACY POLICY",
-            link: "/"
+            link: "/privacy-policy"
         },
         {
             name: "FAQ",

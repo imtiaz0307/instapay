@@ -112,3 +112,48 @@
     font-weight: 500;
     line-height: 150%;
 }
+
+@media screen and (max-width: 1650px) {
+    .content>h4 {
+        font-size: 16px;
+    }
+
+    .content>h2 {
+        font-size: 40px;
+    }
+
+    .content>h5 {
+        font-size: 14px;
+        margin-top: 35px;
+    }
+
+    .question_container .head h3 {
+        font-size: 24px;
+    }
+
+    .question_container .body {
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+
+    .question_container .body>h6 {
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .question_container .body div h5 {
+        font-size: 16px;
+    }
+
+    .question_container .body div h6 {
+        font-size: 12px;
+    }
+
+    .question_container .body ul {
+        padding: 0 2rem;
+    }
+
+    .question_container .body ul li {
+        font-size: 12px;
+    }
+}

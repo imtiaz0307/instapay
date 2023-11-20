@@ -7,7 +7,7 @@
     background-size: cover; */
     background: #fff;
     position: fixed;
-    z-index: 999;
+    z-index: 9999999999;
 }
 
 .loaded_container {

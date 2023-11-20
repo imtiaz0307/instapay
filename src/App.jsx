@@ -4,15 +4,14 @@ import { featuresData } from './data/FeaturesData'
 import FeatureTwo from './components/FeatureTwo'
 import Summarized from './components/Summarized'
 import AnimatedSection from './components/AnimatedSection'
-import { useAppState } from './context/AppContext'
 import Loader from './components/Loader'
 import { useEffect, useState } from 'react'
 import FooterNew from './components/FooterNew'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Faq from './Pages/Faq'
+import PrivacyPolicy from './Pages/PrivacyPolicy'
 
 const App = () => {
-  const { mainRef } = useAppState()
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -44,7 +43,7 @@ const App = () => {
   }, [])
 
   return (
-    <main ref={mainRef}>
+    <main>
       <Loader loading={loading} />
       <BrowserRouter>
         <Routes>
@@ -76,6 +75,7 @@ const App = () => {
             </>
           } />
           <Route path='/faq' element={<Faq />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         </Routes>
         <FooterNew />
       </BrowserRouter>
