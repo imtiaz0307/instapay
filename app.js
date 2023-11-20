@@ -19,10 +19,10 @@ const app = express()
 app.use(compression())
 
 // Serve only the static files form the dist directory
-app.use(express.static('/dist'));
-// app.use(express.static('/dist/sm-web-booking'));
+app.use(express.static(__dirname + '/dist'));
+// app.use(express.static(__dirname + '/dist/sm-web-booking'));
 app.get('*', (req, res) => {
-  res.sendFile(path.join('/dist/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
 const port = process.env.PORT || '3000';
