@@ -1,0 +1,239 @@
+.content {
+    margin: 60px 100px 60px 250px;
+}
+
+.content>h4 {
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 19.973px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.997px;
+}
+
+.content>h2 {
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 62.138px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.243px;
+    margin-bottom: 80px;
+}
+
+.plain_text_container {
+    margin-bottom: 53px;
+}
+
+.plain_text_container h4 {
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.plain_text_container p {
+    color: #1D1D1D;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.plain_text_container .unordered {
+    margin: 6px 0;
+}
+
+.plain_text_container .unordered li {
+    margin-left: 30px;
+    list-style: disc;
+    color: #1D1D1D;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.plain_text_container .unordered li a {
+    color: #5926F0;
+}
+
+.plain_text_container h5 {
+    color: #000;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.plain_text_container .ptc_sec {
+    display: flex;
+    gap: 10px;
+}
+
+.plain_text {
+    margin-top: 50px;
+}
+
+.plain_text h4 {
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.plain_text>p {
+    color: #3C3C3C;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.plain_text .pt_sub {
+    margin-bottom: 76px;
+    margin-left: 50px;
+}
+
+.pt_sub h5 {
+    color: #3C3C3C;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-left: -50px;
+    margin-bottom: 20px;
+}
+
+.pt_sub p {
+    color: #3C3C3C;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.pt_sub .special {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.pt_sub .special p:nth-child(1) {
+    color: #5926f0;
+}
+
+.plain_text ul {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.plain_text ul li {
+    list-style-type: disc;
+    color: #3C3C3C;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-left: 3rem;
+}
+
+.pt_sub {
+    margin-top: 2rem;
+}
+
+.pts_sub {
+    margin: 3rem 2rem 1rem;
+}
+
+.content a {
+    color: #5926F0;
+    text-decoration: underline;
+}
+
+.pt_sub .table_con {
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.table_con h6 {
+    color: #3C3C3C;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.table {
+    display: grid;
+    max-width: 900px;
+    width: 100%;
+    margin-top: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.table div {
+    border: 1px solid black;
+    padding: 30px;
+    border-collapse: collapse;
+    color: #3C3C3C;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.table .table_full {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.kyc_table {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.kyc_table div {
+    color: #3C3C3C;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border: 1px solid black;
+    padding: 30px;
+    border-collapse: collapse;
+    vertical-align: center;
+}
+
+.kyc_table div:nth-child(4n+1) {
+    grid-column: span 2;
+}

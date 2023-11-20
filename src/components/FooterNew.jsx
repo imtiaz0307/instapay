@@ -43,15 +43,15 @@ const FooterNew = () => {
   const linksData = [
     {
       name: "LEGAL & REGULATORY",
-      link: "/",
+      link: "/legal-and-regulatory",
     },
     {
       name: "Terms and Conditions",
-      link: "/",
+      link: "/terms-and-conditions",
     },
     {
       name: "AFFILIATION CERTIFICATE",
-      link: "/",
+      link: "/affiliation-certificates",
     },
     {
       name: "PROHIBITED COUNTRIES",

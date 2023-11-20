@@ -10,6 +10,9 @@ import FooterNew from "./components/FooterNew";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Faq from "./Pages/Faq";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import TermsAndConditions from "./Pages/TermsAndConditions";
+import Certification from "./Pages/Certification";
+import About from "./Pages/About";
 import ContactUs from "./Pages/ContactUs";
 
 const App = () => {
@@ -60,17 +63,7 @@ const App = () => {
                   img={featuresData[0].img}
                   styles={featuresData[0].styles}
                 />
-                <FeatureTwo />
-                {featuresData.slice(1).map((item) => (
-                  <FeatureRow
-                    key={item.count}
-                    count={item.count}
-                    head={item.head}
-                    text={item.text}
-                    img={item.img}
-                    styles={item.styles}
-                  />
-                ))}
+
                 <Summarized />
                 {/* <Footer /> */}
               </>
@@ -78,6 +71,12 @@ const App = () => {
           />
           <Route path="/faq" element={<Faq />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route
+            path="/terms-and-conditions"
+            element={<TermsAndConditions />}
+          />
+          <Route path="/affiliation-certificates" element={<Certification />} />
+          <Route path="/legal-and-regulatory" element={<About />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <FooterNew />

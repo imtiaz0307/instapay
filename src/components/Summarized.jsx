@@ -73,7 +73,7 @@ const Summarized = () => {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    {/* <video src={globe} autoPlay={true} loop={true} muted={true} controls={false}></video> */}
+                    <video src={globe} autoPlay={true} loop={true} muted={true} controls={false}></video>
                 </div>
             </div>
         </div>
