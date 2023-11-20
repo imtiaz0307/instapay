@@ -5,6 +5,7 @@ import logo from "../assets/logo.svg"
 import footer_right from "../assets/footer_right.png"
 import contact_us from "../assets/contact.svg"
 import { FaXTwitter } from "react-icons/fa6"
+import { Link } from 'react-router-dom';
 
 const FooterNew = () => {
     const links = [
@@ -61,7 +62,7 @@ const FooterNew = () => {
         },
         {
             name: "FAQ",
-            link: "/"
+            link: "/faq"
         },
     ]
 
@@ -84,7 +85,7 @@ const FooterNew = () => {
                         <div className={styles.links}>
                             {
                                 linksData.map(it => (
-                                    <a href={it.link}>{it.name.toUpperCase()}</a>
+                                    <Link to={it.link}>{it.name.toUpperCase()}</Link>
                                 ))
                             }
                         </div>

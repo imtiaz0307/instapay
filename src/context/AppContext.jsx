@@ -82,7 +82,11 @@ export const AppStateProvider = ({ children }) => {
             newObserver.observe(heroRef.current)
         }
 
-        return () => newObserver.unobserve(heroRef?.current)
+        return () => {
+            if (heroRef.current) {
+                newObserver.unobserve(heroRef?.current)
+            }
+        }
 
     }, [])
 
