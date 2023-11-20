@@ -38,7 +38,7 @@ const FooterNew = () => {
     const linksData = [
         {
             name: "LEGAL & REGULATORY",
-            link: "/"
+            link: "/legal-and-regulatory"
         },
         {
             name: "Terms and Conditions",

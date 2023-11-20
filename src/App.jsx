@@ -12,6 +12,7 @@ import Faq from './Pages/Faq'
 import PrivacyPolicy from './Pages/PrivacyPolicy'
 import TermsAndConditions from './Pages/TermsAndConditions'
 import Certification from './Pages/Certification'
+import About from './Pages/About'
 
 const App = () => {
   const [loading, setLoading] = useState(true)
@@ -80,6 +81,7 @@ const App = () => {
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
           <Route path='/affiliation-certificates' element={<Certification />} />
+          <Route path='/legal-and-regulatory' element={<About />} />
         </Routes>
         <FooterNew />
       </BrowserRouter>
