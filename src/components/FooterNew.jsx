@@ -46,7 +46,7 @@ const FooterNew = () => {
         },
         {
             name: "AFFILIATION CERTIFICATE",
-            link: "/"
+            link: "/affiliation-certificates"
         },
         {
             name: "PROHIBITED COUNTRIES",
