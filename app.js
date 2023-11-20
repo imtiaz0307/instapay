@@ -1,9 +1,15 @@
-const compression = require('compression')
-const express = require('express');
-const http = require('http');
-const https = require('https');
-const path = require('path');
-const fs = require("fs");
+import compression from 'compression'
+import express from 'express'
+import http from 'http'
+import https from 'https'
+import path from 'path'
+import fs from 'fs'
+// const compression = require('compression')
+// const express = require('express');
+// const http = require('http');
+// const https = require('https');
+// const path = require('path');
+// const fs = require("fs");
 
 const app = express()
 app.use(compression())
