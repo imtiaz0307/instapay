@@ -32,23 +32,25 @@
 .top .head {
     color: #000;
     font-feature-settings: 'liga' off;
-    font-family: var(--family-general);
-    font-size: 54.027px;
+    font-family: var(--family-specific);
+    font-size: 65.693px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: -1.081px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -1.314px;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .top .bold_head {
+    color: #000;
     font-feature-settings: 'liga' off;
-    text-shadow: 0px 7.7181220054626465px 24.119131088256836px rgba(46, 22, 244, 0.16);
-    font-weight: 600;
-    background: linear-gradient(to bottom right, #65184b, #2815e0, #1a0e77);
-    line-height: 130%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-family: Satoshi;
+    font-size: 37.058px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: -10px;
+    line-height: 150%;
 }
 
 .sub_text {
@@ -72,32 +74,22 @@
     color: #000;
     font-feature-settings: 'liga' off;
     font-family: var(--family-specific);
-    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 165%;
 }
 
 .cta a:nth-child(1) {
-    background: url(../../assets/cta_g.png);
     border-radius: 22.582px;
-    background-blend-mode: normal, color-dodge, multiply, soft-light, normal;
-    box-shadow: 0px 12.41987px 23.71066px -7.90355px rgba(46, 22, 244, 0.41);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(88deg, rgba(0, 0, 0, 0.60) 1.88%, rgba(89, 38, 240, 0.15) 43.73%, rgba(0, 0, 0, 0.60) 98.2%), linear-gradient(135deg, #4823B2 0%, #0007AD 100%);
     color: white;
     padding: 9px 50px;
+    font-size: 14px;
 }
 
 .cta a:nth-child(2) {
-    background: url(../../assets/cta_t.png);
-    border-radius: 22.582px;
-    box-shadow: 0px 12.41987px 23.71066px -7.90355px rgba(46, 22, 244, 0.41);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 9px 26px;
+    text-decoration: underline;
+    font-size: 16px;
 }
 
 .fixed_home {

@@ -9,6 +9,7 @@ import AnimatedSection from './components/AnimatedSection'
 import { useAppState } from './context/AppContext'
 import Loader from './components/Loader'
 import { useEffect, useState } from 'react'
+import FooterNew from './components/FooterNew'
 
 const App = () => {
   const { mainRef } = useAppState()
@@ -67,7 +68,8 @@ const App = () => {
         />
       ))}
       <Summarized />
-      <Footer />
+      {/* <Footer /> */}
+      <FooterNew />
     </main>
   )
 }

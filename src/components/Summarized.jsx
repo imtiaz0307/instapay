@@ -5,6 +5,7 @@ import styles from './styles/Summarized.module.css';
 import globe from '../assets/globe.mp4';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import "react-vertical-timeline-component/style.min.css";
+import NavbarFooter from './NavbarFooter';
 
 const Summarized = () => {
     // Example fintech-related data
@@ -33,7 +34,8 @@ const Summarized = () => {
 
     return (
         <div style={{ minHeight: '100vh', top: 0, zIndex: 100, background: 'white', width: '100vw', position: "relative" }}>
-            <Navbar showPlay={false} />
+            {/* <Navbar showPlay={false} /> */}
+            <NavbarFooter />
             <SidebarFixed color="#000" />
             <div className={styles.wrapper}>
                 <div className={styles.left}>
@@ -71,7 +73,7 @@ const Summarized = () => {
                     </div>
                 </div>
                 <div className={styles.right}>
-                    <video src={globe} autoPlay={true} loop={true} muted={true} controls={false}></video>
+                    {/* <video src={globe} autoPlay={true} loop={true} muted={true} controls={false}></video> */}
                 </div>
             </div>
         </div>

@@ -19,7 +19,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 60px;
 }
 
 .left .top {
@@ -40,6 +39,18 @@
     aspect-ratio: 203/57;
 }
 
+.about span {
+    color: #777;
+    font-feature-settings: 'liga' off;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 150%;
+    /* 27px */
+}
+
 .socials {
     display: flex;
     justify-content: space-between;
@@ -48,41 +59,28 @@
 
 .links {
     display: flex;
-    gap: 70px;
+    gap: 60px;
+    flex-wrap: wrap-reverse;
+    align-self: flex-end;
+    row-gap: 40px;
 }
 
-.links_item {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-}
-
-.links_item>* {
-    white-space: nowrap;
-}
-
-.links_item h4 {
+.links a {
     color: #5926F0;
     font-feature-settings: 'liga' off;
-    font-family: var(--family-specific);
+    font-family: Satoshi;
     font-size: 14px;
     font-style: normal;
     font-weight: 900;
     line-height: 150%;
     letter-spacing: 0.14px;
+    width: 210px;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
+    white-space: nowrap;
 }
 
-.links_item a {
-    color: #484848;
-    font-feature-settings: 'liga' off;
-    font-family: var(--family-specific);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    margin-bottom: .75rem;
+.contact_us {
+    min-width: 202px;
 }
 
 .contact_us img {

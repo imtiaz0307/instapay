@@ -31,6 +31,35 @@
     flex-shrink: 0;
 }
 
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta a {
+    color: #909090;
+    font-feature-settings: 'liga' off;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 165%;
+}
+
+.cta a:nth-child(2) {
+    border-radius: 22.582px;
+    background: linear-gradient(88deg, rgba(0, 0, 0, 0.60) 1.88%, rgba(89, 38, 240, 0.15) 43.73%, rgba(0, 0, 0, 0.60) 98.2%), linear-gradient(135deg, #4823B2 0%, #0007AD 100%);
+    color: white;
+    padding: 9px 30px;
+    font-size: 14px;
+}
+
+.cta a:nth-child(1) {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
 @media screen and (max-width: 1650px) {
     .nav {
         padding: 40px 60px 0;

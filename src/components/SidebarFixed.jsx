@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png';
+import logo from '../assets/feature.svg';
 import { useAppState } from '../context/AppContext';
 import styles from './styles/SidebarFixed.module.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
@@ -19,6 +19,8 @@ const SidebarFixed = ({ color = "#fff", featureText }) => {
                         top: '50%',
                         left: '50%',
                         transform: 'translate(-50%, -50%)',
+                        height: "20px",
+                        width: "20px"
                     }}
                 />
                 <div style={{ position: 'absolute', width: '100%', height: '100%' }}>

@@ -1,12 +1,12 @@
 import React from 'react';
 import { BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin, BiLogoWhatsapp, BiLogoYoutube } from "react-icons/bi"
-import styles from './styles/Footer.module.css';
+import styles from './styles/FooterNew.module.css';
 import logo from "../assets/logo.svg"
 import footer_right from "../assets/footer_right.png"
 import contact_us from "../assets/contact.svg"
 import { FaXTwitter } from "react-icons/fa6"
 
-const Footer = () => {
+const FooterNew = () => {
     const links = [
         {
             link: "#",
@@ -34,24 +34,37 @@ const Footer = () => {
 
         },
     ]
-
-    const linkTabsData = [
+    const linksData = [
         {
-            head: "Investors",
-            items: ["Company Overview", "Financials", "Investment Opp"],
-            links: ["/", "/", "/"]
+            name: "LEGAL & REGULATORY",
+            link: "/"
         },
         {
-            head: "Developers",
-            items: ["API Documentation", "SDKs & Plugins", "Support Forum", "Register Now"],
-            links: ["/", "/", "/", "https://tivo-new.vercel.app/auth/signup"]
+            name: "Terms and Conditions",
+            link: "/"
         },
         {
-            head: "About Us",
-            items: ["Our Team", "Our Journey", "Our Vision", "Our Mission"],
-            links: ["/", "/", "/", "/"]
+            name: "AFFILIATION CERTIFICATE",
+            link: "/"
+        },
+        {
+            name: "PROHIBITED COUNTRIES",
+            link: "/"
+        },
+        {
+            name: "API DOCUMENTATION",
+            link: "/"
+        },
+        {
+            name: "PRIVACY POLICY",
+            link: "/"
+        },
+        {
+            name: "FAQ",
+            link: "/"
         },
     ]
+
     return (
         <footer className={styles.footer}>
             <div className={styles.wrapper}>
@@ -66,18 +79,12 @@ const Footer = () => {
                                     ))
                                 }
                             </div>
+                            <span>® 2023 All rights reserved.</span>
                         </div>
                         <div className={styles.links}>
                             {
-                                linkTabsData.map(item => (
-                                    <div key={item.head} className={styles.links_item}>
-                                        <h4>{item.head.toUpperCase()}</h4>
-                                        {
-                                            item.items.map((it, i) => (
-                                                <a href={item?.links?.[i] || "/"} key={it} style={{ color: i === 3 && it === "Register Now" ? "#5926f0" : "#484848" }}>{it}</a>
-                                            ))
-                                        }
-                                    </div>
+                                linksData.map(it => (
+                                    <a href={it.link}>{it.name.toUpperCase()}</a>
                                 ))
                             }
                         </div>
@@ -87,32 +94,13 @@ const Footer = () => {
                             <p>Interested in diving deeper? Reach out to us. In case of genuine interest, we'll furnish you with all the necessary details, ensuring a transparent</p>
                         </div>
                     </div>
-                    <div className={styles.bottom}>
-                        <div className={styles.b_left}>
-                            <span>® 2023 All rights reserved.</span>
-                        </div>
-                        <div className={styles.b_right}>
-                            <span>
-                                FAQ
-                            </span>
-                            <span>
-                                Privacy Policy
-                            </span>
-                            <span>
-                                Terms And Conditions
-                            </span>
-                            <span>
-                                Rooted In Compliance
-                            </span>
-                        </div>
-                    </div>
                 </div>
-                <div className={styles.right}>
+                {/* <div className={styles.right}>
                     <img src={footer_right} alt="instapay" />
-                </div>
+                </div> */}
             </div>
         </footer>
     );
 };
 
-export default Footer;
+export default FooterNew;
