@@ -1,6 +1,7 @@
 import Navbar from './Navbar'
 import styles from "./styles/Home.module.css"
-import home from "../assets/home.png"
+// import home from "../assets/home.png"
+import home from "../assets/footer_right.png"
 import chevron from "../assets/chevron.gif"
 import { useAppState } from '../context/AppContext'
 

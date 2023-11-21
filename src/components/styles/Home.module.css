@@ -14,13 +14,16 @@
 
 .left {
     flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .left img {
     /* max-width: 1; */
-    width: 101%;
-    aspect-ratio: 843/787;
-    transform: translateX(30px) translateY(-90px);
+    width: 80%;
+    /* aspect-ratio: 843/787; */
+    transform: translateX(30px) translateY(10%);
 }
 
 .right {
@@ -314,7 +317,8 @@
     }
 
     .left img {
-        width: 101%;
+        width: 75%;
+        transform: translateX(120px);
     }
 
     .right {
