@@ -45,8 +45,12 @@ const PrivacyPolicy = () => {
 
   return (
     <div>
-      <NavbarFooter />
-      <SidebarFixed featureText={"Privacy Policy"} color="#000" />
+      <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
+        <SidebarFixed featureText={"Privacy Policy"} color="#000" />
+      </div>
+      <div style={{ position: "sticky", top: 0 }}>
+        <NavbarFooter />
+      </div>
       <main className={styles.content}>
         <h4>This policy applies to INSTAPAY services.</h4>
         <h2>Privacy Policy</h2>
@@ -287,7 +291,7 @@ const PrivacyPolicy = () => {
             To contact us on any aspect of this policy or for any
             discrepancies/grievances with respect to your personal information,
             you may write to our support at:{" "}
-            <Link to={"/"}>support@insta-pay.ch</Link>
+            <Link to={"mailto:support@insta-pay.ch"}>support@insta-pay.ch</Link>
           </p>
         </div>
       </main>

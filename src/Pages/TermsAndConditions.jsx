@@ -9,35 +9,39 @@ const TermsAndConditions = () => {
     const listLinks = [
         {
             name: "Terms of Thunes",
-            link: "/"
+            link: "https://www.thunes.com"
         },
         {
             name: "Terms of MFS Africa",
-            link: "/"
+            link: "https://www.onafriq.com"
         },
         {
             name: "Terms of Checkin.com",
-            link: "/"
+            link: "https://www.checkin.com"
         },
         {
             name: "Terms of CoinPayments",
-            link: "/"
+            link: "https://www.coinpayments.net"
         },
         {
             name: "Terms of DTONE",
-            link: "/",
+            link: "https://www.dtone.com",
             text: "(Service provider for mobile airtime recharge)"
         },
     ]
 
     return (
         <div>
-            <NavbarFooter />
-            <SidebarFixed featureText={"Terms And Conditions"} color='#000' />
+            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
+                <SidebarFixed featureText={"Terms And Conditions"} color='#000' />
+            </div>
+            <div style={{ position: "sticky", top: 0 }}>
+                <NavbarFooter />
+            </div>
             <main className={styles.content}>
 
-                <h4>This policy applies to INSTAPAY services.</h4>
-                <h2>Privacy Policy</h2>
+                <h4>Terms and Conditions to INSTAPAY services.</h4>
+                <h2>Terms and Conditions of Use and Sale</h2>
 
                 <div className={styles.plain_text_container}>
                     <h4>Preamble</h4>
@@ -45,7 +49,7 @@ const TermsAndConditions = () => {
                     </p>
                     <br />
                     <br />
-                    <p>For inquiries regarding these Terms and Conditions of Use and Sale (hereinafter also referred to as the “Terms and Conditions of Use” or simply “Terms and Conditions”), please contact us via email at: <Link to={"/"}>info@insta-pay.ch</Link></p>
+                    <p>For inquiries regarding these Terms and Conditions of Use and Sale (hereinafter also referred to as the “Terms and Conditions of Use” or simply “Terms and Conditions”), please contact us via email at: <Link to={"mailto:support@insta-pay.ch"}>info@insta-pay.ch</Link></p>
                     <br />
                     <br />
                     <p>By using our Services, users enter into a contractual relationship with KEMIT KINGDOM, which is governed by these Terms and Conditions of Use.</p>
@@ -63,7 +67,7 @@ const TermsAndConditions = () => {
                     <ul className={styles.unordered}>
                         {listLinks.map(item => (
                             <li key={item.name}>
-                                <Link to={item.link}>{item.name}</Link>
+                                <Link target='_blank' to={item.link}>{item.name}</Link>
                                 {
                                     item?.text && <span>{item.text}</span>
                                 }
@@ -105,234 +109,64 @@ const TermsAndConditions = () => {
                         <br />
                         <br />
                         <br />
-                        <div className={styles.special}>
-                            <p>“Account/User Account”</p>
-                            <p>: Includes InstaPay Chat Bot, InstaPay Wallet, Visa Prepaid Card Account, or IBAN account.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Affiliate”</p>
-                            <p>: An entity that is controlled by, controls, or is under common control with a person, where "control" implies ownership of a majority of the voting power.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Alert/Electronic Advice”</p>
-                            <p>: In-app, SMS, or email notifications sent to your registered contact details.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Application”</p>
-                            <p>: Refers to the InstaPay Chatbot and InstaPay mobile application.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“ATM”</p>
-                            <p>: Automated teller machine for accessing funds in your Account/s.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Available Balance”</p>
-                            <p>: Funds received from third parties or social media interactions, restricted due to exceeding maximum monthly balance/transfer limits.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Billing Organisations/Service Providers”</p>
-                            <p>: Third-party entities registered with InstaPay for bill payments.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Card Transaction”</p>
-                            <p>: Payments or charges made using your Visa Prepaid Card, with or without a physical signature or authorization.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Card-Not-Present Transaction”</p>
-                            <p>: Transactions where the cardholder and card are not physically present, including online, mail, or phone orders.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Contract”</p>
-                            <p>: The agreement between the User and KEMIT KINGDOM for Service usage under specific conditions.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Current Balance”</p>
-                            <p>: Immediate usable funds in your Wallet.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Deposit”</p>
-                            <p>: Funds added to your account to load your wallet or card.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Electronic Instructions”</p>
-                            <p>: Communications or instructions sent via InstaPay platforms using electronic authentication/security codes.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Electronic Services”</p>
-                            <p>: Payment and other services offered electronically, including those requiring PINs or Cards.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“External Account”</p>
-                            <p>: Accounts operated outside K2 SA, including bank accounts, e-wallets, and crypto wallets.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Group”</p>
-                            <p>: Kemit Kingdom - K2 - SA and its subsidiaries.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“FINMA”</p>
-                            <p>: Swiss Financial Market Supervisory Authority.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Identification Checks”</p>
-                            <p>: KYC/KYB processes for verifying user identities, including document checks for account upgrades and service access.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“InstaPay Platform”</p>
-                            <p>: Portals where InstaPay services are accessible, including the Chat Bot, User Dashboard, and mobile app.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Kemit Kingdom, InstaPay, InstaPay platform, InstaPay App, Our, We and Us”</p>
-                            <p>: Means Kemit Kingdom organization and its successors and assigns, that operates the InstaPay products and services.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“KEMIT KINGDOM, we, our”</p>
-                            <p>: Refers to Kemit Kingdom and its staff or collaborators.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“KYC / KYB”</p>
-                            <p>: Know Your Customer/Business processes.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Merchant”</p>
-                            <p>: Entities accepting payments via InstaPay for goods or services.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Social Media platform”</p>
-                            <p>: Platforms where InstaPay Chatbot is accessible.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Mobile Phone/Device”</p>
-                            <p>: Handset used to access InstaPay services.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Notification”</p>
-                            <p>: Electronic alerts sent to registered contact methods.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Participant”</p>
-                            <p>: Entities involved in providing InstaPay services.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Partner Financial Institution(s)”</p>
-                            <p>: Banks holding Wallet assets.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Payment”</p>
-                            <p>: Service for making payments or transfers via InstaPay platforms.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Password”</p>
-                            <p>: Unique login credentials for InstaPay platforms.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Personal data”</p>
-                            <p>: Information relating to an identifiable person.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Personal Information”</p>
-                            <p>: User-provided data for using KEMIT KINGDOM services.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Point of Sale/POS Transaction(s)”</p>
-                            <p>: Payments made using QR Codes, chips, or magnetic stripes at payment interfaces.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Premium access”</p>
-                            <p>: User account type as described in Article 13.4.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Prepaid Card”</p>
-                            <p>: Refers to InstaPay Visa Virtual and Physical Prepaid Cards.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Providers”</p>
-                            <p>: Entities partnered with Kemit Kingdom for InstaPay services.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Professional User(s)”</p>
-                            <p>: Legal entities holding InstaPay accounts.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Security Codes”</p>
-                            <p>: Passwords, PINs, OTPs, and other codes for InstaPay service access.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Security Devices”</p>
-                            <p>: Equipment provided for accessing InstaPay services.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Service(s)”</p>
-                            <p>: Described in Article 2, refers to all InstaPay services.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Silver access”</p>
-                            <p>: User account type as described in Article 13.4.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Social Plugin(s)”</p>
-                            <p>: InstaPay applications on third-party websites or apps.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Standard access”</p>
-                            <p>: User account type as described in Article 13.4.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Third Party Provider/Third Party”</p>
-                            <p>: Entities partnered with Kemit Kingdom for InstaPay services.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Transaction”</p>
-                            <p>: Operations processed through InstaPay, including payments, fund transfers, and administrative functions.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Transaction History”</p>
-                            <p>: Record of all transactions via InstaPay platforms.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“User Account”</p>
-                            <p>: Account created on the Application, applicable to both Basic and Premium Access.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“User ID”</p>
-                            <p>: Identification for accessing InstaPay services.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“User(s)” or “Client(s)”</p>
-                            <p>: Individuals with an InstaPay account.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Visa Prepaid Card”</p>
-                            <p>: Visa virtual and physical prepaid cards issued by KEMIT KINGDOM.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“InstaPay App”</p>
-                            <p>: Mobile application for InstaPay services.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“InstaPay QR Code”</p>
-                            <p>: Payment facility using QR code scanning.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“InstaPay Services”</p>
-                            <p>: Services connected with InstaPay platforms, including wallet, card, and customer support.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“InstaPay Wallet Account”</p>
-                            <p>: Prepaid multi-service payment instrument offered by Kemit Kingdom, with Basic, Standard, and Premium account types.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Wallet”</p>
-                            <p>: Service of electronic wallet as described in Articles 13.1.1 and following, operated by K2 SA as part of the InstaPay network.</p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Website”</p>
-                            <p>: Refers to the website owned, established and maintained by K2 SA located at <Link to={"/"}>www.insta-pay.ch</Link></p>
-                        </div>
-                        <div className={styles.special}>
-                            <p>“Write comments and rating”</p>
-                            <p>: User feedback feature for services acquired through InstaPay.</p>
-                        </div>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Account/User Account”</span> <span>: Includes InstaPay Chat Bot, InstaPay Wallet, Visa Prepaid Card Account, or IBAN account.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Affiliate”</span> <span>: An entity that is controlled by, controls, or is under common control with a person, where "control" implies ownership of a majority of the voting power.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Alert/Electronic Advice”</span> <span>: In-app, SMS, or email notifications sent to your registered contact details.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Application”</span> <span>: Refers to the InstaPay Chatbot and InstaPay mobile application.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“ATM”</span> <span>: Automated teller machine for accessing funds in your Account/s.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Available Balance”</span> <span>: Funds received from third parties or social media interactions, restricted due to exceeding maximum monthly balance/transfer limits.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Billing Organisations/Service Providers”</span> <span>: Third-party entities registered with InstaPay for bill payments.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Card Transaction”</span> <span>: Payments or charges made using your Visa Prepaid Card, with or without a physical signature or authorization.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Card-Not-Present Transaction”</span> <span>: Transactions where the cardholder and card are not physically present, including online, mail, or phone orders.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Contract”</span> <span>: The agreement between the User and KEMIT KINGDOM for Service usage under specific conditions.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Current Balance”</span> <span>: Immediate usable funds in your Wallet.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Deposit”</span> <span>: Funds added to your account to load your wallet or card.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Electronic Instructions”</span> <span>: Communications or instructions sent via InstaPay platforms using electronic authentication/security codes.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Electronic Services”</span> <span>: Payment and other services offered electronically, including those requiring PINs or Cards.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“External Account”</span> <span>: Accounts operated outside K2 SA, including bank accounts, e-wallets, and crypto wallets.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Group”</span> <span>: Kemit Kingdom - K2 - SA and its subsidiaries.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“FINMA”</span> <span>: Swiss Financial Market Supervisory Authority.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Identification Checks”</span> <span>: KYC/KYB processes for verifying user identities, including document checks for account upgrades and service access.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“InstaPay Platform”</span> <span>: Portals where InstaPay services are accessible, including the Chat Bot, User Dashboard, and mobile app.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Kemit Kingdom, InstaPay, InstaPay platform, InstaPay App, Our, We and Us”</span> <span>: Means Kemit Kingdom organization and its successors and assigns, that operates the InstaPay products and services.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“KEMIT KINGDOM, we, our”</span> <span>: Refers to Kemit Kingdom and its staff or collaborators.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“KYC / KYB”</span> <span>: Know Your Customer/Business processes.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Merchant”</span> <span>: Entities accepting payments via InstaPay for goods or services.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Social Media platform”</span> <span>: Platforms where InstaPay Chatbot is accessible.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Mobile Phone/Device”</span> <span>: Handset used to access InstaPay services.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Notification”</span> <span>: Electronic alerts sent to registered contact methods.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Participant”</span> <span>: Entities involved in providing InstaPay services.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Partner Financial Institution(s)”</span> <span>: Banks holding Wallet assets.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Payment”</span> <span>: Service for making payments or transfers via InstaPay platforms.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Password”</span> <span>: Unique login credentials for InstaPay platforms.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Personal data”</span> <span>: Information relating to an identifiable person.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Personal Information”</span> <span>: User-provided data for using KEMIT KINGDOM services.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Point of Sale/POS Transaction(s)”</span> <span>: Payments made using QR Codes, chips, or magnetic stripes at payment interfaces.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Premium access”</span> <span>: User account type as described in Article 13.4.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Prepaid Card”</span> <span>: Refers to InstaPay Visa Virtual and Physical Prepaid Cards.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Providers”</span> <span>: Entities partnered with Kemit Kingdom for InstaPay services.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Professional User(s)”</span> <span>: Legal entities holding InstaPay accounts.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Security Codes”</span> <span>: Passwords, PINs, OTPs, and other codes for InstaPay service access.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Security Devices”</span> <span>: Equipment provided for accessing InstaPay services.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Service(s)”</span> <span>: Described in Article 2, refers to all InstaPay services.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Silver access”</span> <span>: User account type as described in Article 13.4.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Social Plugin(s)”</span> <span>: InstaPay applications on third-party websites or apps.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Standard access”</span> <span>: User account type as described in Article 13.4.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Third Party Provider/Third Party”</span> <span>: Entities partnered with Kemit Kingdom for InstaPay services.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Transaction”</span> <span>: Operations processed through InstaPay, including payments, fund transfers, and administrative functions.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Transaction History”</span> <span>: Record of all transactions via InstaPay platforms.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“User Account”</span> <span>: Account created on the Application, applicable to both Basic and Premium Access.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“User ID”</span> <span>: Identification for accessing InstaPay services.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“User(s)” or “Client(s)”</span> <span>: Individuals with an InstaPay account.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Visa Prepaid Card”</span> <span>: Visa virtual and physical prepaid cards issued by KEMIT KINGDOM.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“InstaPay App”</span> <span>: Mobile application for InstaPay services.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“InstaPay QR Code”</span> <span>: Payment facility using QR code scanning.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“InstaPay Services”</span> <span>: Services connected with InstaPay platforms, including wallet, card, and customer support.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“InstaPay Wallet Account”</span> <span>: Prepaid multi-service payment instrument offered by Kemit Kingdom, with Basic, Standard, and Premium account types.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Wallet”</span> <span>: Service of electronic wallet as described in Articles 13.1.1 and following, operated by K2 SA as part of the InstaPay network.</span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Website”</span> <span>: Refers to the website owned, established and maintained by K2 SA located at <Link to={"/"}>www.insta-pay.ch</Link></span></p>
+                        <p style={{ marginBottom: "10px" }}><span style={{ color: "#5926f0" }}>“Write comments and rating”</span> <span>: User feedback feature for services acquired through InstaPay.</span></p>
+
                     </div>
                     <div className={styles.pt_sub}>
                         <h5>1.2 Data Protection</h5>
@@ -373,7 +207,7 @@ const TermsAndConditions = () => {
                 </div>
                 <div className={styles.plain_text}>
                     <h4>3. Fight against Fraud and Money Laundering</h4>
-                    <p>K2 SA adheres to strict anti-money laundering policies, including client verification and transaction monitoring. Suspicious activities can be reported via <Link to={"/"}>this form</Link>. We reserve the right to refuse or terminate accounts based on the results of identity checks or suspicions of illegal activities.</p>
+                    <p>K2 SA adheres to strict anti-money laundering policies, including client verification and transaction monitoring. Suspicious activities can be reported via <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} to={"/contact-us"}>this form</Link>. We reserve the right to refuse or terminate accounts based on the results of identity checks or suspicions of illegal activities.</p>
                 </div>
                 <div className={styles.plain_text}>
                     <h4>4. User's Obligation</h4>

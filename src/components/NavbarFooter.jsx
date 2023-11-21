@@ -6,9 +6,9 @@ const NavbarFooter = () => {
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
-                <Link to="/" className={styles.logo} style={{ position: "relative", zIndex: 11 }}>
+                <a href="/" className={styles.logo} style={{ position: "relative", zIndex: 11 }}>
                     <img src={logo_black} alt="Instapay" />
-                </Link>
+                </a>
                 <div className={styles.cta}>
                     <a href="#">Become an Affiliate.</a>
                     <a href="https://tivo-new.vercel.app/auth/login">SIGN IN / SIGN UP</a>

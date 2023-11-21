@@ -89,7 +89,7 @@ const FooterNew = () => {
             </div>
             <div className={styles.links}>
               {linksData.map((it) => (
-                <Link to={it.link}>{it.name.toUpperCase()}</Link>
+                <Link to={it.link} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{it.name.toUpperCase()}</Link>
               ))}
             </div>
             <div className={styles.contact_us}>

@@ -392,8 +392,12 @@ const Faq = () => {
 
     return (
         <div>
-            <NavbarFooter />
-            <SidebarFixed featureText={"02 FAQ"} color='#000' />
+            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
+                <SidebarFixed featureText={"FAQ"} color='#000' />
+            </div>
+            <div style={{ position: "sticky", top: 0 }}>
+                <NavbarFooter />
+            </div>
 
             <main className={styles.content}>
                 <h4>Have Doubts?</h4>

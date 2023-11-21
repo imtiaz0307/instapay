@@ -237,3 +237,80 @@
 .kyc_table div:nth-child(4n+1) {
     grid-column: span 2;
 }
+
+@media screen and (max-width: 1650px) {
+    .content>h4 {
+        font-size: 16px;
+    }
+
+    .content>h2 {
+        font-size: 40px;
+    }
+
+    .plain_text_container {
+        margin-bottom: 35px;
+    }
+
+    .plain_text_container h4 {
+        font-size: 24px;
+    }
+
+    .plain_text_container p {
+        font-size: 17px;
+        line-height: 150%;
+    }
+
+    .plain_text_container .unordered li {
+        font-size: 17px;
+        line-height: 150%;
+    }
+
+    .plain_text_container h5 {
+        font-size: 17px;
+        line-height: 150%;
+    }
+
+    .plain_text h4 {
+        font-size: 24px;
+    }
+
+    .plain_text>p {
+        font-size: 17px;
+        line-height: 150%;
+    }
+
+    .pt_sub {
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    .pt_sub h5 {
+        font-size: 17px;
+    }
+
+    .pt_sub p {
+        font-size: 17px;
+    }
+
+    .plain_text ul li {
+        font-size: 17px;
+    }
+
+    .pts_sub {
+        margin: 2rem 1.4rem .6rem;
+    }
+
+    .table_con h6 {
+        font-size: 17px;
+    }
+
+    .table div {
+        font-size: 17px;
+        padding: 24px;
+    }
+
+    .kyc_table div {
+        font-size: 17px;
+        padding: 24px;
+    }
+}
