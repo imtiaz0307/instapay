@@ -10,8 +10,8 @@ const NavbarFooter = () => {
                     <img src={logo_black} alt="Instapay" />
                 </a>
                 <div className={styles.cta}>
-                    <a href="#">Become an Affiliate.</a>
-                    <a href="https://tivo-new.vercel.app/auth/login">SIGN IN / SIGN UP</a>
+                    <a target="_blank" href="#">Become an Affiliate.</a>
+                    <a target="_blank" href="https://tivo-new.vercel.app/auth/login">SIGN IN / SIGN UP</a>
                 </div>
             </nav>
         </header>

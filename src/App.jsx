@@ -14,6 +14,7 @@ import TermsAndConditions from "./Pages/TermsAndConditions";
 import Certification from "./Pages/Certification";
 import About from "./Pages/About";
 import ContactUs from "./Pages/ContactUs";
+import ProhibitedCountries from "./Pages/ProhibitedCountries";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -90,6 +91,7 @@ const App = () => {
           <Route path="/affiliation-certificates" element={<Certification />} />
           <Route path="/legal-and-regulatory" element={<About />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/prohibited-countries" element={<ProhibitedCountries />} />
         </Routes>
         <FooterNew />
       </BrowserRouter>

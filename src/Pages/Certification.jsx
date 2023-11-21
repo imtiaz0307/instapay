@@ -8,10 +8,14 @@ import swiss_auth from "../assets/swiss_authorization.pdf"
 const Certification = () => {
     return (
         <div>
-            <NavbarFooter />
-            <SidebarFixed featureText={"Affiliation Certificate"} color='#000' />
+            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
+                <SidebarFixed featureText={"Affiliation Certificate"} color='#000' />
+            </div>
+            <div style={{ position: "sticky", top: 0 }}>
+                <NavbarFooter />
+            </div>
             <main className={styles.content}>
-                <h4>LEGAL & REGULATORY</h4>
+                {/* <h4>LEGAL & REGULATORY</h4> */}
                 <h2>Affiliation Certificate</h2>
 
                 <h3>Access our regulatory and legal documents with ease.</h3>

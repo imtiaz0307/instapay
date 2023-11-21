@@ -3,13 +3,16 @@ import NavbarFooter from "../components/NavbarFooter";
 import SidebarFixed from "../components/SidebarFixed";
 import styles from "./styles/Contact.module.css";
 
-import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
     <div>
-      <NavbarFooter />
-      <SidebarFixed featureText={"Contact US"} color="#000" />
+      <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
+        <SidebarFixed featureText={"Contact US"} color="#000" />
+      </div>
+      <div style={{ position: "sticky", top: 0 }}>
+        <NavbarFooter />
+      </div>
       <main className={styles.content}>
         <h4>Any Queries?</h4>
         <h2>Contact us</h2>
@@ -43,7 +46,6 @@ const ContactUs = () => {
             <div>
               <input type="checkbox" name="subscribe" />
               <p>I agree to get Tactical and Financial Advice sent to me. </p>
-              {"   "}
               <span>(btw we don't spam)</span>
             </div>
             <button>Send Message!</button>

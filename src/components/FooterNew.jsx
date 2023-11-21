@@ -55,7 +55,7 @@ const FooterNew = () => {
     },
     {
       name: "PROHIBITED COUNTRIES",
-      link: "/",
+      link: "/prohibited-countries",
     },
     {
       name: "API DOCUMENTATION",
