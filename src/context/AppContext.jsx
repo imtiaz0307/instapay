@@ -11,6 +11,7 @@ export const AppStateProvider = ({ children }) => {
     const [showFixedImages, setShowFixedImages] = useState(true)
     const mainRef = useRef(null)
     const [scrollPercentage, setScrollPercentage] = useState(0);
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
     const transformRef = useRef(null)
     const heroRef = useRef(null)
 
@@ -117,7 +118,9 @@ export const AppStateProvider = ({ children }) => {
                 mainRef,
                 transformRef,
                 animate,
-                heroRef
+                heroRef,
+                isMenuOpen,
+                setIsMenuOpen
             }}>
             {children}
         </AppContext.Provider>

@@ -15,6 +15,7 @@ import Certification from "./Pages/Certification";
 import About from "./Pages/About";
 import ContactUs from "./Pages/ContactUs";
 import ProhibitedCountries from "./Pages/ProhibitedCountries";
+import SideMenu from "./components/SideMenu";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -47,10 +48,12 @@ const App = () => {
   //   )()
   // }, [])
 
+
   return (
     <main>
       <Loader loading={loading} />
       <BrowserRouter>
+        <SideMenu />
         <Routes>
           <Route
             path="/"
@@ -89,7 +92,7 @@ const App = () => {
             element={<TermsAndConditions />}
           />
           <Route path="/affiliation-certificates" element={<Certification />} />
-          <Route path="/legal-and-regulatory" element={<About />} />
+          <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/prohibited-countries" element={<ProhibitedCountries />} />
         </Routes>
