@@ -80,7 +80,7 @@ const FooterNew = () => {
               <img src={logo} alt="Instapay" />
               <div className={styles.socials}>
                 {links.map((link, index) => (
-                  <a key={index} href={link.link}>
+                  <a key={index} href={link.link} target="_blank">
                     {link.icon}
                   </a>
                 ))}
@@ -94,7 +94,7 @@ const FooterNew = () => {
             </div>
             <div className={styles.contact_us}>
               {/* <h3>CONTACT US</h3> */}
-              <Link to="/contact-us">
+              <Link to="/contact-us" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                 <img src={contact_us} alt="contact us" />
               </Link>
               <p>

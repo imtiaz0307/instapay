@@ -57,7 +57,7 @@
 .side_img {
     height: 118vh;
     position: fixed;
-    left: -57%;
+    left: -63vw;
     z-index: -1;
     top: -9vh;
     transform: translateX(50%);

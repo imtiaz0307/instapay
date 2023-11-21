@@ -66,7 +66,7 @@ const SideMenu = () => {
             <img src={side_left} alt="sidebar image" className={styles.side_img} />
 
             <div className={styles.main_menu}>
-                <Link onClick={linkHandler} to={"?section=feature"}>Features</Link>
+                {/* <Link onClick={linkHandler} to={"/"}>Features</Link> */}
                 <Link onClick={linkHandler} to={"/about-us"}>About InstaPay</Link>
                 <Link onClick={linkHandler} to={"/contact-us"}>Contact Us</Link>
             </div>
