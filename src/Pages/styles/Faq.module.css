@@ -1,159 +1,159 @@
 .content {
-    margin: 60px 100px 60px 250px;
+  margin: 60px 100px 60px 250px;
 }
 
-.content>h4 {
-    color: #000;
-    font-family: var(--family-general);
-    font-size: 19.973px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1.997px;
+.content > h4 {
+  color: #000;
+  font-family: var(--family-general);
+  font-size: 19.973px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.997px;
 }
 
-.content>h2 {
-    color: #000;
-    font-family: var(--family-general);
-    font-size: 62.138px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -1.243px;
+.content > h2 {
+  color: #000;
+  font-family: var(--family-general);
+  font-size: 62.138px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.243px;
 }
 
-.content>h5 {
-    color: #5926F0;
-    font-feature-settings: 'liga' off;
-    font-family: var(--family-specific);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    margin-top: 60px;
-    padding-left: 1rem;
+.content > h5 {
+  color: #5926f0;
+  font-feature-settings: "liga" off;
+  font-family: var(--family-specific);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-top: 60px;
+  padding-left: 1rem;
 }
 
 .question_container {
-    border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .question_container .head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
 }
 
 .question_container .head h3 {
-    color: #000;
-    font-family: var(--family-general);
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.8px;
+  color: #000;
+  font-family: var(--family-general);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.8px;
 }
 
 .question_container .body {
-    padding: 0 1rem;
-    margin-bottom: 60px;
-    margin-top: 50px;
+  padding: 0 1rem;
+  margin-bottom: 60px;
+  margin-top: 50px;
 }
 
-.question_container .body>h6 {
-    color: #000;
-    font-family: var(--family-general);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 30px;
+.question_container .body > h6 {
+  color: #000;
+  font-family: var(--family-general);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 30px;
 }
 
 .question_container .body div h5 {
-    color: #000;
-    font-family: var(--family-general);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 20px;
-    margin-top: 16px;
+  color: #000;
+  font-family: var(--family-general);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+  margin-top: 16px;
 }
 
 .question_container .body div h6 {
-    color: #3C3C3C;
-    font-feature-settings: 'liga' off;
-    font-family: Satoshi;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
+  color: #3c3c3c;
+  font-feature-settings: "liga" off;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 
 .question_container .body div h6::before {
-    content: "A. ";
+  content: "A. ";
 }
 
 .question_container .body ul {
-    padding: 0 3rem;
-    margin-top: 10px;
+  padding: 0 3rem;
+  margin-top: 10px;
 }
 
 .question_container .body ul li {
-    list-style-type: disc;
-    color: #3C3C3C;
-    font-feature-settings: 'liga' off;
-    font-family: Satoshi;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
+  list-style-type: disc;
+  color: #3c3c3c;
+  font-feature-settings: "liga" off;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 
 @media screen and (max-width: 1650px) {
-    .content>h4 {
-        font-size: 16px;
-    }
+  .content > h4 {
+    font-size: 16px;
+  }
 
-    .content>h2 {
-        font-size: 40px;
-    }
+  .content > h2 {
+    font-size: 40px;
+  }
 
-    .content>h5 {
-        font-size: 14px;
-        margin-top: 35px;
-    }
+  .content > h5 {
+    font-size: 14px;
+    margin-top: 35px;
+  }
 
-    .question_container .head h3 {
-        font-size: 24px;
-    }
+  .question_container .head h3 {
+    font-size: 24px;
+  }
 
-    .question_container .body {
-        margin-top: 30px;
-        margin-bottom: 35px;
-    }
+  .question_container .body {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
 
-    .question_container .body>h6 {
-        font-size: 17px;
-        margin-top: 10px;
-    }
+  .question_container .body > h6 {
+    font-size: 17px;
+    margin-top: 10px;
+  }
 
-    .question_container .body div h5 {
-        font-size: 16px;
-    }
+  .question_container .body div h5 {
+    font-size: 16px;
+  }
 
-    .question_container .body div h6 {
-        font-size: 12px;
-    }
+  .question_container .body div h6 {
+    font-size: 12px;
+  }
 
-    .question_container .body ul {
-        padding: 0 2rem;
-    }
+  .question_container .body ul {
+    padding: 0 2rem;
+  }
 
-    .question_container .body ul li {
-        font-size: 12px;
-    }
+  .question_container .body ul li {
+    font-size: 12px;
+  }
 }
