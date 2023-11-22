@@ -41,10 +41,10 @@ const FooterNew = () => {
     },
   ];
   const linksData = [
-    {
-      name: "LEGAL & REGULATORY",
-      link: "/legal-and-regulatory",
-    },
+    // {
+    //   name: "LEGAL & REGULATORY",
+    //   link: "/legal-and-regulatory",
+    // },
     {
       name: "Terms and Conditions",
       link: "/terms-and-conditions",
@@ -57,10 +57,10 @@ const FooterNew = () => {
       name: "PROHIBITED COUNTRIES",
       link: "/prohibited-countries",
     },
-    {
-      name: "API DOCUMENTATION",
-      link: "/",
-    },
+    // {
+    //   name: "API DOCUMENTATION",
+    //   link: "/",
+    // },
     {
       name: "PRIVACY POLICY",
       link: "/privacy-policy",
@@ -97,11 +97,18 @@ const FooterNew = () => {
               <Link to="/contact-us" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                 <img src={contact_us} alt="contact us" />
               </Link>
-              <p>
+              {/* <p>
                 Interested in diving deeper? Reach out to us. In case of genuine
                 interest, we'll furnish you with all the necessary details,
                 ensuring a transparent
-              </p>
+              </p> */}
+              <div>
+                <h5>KEMIT KINGDOM (K2) SA</h5>
+                <p>ROUTE DES FELAISES 7,</p>
+                <p>2000 NEUChâTEL</p>
+                <p>SWITZERLAND</p>
+                <h5>VAT: CHE-260.546.812</h5>
+              </div>
             </div>
           </div>
         </div>

@@ -90,6 +90,34 @@
     margin-bottom: 40px;
 }
 
+.contact_us div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: var(--family-specific);
+}
+
+.contact_us h5 {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27.5px;
+    /* 196.429% */
+    letter-spacing: 0.14px;
+    text-transform: uppercase;
+}
+
+.contact_us p {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.5px;
+    letter-spacing: 0.14px;
+    text-transform: uppercase;
+}
+
 .contact_us p {
     color: #777;
     font-feature-settings: 'liga' off;
