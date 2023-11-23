@@ -45,7 +45,7 @@ const TermsAndConditions = () => {
 
                 <div className={styles.plain_text_container}>
                     <h4>Preamble</h4>
-                    <p>InstaPay Chat Bot is a cutting-edge service operated by KEMIT KINGDOM (hereinafter referred to as “K2 SA”), a public limited company governed by Swiss law. K2 SA is headquartered at Route des Falaises 7 (c/o Brunner et Associés SA, fiduciary company) - 2000 Neuchâtel, Switzerland. K2 SA specializes in innovative financial technology solutions, focusing on seamless money transfer and payment services. Our application targets social media platforms, leveraging a chat bot to enable real-time financial transactions among users. Key features include Send Money, Request Money, Send a Quote, Convert Crypto to Fiat, and QR Code Payment.
+                    <p>InstaPay Chat Bot is a cutting-edge service operated by KEMIT KINGDOM (hereinafter referred to as “K2 SA”), a public limited company governed by Swiss law, registration number CHE-260.546.812. K2 SA is headquartered at Route des Falaises 7 - 2000 Neuchâtel, Switzerland. K2 SA specializes in innovative financial technology solutions, focusing on seamless money transfer and payment services. Our application targets social media platforms, leveraging a chat bot to enable real-time financial transactions among users. Key features include Send Money, Request Money, Send a Quote, Convert Crypto to Fiat, and QR Code Payment.
                     </p>
                     <br />
                     <br />
