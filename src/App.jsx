@@ -16,6 +16,7 @@ import About from "./Pages/About";
 import ContactUs from "./Pages/ContactUs";
 import ProhibitedCountries from "./Pages/ProhibitedCountries";
 import SideMenu from "./components/SideMenu";
+import RefundPolicy from "./Pages/RefundPolicy";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -95,6 +96,7 @@ const App = () => {
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/prohibited-countries" element={<ProhibitedCountries />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
         </Routes>
         <FooterNew />
       </BrowserRouter>

@@ -1,0 +1,97 @@
+.content {
+    margin: 60px 100px 60px 250px;
+    min-height: 80vh;
+}
+
+.content>h4 {
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 19.973px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.997px;
+}
+
+.content>h2 {
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 62.138px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.243px;
+}
+
+.text_contatiner {
+    margin-top: 90px;
+}
+
+.text_contatiner h4 {
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.text_contatiner p {
+    color: #3C3C3C;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    max-width: 1260px;
+    /* 158.333% */
+}
+
+.text_contatiner p a {
+    color: #5926f0;
+    white-space: nowrap;
+}
+
+.text_contatiner ul {
+    padding-left: 2rem;
+}
+
+.text_contatiner ul li {
+    list-style-type: disc;
+    color: #3C3C3C;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+@media screen and (max-width: 1650px) {
+    .content>h4 {
+        font-size: 16px;
+    }
+
+    .content>h2 {
+        font-size: 40px;
+    }
+
+    .text_contatiner {
+        margin-top: 60px;
+    }
+
+    .text_contatiner h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .text_contatiner p {
+        font-size: 17px;
+    }
+
+    .text_contatiner ul li {
+        font-size: 17px;
+    }
+}
