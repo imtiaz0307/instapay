@@ -18,6 +18,8 @@ import ProhibitedCountries from "./Pages/ProhibitedCountries";
 import SideMenu from "./components/SideMenu";
 import RefundPolicy from "./Pages/RefundPolicy";
 import MarketSegments from "./Pages/MarketSegments";
+import AffiliationProgram from "./Pages/AffiliationProgram";
+import Reels from "./Pages/Reels";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -99,6 +101,8 @@ const App = () => {
           <Route path="/prohibited-countries" element={<ProhibitedCountries />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/market-segments" element={<MarketSegments />} />
+          <Route path="/affiliation-program" element={<AffiliationProgram />} />
+          <Route path="/play-reels" element={<Reels />} />
         </Routes>
         <FooterNew />
       </BrowserRouter>

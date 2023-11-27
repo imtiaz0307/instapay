@@ -98,6 +98,10 @@
         font-size: 40px;
     }
 
+    .content div {
+        margin-top: 50px;
+    }
+
     .content div h4 {
         font-size: 24px;
     }

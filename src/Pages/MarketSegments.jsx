@@ -19,7 +19,7 @@ const MarketSegments = () => {
     return (
         <div>
             <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
-                <SidebarFixed featureText={"Privacy Policy"} color="#000" />
+                <SidebarFixed featureText={"Market Segments"} color="#000" />
             </div>
             <div style={{ position: "sticky", top: 0 }}>
                 <NavbarFooter />
@@ -146,7 +146,7 @@ const MarketSegments = () => {
                         </div>
                     </div>
                     <div className={styles.row}>
-                        <img src={i_11} alt="image_11" />
+                        <img src={i_11} alt="image_11" style={{ width: "45%" }} />
                         <div>
 
                             <h3>B2B Transactions:</h3>

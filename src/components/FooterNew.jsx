@@ -77,6 +77,14 @@ const FooterNew = () => {
       name: "MARKET SEGMENTS",
       link: "/market-segments",
     },
+    {
+      name: "AFFILIATION PROGRAM",
+      link: "/affiliation-program",
+    },
+    {
+      name: "PLAY OUR REELS",
+      link: "/play-reels",
+    },
   ];
 
   return (

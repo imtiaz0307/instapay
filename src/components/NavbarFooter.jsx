@@ -1,13 +1,14 @@
 import styles from "./styles/Navbar.module.css"
 import logo_black from "../assets/logo_color.svg"
+import logo_white from "../assets/white_lg.png"
 import { Link } from "react-router-dom"
 
-const NavbarFooter = () => {
+const NavbarFooter = ({ theme = "light" }) => {
     return (
         <header className={styles.header}>
-            <nav className={styles.nav}>
+            <nav className={styles.nav} style={{ background: theme === "light" ? "#fff" : "#02000b" }}>
                 <a href="/" className={styles.logo} style={{ position: "relative", zIndex: 11 }}>
-                    <img src={logo_black} alt="Instapay" />
+                    <img src={theme === "light" ? logo_black : logo_white} alt="Instapay" />
                 </a>
                 <div className={styles.cta}>
                     <a target="_blank" href="#">Become an Affiliate.</a>
