@@ -1,0 +1,132 @@
+.content {
+    margin: 60px 100px 60px 250px;
+}
+
+.content>h4 {
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 19.973px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.997px;
+}
+
+.content>h2 {
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 62.138px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.243px;
+}
+
+.content div {
+    margin-top: 80px;
+}
+
+.content div h4 {
+    color: #000;
+    font-family: var(--family-general);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+    margin: 160px 0;
+}
+
+.row {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.row img {
+    width: 60%;
+}
+
+.row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.row:nth-child(even) img {
+    width: 40%;
+
+}
+
+.row h3 {
+    color: #5926F0;
+    font-family: var(--family-general);
+    font-size: 43.848px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 170%;
+    margin-bottom: 50px;
+}
+
+.row ul {
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.row ul li {
+    list-style-type: disc;
+    color: #000;
+    font-family: var(--family-specific);
+    font-size: 28.442px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45.033px;
+}
+
+@media screen and (max-width: 1650px) {
+    .content>h4 {
+        font-size: 16px;
+    }
+
+    .content>h2 {
+        font-size: 40px;
+    }
+
+    .content div h4 {
+        font-size: 24px;
+    }
+
+    .bottom {
+        margin: 100px 0;
+        gap: 100px;
+    }
+
+    .row {
+        gap: 40px;
+    }
+
+    .row img {
+        width: 35%;
+    }
+
+    .row h3 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .row ul {
+        gap: 24px;
+        margin-left: 22px;
+    }
+
+    .row ul li {
+        font-size: 20px;
+        line-height: 150%;
+    }
+}

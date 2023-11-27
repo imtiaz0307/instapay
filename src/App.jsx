@@ -17,6 +17,7 @@ import ContactUs from "./Pages/ContactUs";
 import ProhibitedCountries from "./Pages/ProhibitedCountries";
 import SideMenu from "./components/SideMenu";
 import RefundPolicy from "./Pages/RefundPolicy";
+import MarketSegments from "./Pages/MarketSegments";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -97,6 +98,7 @@ const App = () => {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/prohibited-countries" element={<ProhibitedCountries />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
+          <Route path="/market-segments" element={<MarketSegments />} />
         </Routes>
         <FooterNew />
       </BrowserRouter>

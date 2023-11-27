@@ -73,6 +73,10 @@ const FooterNew = () => {
       name: "REFUND POLICY",
       link: "/refund-policy",
     },
+    {
+      name: "MARKET SEGMENTS",
+      link: "/market-segments",
+    },
   ];
 
   return (
