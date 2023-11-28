@@ -218,69 +218,69 @@ const Faq = () => {
         }
     ];
 
-    const crowdfundingData = [
-        {
-            head: "CROWDFUNDING",
-            questions: [
-                {
-                    question: "1. What are the types of campaigns available on INSTAPAY?",
-                    question_text: "We offer two types of campaigns:",
-                    answers: [
-                        "All-or-Nothing: Campaigns only receive funds if they reach their set goal.",
-                        "Keep-it-All: Campaigns retain all contributions regardless of whether they meet their goal."
-                    ]
-                },
-                {
-                    question: "2. How do I know which type of campaign I'm contributing to?",
-                    question_text: "The campaign type is displayed prominently in the 'Campaign Snapshot' section."
-                }
-            ],
-            sub_head_donating: "DONATING",
-            questions_donating: [
-                {
-                    question: "1. How do I donate to a campaign?",
-                    question_text: "You can donate by clicking on a campaign's link on Instagram, which will ini&ate the INSTAPAY chatbot to guide you through the dona&on process."
-                },
-                {
-                    question: "2. The campaign I wanted to donate to has ended. Can I s'll contribute?",
-                    question_text: "Once a campaign ends, contribu&ons are no longer accepted. However, you can stay updated on other campaigns by subscribing to our notifications."
-                }
-            ],
-            sub_head_sharing: "Sharing",
-            questions_sharing: [
-                {
-                    question: "1. How can I share a campaign with my friends?",
-                    question_text: "AXer making a dona&on, the chatbot will give you op&ons to share the campaign on popular social media pla_orms or copy a direct link."
-                },
-                {
-                    question: "2. I've donated to a campaign. How do I encourage others to do the same?",
-                    question_text: "Sharing the campaign on your social media pla_orms, par&cularly Instagram, and explaining why you support the cause can encourage your friends and followers to donate too."
-                }
-            ],
-            sub_head_safety: "SAFETY & VERIFICATION",
-            questions_safety: [
-                {
-                    question: "1. How do I know if a campaign is legitimate?",
-                    question_text: `Campaigns verified by INSTAPAY will have a "Verification Badge." However, always exercise cau&on and do your research before donating.`
-                },
-                {
-                    question: "2. How is my payment information kept secure?",
-                    question_text: "INSTAPAY uses state-of-the-art encryption techniques to ensure your payment details and personal information are kept secure."
-                }
-            ],
-            sub_head_other: "OTHER QUERIES",
-            questions_other: [
-                {
-                    question: "1. I encountered an issue while donating. How can I get assistance?",
-                    question_text: `Please reach out to our support team at support@instapay.com, and they'll be happy to assist you.`
-                },
-                {
-                    question: "2. Can I get updates on campaigns I'm interested in?",
-                    question_text: `Yes! When interacting with the chatbot, choose the op&on to "stay updated on other inspiring campaigns" to receive notifications about campaigns that align with your interests.`
-                }
-            ],
-        }
-    ];
+    // const crowdfundingData = [
+    //     {
+    //         head: "CROWDFUNDING",
+    //         questions: [
+    //             {
+    //                 question: "1. What are the types of campaigns available on INSTAPAY?",
+    //                 question_text: "We offer two types of campaigns:",
+    //                 answers: [
+    //                     "All-or-Nothing: Campaigns only receive funds if they reach their set goal.",
+    //                     "Keep-it-All: Campaigns retain all contributions regardless of whether they meet their goal."
+    //                 ]
+    //             },
+    //             {
+    //                 question: "2. How do I know which type of campaign I'm contributing to?",
+    //                 question_text: "The campaign type is displayed prominently in the 'Campaign Snapshot' section."
+    //             }
+    //         ],
+    //         sub_head_donating: "DONATING",
+    //         questions_donating: [
+    //             {
+    //                 question: "1. How do I donate to a campaign?",
+    //                 question_text: "You can donate by clicking on a campaign's link on Instagram, which will ini&ate the INSTAPAY chatbot to guide you through the dona&on process."
+    //             },
+    //             {
+    //                 question: "2. The campaign I wanted to donate to has ended. Can I s'll contribute?",
+    //                 question_text: "Once a campaign ends, contribu&ons are no longer accepted. However, you can stay updated on other campaigns by subscribing to our notifications."
+    //             }
+    //         ],
+    //         sub_head_sharing: "Sharing",
+    //         questions_sharing: [
+    //             {
+    //                 question: "1. How can I share a campaign with my friends?",
+    //                 question_text: "AXer making a dona&on, the chatbot will give you op&ons to share the campaign on popular social media pla_orms or copy a direct link."
+    //             },
+    //             {
+    //                 question: "2. I've donated to a campaign. How do I encourage others to do the same?",
+    //                 question_text: "Sharing the campaign on your social media pla_orms, par&cularly Instagram, and explaining why you support the cause can encourage your friends and followers to donate too."
+    //             }
+    //         ],
+    //         sub_head_safety: "SAFETY & VERIFICATION",
+    //         questions_safety: [
+    //             {
+    //                 question: "1. How do I know if a campaign is legitimate?",
+    //                 question_text: `Campaigns verified by INSTAPAY will have a "Verification Badge." However, always exercise cau&on and do your research before donating.`
+    //             },
+    //             {
+    //                 question: "2. How is my payment information kept secure?",
+    //                 question_text: "INSTAPAY uses state-of-the-art encryption techniques to ensure your payment details and personal information are kept secure."
+    //             }
+    //         ],
+    //         sub_head_other: "OTHER QUERIES",
+    //         questions_other: [
+    //             {
+    //                 question: "1. I encountered an issue while donating. How can I get assistance?",
+    //                 question_text: `Please reach out to our support team at support@instapay.com, and they'll be happy to assist you.`
+    //             },
+    //             {
+    //                 question: "2. Can I get updates on campaigns I'm interested in?",
+    //                 question_text: `Yes! When interacting with the chatbot, choose the op&on to "stay updated on other inspiring campaigns" to receive notifications about campaigns that align with your interests.`
+    //             }
+    //         ],
+    //     }
+    // ];
 
 
     const instapayKYCData = [
@@ -770,7 +770,7 @@ const Faq = () => {
                 </div>
 
                 {/* crowd fund */}
-                <div className={styles.question_container}>
+                {/*<div className={styles.question_container}>
                     <div className={styles.head} onClick={() => setShowCf(!showCf)}>
                         <h3>{crowdfundingData[0].head}</h3>
                         {
@@ -907,7 +907,7 @@ const Faq = () => {
                             }
                         </div>
                     }
-                </div>
+                </div>*/}
 
                 {/* kyc */}
                 <div className={styles.question_container}>
