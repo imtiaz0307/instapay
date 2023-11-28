@@ -580,6 +580,22 @@ const TermsAndConditions = () => {
                             </div>
                         </div>
                     </div>
+                    <div className={styles.pt_sub}>
+                        <h5>13.6 Fund Deposits and Status</h5>
+                        <p>InstaPay Wallet Services are used at your own risk. Disputes on Electronic Statements must be raised within 14 days of availability on InstaPay Chat Bot and User online dashboard. Some services are provided by Third Parties, requiring acceptance of Additional Terms.</p>
+                        <br />
+                        <br />
+                        <p>13.6.1 Kemit Kingdom is entitled to retain client deposits in its books for a maximum of 60 calendar days or up to a total amount of $10,000 for individual accounts and $250,000 for business accounts. Clients are obliged to initiate the transfer of the deposited funds by the latest on the 60th day following the initial deposit. After this period, the client agrees that InstaPay will automatically return the funds to one of the accounts registered on the platform by the client (bank account, mobile money account, or payment card); this will be considered a transfer order. If the client's account from which the funds were sent has been closed in the meantime, Kemit Kingdom will issue a check to be sent by registered mail to the client. If the company cannot be found, due to a change of address or bankruptcy, specific provisions will be applied.</p>
+                        <br />
+                        <br />
+                        <p>13.6.2 Deposits with Kemit Kingdom do not accrue any interest.</p>
+                        <br />
+                        <br />
+                        <p>13.6.3 Deposits are not covered by the Swiss deposit guarantee of CHF 100,000 per client.</p>
+                        <br />
+                        <br />
+                        <p>13.6.4 Deposits received in client Wallets are held in a segregated bank account (or client account) to ensure that, in the event of insolvency and/or legal proceedings against Kemit Kingdom, no creditor can claim the funds held in this segregated account (or client account).</p>
+                    </div>
                 </div>
                 <div className={styles.plain_text}>
                     <h4>14.	KYC / Know Your Customer requirements & Account Opening</h4>
