@@ -14,6 +14,7 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom"
 import { useAppState } from '../context/AppContext'
+import { linksData } from './FooterNew'
 
 const SideMenu = () => {
     const { isMenuOpen, setIsMenuOpen } = useAppState()
@@ -55,10 +56,12 @@ const SideMenu = () => {
                 <a href="/" className={styles.logo}>
                     <img src={logo_white} alt="instapay" />
                 </a>
-                <div className={styles.play}>
-                    <span>Play the reel</span>
-                    <img src={play} alt="Play" />
-                </div>
+                <Link to={"/play-reels"} onClick={linkHandler}>
+                    <div className={styles.play}>
+                        <span>Play the reel</span>
+                        <img src={play} alt="Play" />
+                    </div>
+                </Link>
             </div>
             <div>
                 <SidebarFixed featureText={"MAIN MENU"} color='#fff' />
@@ -72,13 +75,11 @@ const SideMenu = () => {
             </div>
 
             <div className={styles.footer_menu}>
-                <Link onClick={linkHandler} to="/faq">FAQ</Link>
-                <Link onClick={linkHandler} to="/">API DOCUMENTATION</Link>
-                <Link onClick={linkHandler} to="/privacy-policy">PRIVACY POLICY</Link>
-                <Link onClick={linkHandler} to="/">LEGAL & REGULATORY</Link>
-                <Link onClick={linkHandler} to="/terms-and-condtions">TERMS AND CONDITIONS</Link>
-                <Link onClick={linkHandler} to="/affiliation-certificates">AFFILIATION CERTIFICATE</Link>
-                <Link onClick={linkHandler} to="/prohibited-countries">Prohibited Countries</Link>
+                {
+                    [...linksData]
+                        .sort((a, b) => a.name.length - b.name.length)
+                        .map(link => <Link onClick={linkHandler} to={link.link}>{link.name}</Link>)
+                }
             </div>
 
             <div className={styles.socials}>

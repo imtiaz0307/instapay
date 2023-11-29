@@ -13,6 +13,41 @@ import contact_us from "../assets/contact.svg";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
+export const linksData = [
+  {
+    name: "Terms and Conditions",
+    link: "/terms-and-conditions",
+  },
+  {
+    name: "AFFILIATION CERTIFICATE",
+    link: "/affiliation-certificates",
+  },
+  {
+    name: "PROHIBITED COUNTRIES",
+    link: "/prohibited-countries",
+  },
+  {
+    name: "PRIVACY POLICY",
+    link: "/privacy-policy",
+  },
+  {
+    name: "FAQ",
+    link: "/faq",
+  },
+  {
+    name: "REFUND POLICY",
+    link: "/refund-policy",
+  },
+  {
+    name: "MARKET SEGMENTS",
+    link: "/market-segments",
+  },
+  {
+    name: "AFFILIATION PROGRAM",
+    link: "/affiliation-program",
+  },
+];
+
 const FooterNew = () => {
   const links = [
     {
@@ -38,52 +73,6 @@ const FooterNew = () => {
     {
       link: "#",
       icon: <FaXTwitter color="black" size={20} />,
-    },
-  ];
-  const linksData = [
-    // {
-    //   name: "LEGAL & REGULATORY",
-    //   link: "/legal-and-regulatory",
-    // },
-    {
-      name: "Terms and Conditions",
-      link: "/terms-and-conditions",
-    },
-    {
-      name: "AFFILIATION CERTIFICATE",
-      link: "/affiliation-certificates",
-    },
-    {
-      name: "PROHIBITED COUNTRIES",
-      link: "/prohibited-countries",
-    },
-    // {
-    //   name: "API DOCUMENTATION",
-    //   link: "/",
-    // },
-    {
-      name: "PRIVACY POLICY",
-      link: "/privacy-policy",
-    },
-    {
-      name: "FAQ",
-      link: "/faq",
-    },
-    {
-      name: "REFUND POLICY",
-      link: "/refund-policy",
-    },
-    {
-      name: "MARKET SEGMENTS",
-      link: "/market-segments",
-    },
-    {
-      name: "AFFILIATION PROGRAM",
-      link: "/affiliation-program",
-    },
-    {
-      name: "PLAY OUR REELS",
-      link: "/play-reels",
     },
   ];
 
