@@ -11,7 +11,7 @@ const NavbarFooter = ({ theme = "light" }) => {
                     <img src={theme === "light" ? logo_black : logo_white} alt="Instapay" />
                 </a>
                 <div className={styles.cta}>
-                    <a target="_blank" href="#">Become an Affiliate.</a>
+                    <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} to={"/affiliation-program"}>Become an Affiliate.</Link>
                     <a target="_blank" href="https://tivo-new.vercel.app/auth/login">SIGN IN / SIGN UP</a>
                 </div>
             </nav>
