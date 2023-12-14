@@ -51,6 +51,8 @@
 
 .row img {
     width: 60%;
+    max-height: 60vh;
+    object-fit: contain;
 }
 
 .row:nth-child(even) {
@@ -59,7 +61,8 @@
 
 .row:nth-child(even) img {
     width: 40%;
-
+    max-height: 60vh;
+    object-fit: contain;
 }
 
 .row h3 {

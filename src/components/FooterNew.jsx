@@ -46,6 +46,10 @@ export const linksData = [
     name: "AFFILIATION PROGRAM",
     link: "/affiliation-program",
   },
+  {
+    name: "BECOME A PARTNER",
+    link: "/become-a-partner",
+  },
 ];
 
 const FooterNew = () => {
@@ -98,15 +102,9 @@ const FooterNew = () => {
               ))}
             </div>
             <div className={styles.contact_us}>
-              {/* <h3>CONTACT US</h3> */}
               <Link to="/contact-us" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                 <img src={contact_us} alt="contact us" />
               </Link>
-              {/* <p>
-                Interested in diving deeper? Reach out to us. In case of genuine
-                interest, we'll furnish you with all the necessary details,
-                ensuring a transparent
-              </p> */}
               <div>
                 <h5>KEMIT KINGDOM (K2) SA</h5>
                 <p>ROUTE DES FELAISES 7,</p>
@@ -117,9 +115,6 @@ const FooterNew = () => {
             </div>
           </div>
         </div>
-        {/* <div className={styles.right}>
-                    <img src={footer_right} alt="instapay" />
-                </div> */}
       </div>
     </footer>
   );

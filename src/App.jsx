@@ -20,6 +20,7 @@ import RefundPolicy from "./Pages/RefundPolicy";
 import MarketSegments from "./Pages/MarketSegments";
 import AffiliationProgram from "./Pages/AffiliationProgram";
 import Reels from "./Pages/Reels";
+import BecomeAPartner from "./Pages/BecomeAPartner";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -103,6 +104,7 @@ const App = () => {
           <Route path="/market-segments" element={<MarketSegments />} />
           <Route path="/affiliation-program" element={<AffiliationProgram />} />
           <Route path="/play-reels" element={<Reels />} />
+          <Route path="/become-a-partner" element={<BecomeAPartner />} />
         </Routes>
         <FooterNew />
       </BrowserRouter>
