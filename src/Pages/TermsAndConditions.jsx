@@ -40,7 +40,7 @@ const TermsAndConditions = () => {
             </div>
             <main className={styles.content}>
 
-                <h4>Terms and Conditions to INSTAPAY services.</h4>
+                <h4>Terms and Conditions to InstaPay services.</h4>
                 <h2>Terms and Conditions of Use and Sale</h2>
 
                 <div className={styles.plain_text_container}>

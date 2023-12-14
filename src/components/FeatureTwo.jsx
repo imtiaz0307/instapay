@@ -19,7 +19,7 @@ const FeatureTwo = () => {
         },
         {
             head: "Subscription and Scheduled Payments:",
-            text: "Regular payments? No sweat. INSTA-PAY offers two disFnct plans: set up clearly defined subscripFon payments with an end-date or go for the convenience of open-ended scheduled payments. Perfect for those repeated transacFons."
+            text: "Regular payments? No sweat. InstaPay offers two disFnct plans: set up clearly defined subscripFon payments with an end-date or go for the convenience of open-ended scheduled payments. Perfect for those repeated transacFons."
         },
         {
             head: "SecurePay Deposit:",
@@ -56,7 +56,7 @@ const FeatureTwo = () => {
             <div className={styles.wrapper}>
                 <div className={styles.top}>
                     <h2 data-feature={"02"}>Payment Request</h2>
-                    <p>Experience versatility in payment requests with INSTA-PAY. Here's what sets us apart:</p>
+                    <p>Experience versatility in payment requests with InstaPay. Here's what sets us apart:</p>
                 </div>
                 <Swiper
                     className={styles.bottom}

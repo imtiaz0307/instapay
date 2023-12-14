@@ -19,12 +19,12 @@ const BecomeAPartner = () => {
                 <div>
                     <div className={styles.details}>
                         <h5>Social Network Platforms:</h5>
-                        <p>Leverage your massive audience to unlock new, lucrative revenue streams. By integrating INSTA-PAY, you're not merely enhancing user experience; you're unveiling a golden opportunity for revenue. Watch user engagement soar as you provide the seamless transaction capability they've always needed, right within the space they frequently interact. Go beyond connecting – monetize, empower, and revolutionize with INSTA-PAY!</p>
+                        <p>Leverage your massive audience to unlock new, lucrative revenue streams. By integrating InstaPay, you're not merely enhancing user experience; you're unveiling a golden opportunity for revenue. Watch user engagement soar as you provide the seamless transaction capability they've always needed, right within the space they frequently interact. Go beyond connecting – monetize, empower, and revolutionize with InstaPay!</p>
                     </div>
 
                     <div className={styles.details}>
                         <h5>Payment Service Providers:</h5>
-                        <p>We're on a relentless quest to integrate diverse local payment methods, ensuring our users always have the top-up options they need. Partner with INSTA-PAY and diversify your portfolio, expanding your reach into new territories and demographics. Together, we can amplify transaction volumes and redefine payments in the digital age. With INSTA-PAY, it's not just about processing payments, but pioneering a seamless and unified experience for all.</p>
+                        <p>We're on a relentless quest to integrate diverse local payment methods, ensuring our users always have the top-up options they need. Partner with InstaPay and diversify your portfolio, expanding your reach into new territories and demographics. Together, we can amplify transaction volumes and redefine payments in the digital age. With InstaPay, it's not just about processing payments, but pioneering a seamless and unified experience for all.</p>
                     </div>
                 </div>
             </main>

@@ -37,7 +37,7 @@ const Reels = () => {
                 <h4>Tutorial/informative videos</h4>
                 <h2>Play our reels.</h2>
 
-                <img src={banner} alt="Instapay Banner" />
+                <img src={banner} alt="InstaPay Banner" />
                 <h3>Watch Our Commercial Video</h3>
                 <p>Dive into a lucrative journey with InstaPay, where every follower can be a source of revenue. The more they transact, the more you earn ! It's time to turn influence into affluence.</p>
 

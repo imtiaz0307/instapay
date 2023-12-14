@@ -52,7 +52,7 @@ const PrivacyPolicy = () => {
         <NavbarFooter />
       </div>
       <main className={styles.content}>
-        <h4>This policy applies to INSTAPAY services.</h4>
+        <h4>This policy applies to InstaPay services.</h4>
         <h2>Privacy Policy</h2>
 
         <div>
@@ -240,7 +240,7 @@ const PrivacyPolicy = () => {
           <p>
             Our websites may contain links to other websites which are not
             maintained by InstaPay. This privacy policy only applies to the
-            websites of Instapay. When visiting these third party websites, you
+            websites of InstaPay. When visiting these third party websites, you
             should read their privacy policies which will apply to your use of
             the websites.
           </p>

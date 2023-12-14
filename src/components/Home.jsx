@@ -26,7 +26,7 @@ const Home = () => {
                         </h1>
                     </div>
                     <p className={styles.sub_text}>
-                        With INSTA-PAY, turn your go-to platforms—Instagram, WhatsApp, Telegram, X (Formerly Twitter) —into versatile transaction hubs. Be it P2P, P2B, B2P, or B2B transfers, we've got you covered—all within the chats you love. Make every conversation culminate in effortless payment.
+                        With InstaPay, turn your go-to platforms—Instagram, WhatsApp, Telegram, X (Formerly Twitter) —into versatile transaction hubs. Be it P2P, P2B, B2P, or B2B transfers, we've got you covered—all within the chats you love. Make every conversation culminate in effortless payment.
                     </p>
                     <div className={styles.cta}>
                         <a target='_blank' href="https://tivo-new.vercel.app/auth/login">SIGN IN / SIGN UP</a>

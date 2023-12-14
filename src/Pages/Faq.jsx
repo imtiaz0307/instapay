@@ -19,7 +19,7 @@ const Faq = () => {
         sub_head: "International Transfer",
         questions: [
             {
-                question: "1. How do I initiate an International Transfer using INSTAPAY?",
+                question: "1. How do I initiate an International Transfer using InstaPay?",
                 question_text: "A. To initiate an International Transfer:",
                 answers: [
                     `Navigate to the "Send Money" sec&on.`,
@@ -39,7 +39,7 @@ const Faq = () => {
             },
             {
                 question: "4. Can I track the status of my International Transfer?",
-                question_text: "A. Absolutely! You can track the status in the \"Transac&on History\" sec&on in your INSTAPAY account. You'll also receive email no&fica&ons upda&ng you about the transfer's progress."
+                question_text: "A. Absolutely! You can track the status in the \"Transac&on History\" sec&on in your InstaPay account. You'll also receive email no&fica&ons upda&ng you about the transfer's progress."
             }
         ]
 
@@ -49,30 +49,30 @@ const Faq = () => {
         head: "Wallet to Wallet Transfer",
         questions: [
             {
-                question: "1. How do I transfer money from my INSTAPAY wallet to another INSTAPAY wallet?",
+                question: "1. How do I transfer money from my InstaPay wallet to another InstaPay wallet?",
                 question_text: "To execute a Wallet to Wallet transfer:",
                 answers: [
                     `Go to the "Send Money" section.`,
                     `Select "Wallet to Wallet Transfer."`,
-                    `Input the recipient's INSTAPAY ID or associated mobile number.`,
+                    `Input the recipient's InstaPay ID or associated mobile number.`,
                     `Fill in the amount you wish to transfer.`,
                     `Review and confirm the transac&on.`
                 ]
             },
             {
                 question: "2. Is there a fee for Wallet to Wallet Transfers?",
-                question_text: "No, Wallet to Wallet Transfers on INSTAPAY are free of charge."
+                question_text: "No, Wallet to Wallet Transfers on InstaPay are free of charge."
             },
             {
                 question: "3. How long does a Wallet to Wallet Transfer take?",
                 question_text: "Wallet to Wallet Transfers are instantaneous. The recipient will get a no&fica&on the moment you confirm the transac&on"
             },
             {
-                question: "4. What if I mistakenly sent money to the wrong INSTAPAY wallet?",
-                question_text: "If you realize you've sent money to the wrong INSTAPAY wallet, contact our support team immediately at support@instapay.com. While we cannot guarantee retrieval in every case due to the real-&me nature of the transfer, we will do our best to assist you."
+                question: "4. What if I mistakenly sent money to the wrong InstaPay wallet?",
+                question_text: "If you realize you've sent money to the wrong InstaPay wallet, contact our support team immediately at support@InstaPay.com. While we cannot guarantee retrieval in every case due to the real-&me nature of the transfer, we will do our best to assist you."
             },
             {
-                question: "5. Is there a limit to how much I can transfer between INSTAPAY wallets?",
+                question: "5. Is there a limit to how much I can transfer between InstaPay wallets?",
                 question_text: "Yes, there are daily and monthly transfer limits to ensure security. The specific limits can be found in your account seVngs or by contac&ng our support team."
             }
         ]
@@ -84,12 +84,12 @@ const Faq = () => {
             sub_head_standard: "Standard Request",
             questions_standard: [
                 {
-                    question: "1. How do I send a standard fund request using INSTAPAY?",
+                    question: "1. How do I send a standard fund request using InstaPay?",
                     question_text: "To ini&ate a Standard Request:",
                     answers: [
                         `Navigate to the "Request Funds" sec&on.`,
                         `Choose "Standard Request."`,
-                        `Enter the recipient's INSTAPAY ID or associated mobile number.`,
+                        `Enter the recipient's InstaPay ID or associated mobile number.`,
                         `Input the amount you wish to request.`,
                         `Add any necessary details or notes.`,
                         `Review and send the request.`
@@ -163,7 +163,7 @@ const Faq = () => {
             head: "Provide a Quote",
             questions: [
                 {
-                    question: "1. What does 'Provide a Quote' mean in INSTAPAY?",
+                    question: "1. What does 'Provide a Quote' mean in InstaPay?",
                     question_text: "The 'Provide a Quote' feature allows sellers or service providers to give potential clients an estimate of the costs for goods or services before any commitment is made. It offers transparency and clarity, helping both parties agree on terms before proceeding."
                 },
                 {
@@ -174,7 +174,7 @@ const Faq = () => {
             sub_head_creating: "Creating a Quote",
             questions_creating: [
                 {
-                    question: "1. How do I create a quote on INSTAPAY?",
+                    question: "1. How do I create a quote on InstaPay?",
                     question_text: "To create a quote:",
                     answers: [
                         `Navigate to the "Provide a Quote" section.`,
@@ -197,7 +197,7 @@ const Faq = () => {
                 },
                 {
                     question: "2. What if I disagree with the provided quote?",
-                    question_text: "If you have concerns or disagreements about a quote, it's best to communicate directly with the sender to discuss adjustments or clarifications. INSTAPAY provides a built-in chat feature for such communications."
+                    question_text: "If you have concerns or disagreements about a quote, it's best to communicate directly with the sender to discuss adjustments or clarifications. InstaPay provides a built-in chat feature for such communications."
                 }
             ],
             sub_head_expiry_reminders: "Quote Expiry and Reminders",
@@ -208,11 +208,11 @@ const Faq = () => {
                 },
                 {
                     question: "2. What happens if a quote expires?",
-                    question_text: "Once a quote expires, you won't be able to accept it via INSTAPAY. If you're still interested in the goods or services, you should contact the provider to request a new quote or check for availability."
+                    question_text: "Once a quote expires, you won't be able to accept it via InstaPay. If you're still interested in the goods or services, you should contact the provider to request a new quote or check for availability."
                 },
                 {
                     question: "3. Will I get reminders before a quote expires?",
-                    question_text: "INSTAPAY sends notifications to remind recipients of upcoming quote expirations. This ensures that potential clients have ample time to review and respond."
+                    question_text: "InstaPay sends notifications to remind recipients of upcoming quote expirations. This ensures that potential clients have ample time to review and respond."
                 }
             ]
         }
@@ -223,7 +223,7 @@ const Faq = () => {
     //         head: "CROWDFUNDING",
     //         questions: [
     //             {
-    //                 question: "1. What are the types of campaigns available on INSTAPAY?",
+    //                 question: "1. What are the types of campaigns available on InstaPay?",
     //                 question_text: "We offer two types of campaigns:",
     //                 answers: [
     //                     "All-or-Nothing: Campaigns only receive funds if they reach their set goal.",
@@ -239,7 +239,7 @@ const Faq = () => {
     //         questions_donating: [
     //             {
     //                 question: "1. How do I donate to a campaign?",
-    //                 question_text: "You can donate by clicking on a campaign's link on Instagram, which will ini&ate the INSTAPAY chatbot to guide you through the dona&on process."
+    //                 question_text: "You can donate by clicking on a campaign's link on Instagram, which will ini&ate the InstaPay chatbot to guide you through the dona&on process."
     //             },
     //             {
     //                 question: "2. The campaign I wanted to donate to has ended. Can I s'll contribute?",
@@ -261,18 +261,18 @@ const Faq = () => {
     //         questions_safety: [
     //             {
     //                 question: "1. How do I know if a campaign is legitimate?",
-    //                 question_text: `Campaigns verified by INSTAPAY will have a "Verification Badge." However, always exercise cau&on and do your research before donating.`
+    //                 question_text: `Campaigns verified by InstaPay will have a "Verification Badge." However, always exercise cau&on and do your research before donating.`
     //             },
     //             {
     //                 question: "2. How is my payment information kept secure?",
-    //                 question_text: "INSTAPAY uses state-of-the-art encryption techniques to ensure your payment details and personal information are kept secure."
+    //                 question_text: "InstaPay uses state-of-the-art encryption techniques to ensure your payment details and personal information are kept secure."
     //             }
     //         ],
     //         sub_head_other: "OTHER QUERIES",
     //         questions_other: [
     //             {
     //                 question: "1. I encountered an issue while donating. How can I get assistance?",
-    //                 question_text: `Please reach out to our support team at support@instapay.com, and they'll be happy to assist you.`
+    //                 question_text: `Please reach out to our support team at support@InstaPay.com, and they'll be happy to assist you.`
     //             },
     //             {
     //                 question: "2. Can I get updates on campaigns I'm interested in?",
@@ -283,19 +283,19 @@ const Faq = () => {
     // ];
 
 
-    const instapayKYCData = [
+    const InstaPayKYCData = [
         {
-            head: "INSTAPAY KYC (Know Your Customer)",
+            head: "InstaPay KYC (Know Your Customer)",
             questions: [
                 {
-                    question: "1. Why is KYC required on INSTAPAY?",
-                    question_text: "To ensure the security and authenticity of our platform and its users, INSTAPAY mandates the Know Your Customer (KYC) process. This rigorous verification process helps prevent fraud, money laundering, and ensures that only legitimate users can perform transactions."
+                    question: "1. Why is KYC required on InstaPay?",
+                    question_text: "To ensure the security and authenticity of our platform and its users, InstaPay mandates the Know Your Customer (KYC) process. This rigorous verification process helps prevent fraud, money laundering, and ensures that only legitimate users can perform transactions."
                 },
                 {
                     question: "2. What documents do private individuals need for KYC verification?",
                     question_text: "For Individuals - Individual Accounts, the following documents and information are required:",
                     answers: [
-                        `Present Your Personal Activity: Description - Provide a short description of your primary occupation or the main purpose of using INSTAPAY.`,
+                        `Present Your Personal Activity: Description - Provide a short description of your primary occupation or the main purpose of using InstaPay.`,
                         `Employment Field: Options available in a dropdown list, such as Arts & Entertainment, Banking & Finance, Education & Research, etc. If your employment sector isn't listed, please select "Other" and provide details in the free text field.`,
                         `Primary Identity Document: This should be a government-issued identification with a photo. Acceptable documents include:`,
                         `2.2 A valid national identity card`,
@@ -310,31 +310,31 @@ const Faq = () => {
                     question_text: "Once all required documents and information are submitted, the verification process typically takes between 24 to 48 hours. However, if additional documents (EDD) are requested, this timeline might be extended."
                 },
                 {
-                    question: "4. Is my personal information safe with INSTAPAY?",
-                    question_text: "Absolutely. INSTAPAY prioritizes the privacy and security of user data. We employ state-of-the-art encryption techniques and rigorous data protection policies to ensure your information is kept confidential and safe from any unauthorized access."
+                    question: "4. Is my personal information safe with InstaPay?",
+                    question_text: "Absolutely. InstaPay prioritizes the privacy and security of user data. We employ state-of-the-art encryption techniques and rigorous data protection policies to ensure your information is kept confidential and safe from any unauthorized access."
                 },
                 {
                     question: "5. I'm having issues with the KYC process. Who can I contact?",
-                    question_text: "Should you encounter any challenges or have queries regarding the KYC process, please reach out to our dedicated support team at support@instapay.com. They're trained to assist you in ensuring a smooth verification process."
+                    question_text: "Should you encounter any challenges or have queries regarding the KYC process, please reach out to our dedicated support team at support@InstaPay.com. They're trained to assist you in ensuring a smooth verification process."
                 }
             ]
         }
     ];
 
-    const instapayKYBData = [
+    const InstaPayKYBData = [
         {
-            head: "INSTAPAY KYB (Know Your Business)",
+            head: "InstaPay KYB (Know Your Business)",
             questions: [
                 {
-                    question: "1. What is INSTAPAY KYB?",
-                    question_text: "KYB (Know Your Business) is a verification process implemented by INSTAPAY to identify and verify the legitimacy of its business customers. This process ensures the security and integrity of transactions made via our platform."
+                    question: "1. What is InstaPay KYB?",
+                    question_text: "KYB (Know Your Business) is a verification process implemented by InstaPay to identify and verify the legitimacy of its business customers. This process ensures the security and integrity of transactions made via our platform."
                 },
                 {
                     question: "2. Why is KYB necessary?",
                     question_text: "KYB is essential to prevent fraudulent activities, maintain compliance with global financial regulations, and safeguard the interests of all our stakeholders."
                 },
                 {
-                    question: "3. What entities need to undergo KYB with INSTAPAY?",
+                    question: "3. What entities need to undergo KYB with InstaPay?",
                     answers: [
                         "Private Limited Companies or equivalent",
                         "Publicly Listed Companies",
@@ -382,7 +382,7 @@ const Faq = () => {
                 },
                 {
                     question: "12. What should I do if I encounter issues during the KYB process?",
-                    question_text: "Please reach out to our support team through support@instapay.com. We're here to help!"
+                    question_text: "Please reach out to our support team through support@InstaPay.com. We're here to help!"
                 }
             ]
         }
@@ -912,7 +912,7 @@ const Faq = () => {
                 {/* kyc */}
                 <div className={styles.question_container}>
                     <div className={styles.head} onClick={() => setShowKyc(!showKyc)}>
-                        <h3>{instapayKYCData[0].head}</h3>
+                        <h3>{InstaPayKYCData[0].head}</h3>
                         {
                             showKyc
                                 ?
@@ -926,9 +926,9 @@ const Faq = () => {
                         &&
                         <div className={styles.body}>
 
-                            <h6>{instapayKYCData[0].sub_head}</h6>
+                            <h6>{InstaPayKYCData[0].sub_head}</h6>
                             {
-                                instapayKYCData[0].questions.map(item => (
+                                InstaPayKYCData[0].questions.map(item => (
                                     <div key={item.question}>
                                         <h5>{item.question}</h5>
                                         {
@@ -956,7 +956,7 @@ const Faq = () => {
                 {/* kyb */}
                 <div className={styles.question_container}>
                     <div className={styles.head} onClick={() => setShowKyb(!showKyb)}>
-                        <h3>{instapayKYBData[0].head}</h3>
+                        <h3>{InstaPayKYBData[0].head}</h3>
                         {
                             showKyb
                                 ?
@@ -970,9 +970,9 @@ const Faq = () => {
                         &&
                         <div className={styles.body}>
 
-                            <h6>{instapayKYBData[0].sub_head}</h6>
+                            <h6>{InstaPayKYBData[0].sub_head}</h6>
                             {
-                                instapayKYBData[0].questions.map(item => (
+                                InstaPayKYBData[0].questions.map(item => (
                                     <div key={item.question}>
                                         <h5>{item.question}</h5>
                                         {

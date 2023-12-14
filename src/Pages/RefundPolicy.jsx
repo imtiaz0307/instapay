@@ -14,17 +14,17 @@ const RefundPolicy = () => {
                 <NavbarFooter />
             </div>
             <main className={styles.content}>
-                <h4>This policy applies to INSTAPAY services.</h4>
+                <h4>This policy applies to InstaPay services.</h4>
                 <h2>InstaPay Refund Policy</h2>
 
                 <div className={styles.text_contatiner}>
                     <h4>1. Introduction</h4>
-                    <p>Welcome to INSTAPAY. This policy outlines our approach to refunds, acknowledging the inherent risks of online transactions and the irrevocable nature of most transactions made through the INSTAPAY Wallet.</p>
+                    <p>Welcome to InstaPay. This policy outlines our approach to refunds, acknowledging the inherent risks of online transactions and the irrevocable nature of most transactions made through the InstaPay Wallet.</p>
                 </div>
 
                 <div className={styles.text_contatiner}>
                     <h4>2. Acknowledgment of Risks and Transaction Irrevocability</h4>
-                    <p>By using INSTAPAY, you acknowledge various risks associated with digital wallet transactions. These include, but are not limited to, financial losses, technical errors, password theft, unauthorized access, and third-party interception of transaction details. You agree that, except as specified for Card Transactions, all transactions processed through INSTAPAY are irrevocable and non-refundable.</p>
+                    <p>By using InstaPay, you acknowledge various risks associated with digital wallet transactions. These include, but are not limited to, financial losses, technical errors, password theft, unauthorized access, and third-party interception of transaction details. You agree that, except as specified for Card Transactions, all transactions processed through InstaPay are irrevocable and non-refundable.</p>
                 </div>
 
                 <div className={styles.text_contatiner}>
@@ -46,15 +46,15 @@ const RefundPolicy = () => {
                 </div>
                 <div className={styles.text_contatiner}>
                     <h4>6. Refunds for Non-Delivery or Rejection of Goods/Services</h4>
-                    <p>Refunds due to non-delivery or rejection of goods/services are processed only upon the request of the relevant merchant or third-party. INSTAPAY does not refund any payment processing charges levied on such transactions.</p>
+                    <p>Refunds due to non-delivery or rejection of goods/services are processed only upon the request of the relevant merchant or third-party. InstaPay does not refund any payment processing charges levied on such transactions.</p>
                 </div>
                 <div className={styles.text_contatiner}>
                     <h4>7. Limitation of Liability</h4>
-                    <p>INSTAPAY is not liable for any loss or damage arising from defects in goods/services, merchant or third party refusal to accept payments, terminal malfunctions, technical failures, unauthorized sharing of account details, misrepresentations, or discrepancies in merchant charges. Refunds due to merchant cancellation/rejection requests are subject to the merchant's terms.</p>
+                    <p>InstaPay is not liable for any loss or damage arising from defects in goods/services, merchant or third party refusal to accept payments, terminal malfunctions, technical failures, unauthorized sharing of account details, misrepresentations, or discrepancies in merchant charges. Refunds due to merchant cancellation/rejection requests are subject to the merchant's terms.</p>
                 </div>
                 <div className={styles.text_contatiner}>
                     <h4>8. Modifications to the Refund Policy</h4>
-                    <p>INSTAPAY reserves the right to modify this refund policy. Any changes will be communicated through our official channels.</p>
+                    <p>InstaPay reserves the right to modify this refund policy. Any changes will be communicated through our official channels.</p>
                 </div>
                 <div className={styles.text_contatiner}>
                     <h4>9. Contact Us</h4>
