@@ -12,9 +12,22 @@ import feature from "../assets/feature.svg"
 import { useAppState } from "../context/AppContext";
 import { Link } from "react-router-dom";
 import { X } from "react-feather";
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
     const { isMenuOpen, setIsMenuOpen } = useAppState()
+    const [winWidth, setWinWidth] = useState(window.innerWidth > 1000)
+
+    useEffect(() => {
+        const resizeHandler = () => {
+            setWinWidth(window.innerWidth > 1000)
+        }
+
+        window.addEventListener("resize", resizeHandler)
+        return () => {
+            window.removeEventListener("resize", resizeHandler)
+        }
+    }, [])
     return (
         <>
             <nav className={styles.nav}>
@@ -35,7 +48,7 @@ const HomePage = () => {
                             <img
                                 src={feature}
                                 alt="logo"
-                                style={{ height: "25px", width: "25px", objectFit: "contain", transform: "translateY(-3px)" }}
+                                style={{ height: "20px", width: "20px", objectFit: "contain", transform: "translateY(-3px)" }}
                                 onClick={() => {
                                     setIsMenuOpen(!isMenuOpen)
                                 }}
@@ -53,7 +66,7 @@ const HomePage = () => {
                 count={featuresData[0].count}
                 head={featuresData[0].head}
                 text={featuresData[0].text}
-                img={featuresData[0].img}
+                img={winWidth ? featuresData[0].img : featuresData[0].img_mob}
                 styles={featuresData[0].styles}
             />
             <FeatureTwo />
@@ -63,7 +76,7 @@ const HomePage = () => {
                     count={item.count}
                     head={item.head}
                     text={item.text}
-                    img={item.img}
+                    img={winWidth ? item.img : item.img_mob}
                     styles={item.styles}
                 />
             ))}

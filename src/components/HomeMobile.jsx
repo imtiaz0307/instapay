@@ -2,8 +2,31 @@ import styles from "./styles/HomeMobile.module.css"
 import hero from "../assets/footer_right.png"
 import { Link } from "react-router-dom"
 import anim_mob from "../assets/anim_mob.png"
+import { useLayoutEffect, useRef, useState } from "react"
 
 const HomeMobile = () => {
+    const animRef = useRef(null)
+    const [isScrolled, setIsScrolled] = useState(false)
+
+    useLayoutEffect(() => {
+        const scrollHandler = () => {
+            if (window.scrollY > 50) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false)
+            }
+        }
+        window.addEventListener("scroll", scrollHandler)
+        return () => {
+            window.removeEventListener("scroll", scrollHandler)
+        }
+    }, [])
+
+    useLayoutEffect(() => {
+        if (isScrolled) {
+            animRef.current.scrollIntoView({ behavior: "smooth" })
+        }
+    }, [isScrolled])
     return (
         <div className={styles.container}>
             <div className={styles.home}>
@@ -34,10 +57,23 @@ const HomeMobile = () => {
                 </div>
             </div>
 
-            <div className={styles.transform_section}>
-                <h2>Elevate Your Social Media Transactions to Unparalleled Convenience.</h2>
-                <p>With INSTAPAY, say goodbye to external payment platforms when dealing on social media. Seamlessly pay, request, or receive money—and when it's time to cash out, choose your preferred payout channel, be it mobile wallets, bank accounts, payment cards like VISA/Mastercard, or even cash pick-up locations.</p>
-                <p>All this, without ever stepping away from your cherished social media space. Whether you're an individual syncing up with friends or a business building bridges with clients, transform every chat into a potent financial transaction. Dive into a reality where every message can effortlessly culminate in payment, all within the chats you adore.</p>
+            <div className={styles.transform_section} ref={animRef} style={{
+                borderRadius: !isScrolled ? "120px 120px 0px 0px" : "0px 0px 0px 0px",
+                paddingTop: !isScrolled ? "200px" : "3rem",
+                transition: "500ms"
+            }}>
+                <h2 style={{
+                    opacity: !isScrolled ? 0 : 1,
+                    transition: "500ms"
+                }}>Elevate Your Social Media Transactions to Unparalleled Convenience.</h2>
+                <p style={{
+                    opacity: !isScrolled ? 0 : 1,
+                    transition: "500ms"
+                }}>With INSTAPAY, say goodbye to external payment platforms when dealing on social media. Seamlessly pay, request, or receive money—and when it's time to cash out, choose your preferred payout channel, be it mobile wallets, bank accounts, payment cards like VISA/Mastercard, or even cash pick-up locations.</p>
+                <p style={{
+                    opacity: !isScrolled ? 0 : 1,
+                    transition: "500ms"
+                }}>All this, without ever stepping away from your cherished social media space. Whether you're an individual syncing up with friends or a business building bridges with clients, transform every chat into a potent financial transaction. Dive into a reality where every message can effortlessly culminate in payment, all within the chats you adore.</p>
                 <img src={anim_mob} alt="a" />
                 <h3>FEATURES</h3>
             </div>

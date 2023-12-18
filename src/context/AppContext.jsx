@@ -31,38 +31,42 @@ export const AppStateProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        // if (mainRef.current) {
-        window.addEventListener("scroll", windowScrollHandler)
-        // }
-        return () => {
-            // if (mainRef.current) {
-            window.removeEventListener("scroll", windowScrollHandler)
+        if (window.innerWidth > 1000) {
+            window.addEventListener("scroll", windowScrollHandler)
             // }
+            return () => {
+                // if (mainRef.current) {
+                window.removeEventListener("scroll", windowScrollHandler)
+                // }
+            }
         }
+        // if (mainRef.current) {
     }, [])
 
 
     const scrollHandler = () => {
-        setAnimate(true);
+        if (window.innerWidth > 1000) {
+            setAnimate(true);
 
-        const duration = 500;
-        const intervals = 30;
+            const duration = 500;
+            const intervals = 30;
 
-        const distance = window.innerHeight - 122;
+            const distance = window.innerHeight - 122;
 
-        const steps = Math.floor(duration / intervals);
-        const stepValue = distance / steps;
+            const steps = Math.floor(duration / intervals);
+            const stepValue = distance / steps;
 
 
-        let step = 0;
-        const smoothScroll = setInterval(function () {
-            if (step <= steps) {
-                window.scrollBy(0, stepValue);
-                step++;
-            } else {
-                clearInterval(smoothScroll);
-            }
-        }, intervals);
+            let step = 0;
+            const smoothScroll = setInterval(function () {
+                if (step <= steps) {
+                    window.scrollBy(0, stepValue);
+                    step++;
+                } else {
+                    clearInterval(smoothScroll);
+                }
+            }, intervals);
+        }
     };
 
     useEffect(() => {
