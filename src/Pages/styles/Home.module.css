@@ -1,0 +1,33 @@
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .pc {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        top: 1rem;
+        padding: 1rem;
+        background: rgba(217, 217, 217, 0.01);
+        backdrop-filter: blur(9.050000190734863px);
+    }
+
+    .nav div {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+}

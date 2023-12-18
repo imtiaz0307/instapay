@@ -1,0 +1,166 @@
+.container {
+    padding-top: 6rem;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.home img {
+    width: 70%;
+    object-fit: contain;
+    margin-bottom: 55px;
+}
+
+.home h2 {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 31.5px;
+    font-style: normal;
+    font-weight: 500;
+    max-width: 12ch;
+    line-height: 130%;
+    /* 40.95px */
+    letter-spacing: -0.63px;
+    margin-bottom: 11px;
+}
+
+.home h5 {
+    color: #000;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 19.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 29.25px */
+    margin-bottom: 16px;
+}
+
+.home p {
+    color: #8C8C8C;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+    /* 20.4px */
+    margin-bottom: 47px;
+}
+
+.home>div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.home>div a:nth-child(1) {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 165%;
+    /* 23.1px */
+    width: 200px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 22.582px;
+    background: linear-gradient(88deg, rgba(0, 0, 0, 0.60) 1.88%, rgba(89, 38, 240, 0.15) 43.73%, rgba(0, 0, 0, 0.60) 98.2%), linear-gradient(135deg, #4823B2 0%, #0007AD 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home>div a:nth-child(2) {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    line-height: 165%;
+    /* 26.4px */
+    text-decoration: underline;
+}
+
+.home div div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.home div div span {
+    color: #6B6B6B;
+    leading-trim: both;
+    text-edge: cap;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 9.285px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 165%;
+    /* 15.321px */
+}
+
+.transform_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem 0;
+    background: radial-gradient(81.32% 81.32% at 50% 50%, #030347, #020219 100%);
+    border-radius: 120px 120px 0 0;
+}
+
+.transform_section h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--family-general);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.516px;
+    margin-bottom: 31px;
+    margin-top: 200px;
+}
+
+.transform_section p {
+    color: rgba(255, 255, 255, 0.76);
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-family: var(--family-specific);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin-bottom: 31px;
+    /* 22.4px */
+}
+
+.transform_section h3 {
+    margin-top: 100px;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--family-specific);
+    font-size: 31.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.63px;
+    margin-bottom: 3rem;
+}

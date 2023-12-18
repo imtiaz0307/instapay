@@ -243,4 +243,43 @@
         /* 17.238px */
     }
 
+    .contact {
+        height: 490px;
+        width: 100%;
+        border-radius: 30px;
+        background-color: #0E032D;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .contact a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact img {
+        color: white;
+        mix-blend-mode: exclusion;
+        margin-top: 57px;
+        max-width: calc(100% - 48px);
+    }
+
+    .contact p {
+        color: #777;
+        font-feature-settings: 'liga' off;
+        font-family: var(--family-specific);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 170%;
+        max-width: calc(100% - 48px);
+        /* 27.2px */
+    }
+
+    .contact video {
+        mix-blend-mode: lighten;
+    }
 }

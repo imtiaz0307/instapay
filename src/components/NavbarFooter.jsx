@@ -16,7 +16,7 @@ const NavbarFooter = ({ theme = "light" }) => {
                 </a>
                 <div className={styles.cta}>
                     <Link className={styles.cta_1} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} to={"/affiliation-program"}>Become an Affiliate.</Link>
-                    <a className={styles.cta_2} target="_blank" href="https://tivo-new.vercel.app/auth/login">SIGN IN / SIGN UP</a>
+                    <a className={styles.cta_2} target="_blank" href="https://instapay-user.vercel.app/auth/login">SIGN IN / SIGN UP</a>
                     {
                         isMenuOpen
                             ?

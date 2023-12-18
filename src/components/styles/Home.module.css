@@ -446,3 +446,11 @@
         gap: 20px;
     }
 }
+
+@media screen and (max-width: 1000px) {
+
+    .home,
+    .animated {
+        display: none;
+    }
+}

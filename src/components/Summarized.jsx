@@ -6,6 +6,8 @@ import globe from '../assets/globe.mp4';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import "react-vertical-timeline-component/style.min.css";
 import NavbarFooter from './NavbarFooter';
+import contact_us from "../assets/home_con.png";
+import { Link } from 'react-router-dom';
 
 const Summarized = () => {
     // Example fintech-related data
@@ -110,6 +112,14 @@ const Summarized = () => {
                             </VerticalTimelineElement>
                         ))}
                     </VerticalTimeline>
+                </div>
+
+                <div className={styles.contact}>
+                    <Link to={"/contact-us"}>
+                        <img src={contact_us} alt="" />
+                    </Link>
+                    <p>Interested in diving deeper? Reach out to us. In case of genuine interest, we'll furnish you with all the necessary details, ensuring a transparent</p>
+                    <video src={globe} autoPlay={true} loop={true} muted={true} controls={false}></video>
                 </div>
             </div>
         </>
