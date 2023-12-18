@@ -17,13 +17,21 @@
     display: flex;
     align-items: center;
     height: 100%;
+    position: relative;
 }
 
 .left img {
     /* max-width: 1; */
-    width: 80%;
+    width: 50%;
     /* aspect-ratio: 843/787; */
-    transform: translateX(30px) translateY(10%);
+    transform: translateX(150px) translateY(10%);
+}
+
+.gif {
+    position: absolute;
+    width: 100% !important;
+    transform: none !important;
+    left: -10%;
 }
 
 .right {
@@ -389,8 +397,14 @@
     }
 
     .left img {
-        width: 75%;
-        transform: translateX(120px);
+        width: 60%;
+        transform: translateX(180px);
+    }
+
+    .gif {
+        top: -35%;
+        width: 110%;
+        left: 5%;
     }
 
     .right {

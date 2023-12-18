@@ -1,7 +1,8 @@
 import Navbar from './Navbar'
 import styles from "./styles/Home.module.css"
-// import home from "../assets/home.png"
 import home from "../assets/footer_right.png"
+import heroGif from "../assets/hero.gif"
+import hero from "../assets/hero.png"
 import chevron from "../assets/chevron.gif"
 import { useAppState } from '../context/AppContext'
 
@@ -12,7 +13,9 @@ const Home = () => {
             <Navbar />
             <div className={styles.hero} data-scroll data-scroll-speed="0.9">
                 <div className={styles.left}>
-                    <img src={home} alt="home" />
+                    {/* <img src={home} alt="home" /> */}
+                    <img src={hero} alt="home" />
+                    <img src={heroGif} alt="instapay" className={styles.gif} />
                 </div>
                 <div className={styles.right}>
                     <div className={styles.top}>
@@ -47,7 +50,7 @@ const Home = () => {
                     zIndex: 100,
                     cursor: "pointer",
                     // }} onClick={scrollHandler}>
-                }} onClick={() => window.scrollTo({ top: 100, behavior: "smooth", })}>
+                }} onClick={() => window.scrollTo({ top: 120, behavior: "smooth", })}>
                     {/* <video src={chevron} autoPlay={true} loop={true} controls={false} style={{ height: "100%", width: "100%", mixBlendMode: "" }}></video> */}
                     <img src={chevron} alt="chevron" style={{
                         height: "100%",

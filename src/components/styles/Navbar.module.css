@@ -48,7 +48,7 @@
     line-height: 165%;
 }
 
-.cta a:nth-child(2) {
+.cta .cta_2 {
     border-radius: 22.582px;
     background: linear-gradient(88deg, rgba(0, 0, 0, 0.60) 1.88%, rgba(89, 38, 240, 0.15) 43.73%, rgba(0, 0, 0, 0.60) 98.2%), linear-gradient(135deg, #4823B2 0%, #0007AD 100%);
     color: white;
@@ -56,7 +56,7 @@
     font-size: 14px;
 }
 
-.cta a:nth-child(1) {
+.cta .cta_1 {
     text-decoration: underline;
     font-size: 16px;
 }
@@ -76,5 +76,43 @@
 
     .play img {
         width: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav {
+        padding: 45px 1rem 0;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cta_1 {
+        display: none;
+    }
+
+    .cta a {
+        font-feature-settings: 'liga' off;
+        font-family: Satoshi;
+        color: red;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 165%;
+        /* 12.353px */
+    }
+
+    .cta_2 {
+        border-radius: 12px;
+        width: 106.952px;
+        height: 24.064px;
+        flex-shrink: 0;
+        font-size: 7.487px !important;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

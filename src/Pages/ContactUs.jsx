@@ -7,10 +7,10 @@ import styles from "./styles/Contact.module.css";
 const ContactUs = () => {
   return (
     <div>
-      <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
+      <div className={styles.side} style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
         <SidebarFixed featureText={"Contact US"} color="#000" />
       </div>
-      <div style={{ position: "sticky", top: 0 }}>
+      <div style={{ position: "sticky", top: 0 }} className={styles.nav}>
         <NavbarFooter />
       </div>
       <main className={styles.content}>
@@ -45,8 +45,10 @@ const ContactUs = () => {
           >
             <div>
               <input type="checkbox" name="subscribe" />
-              <p>I agree to get Tactical and Financial Advice sent to me. </p>
-              <span>(btw we don't spam)</span>
+              <div style={{ marginTop: "0" }}>
+                <p>I agree to get Tactical and Financial Advice sent to me. </p>
+                <span>(btw we don't spam)</span>
+              </div>
             </div>
             <button>Send Message!</button>
           </div>

@@ -8,7 +8,7 @@ import swiss_auth from "../assets/swiss_authorization.pdf"
 const Certification = () => {
     return (
         <div>
-            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
+            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }} className={styles.side}>
                 <SidebarFixed featureText={"Affiliation Certificate"} color='#000' />
             </div>
             <div style={{ position: "sticky", top: 0 }}>

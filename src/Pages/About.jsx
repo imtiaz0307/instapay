@@ -8,7 +8,7 @@ import about_r from "../assets/about_r.png"
 const About = () => {
     return (
         <div>
-            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
+            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }} className={styles.side}>
                 <SidebarFixed featureText={"About Us"} color='#000' />
             </div>
             <div style={{ position: "sticky", top: 0 }}>

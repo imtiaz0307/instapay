@@ -2,12 +2,25 @@ import NavbarFooter from "../components/NavbarFooter"
 import SidebarFixed from "../components/SidebarFixed"
 import styles from "./styles/AffiliationProgram.module.css"
 import affiliation from "../assets/affiliation.png"
+import aff_ver from "../assets/aff_ver.png"
+import { useEffect, useState } from "react"
 
 const AffiliationProgram = () => {
+    const [width, setWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+        const resize = () => setWidth(window.innerWidth);
+
+        window.addEventListener("resize", resize)
+
+        return () => {
+            window.removeEventListener("resize", resize)
+        }
+    }, [])
     return (
         <div>
-            <div style={{ height: "100vh", width: "100vw", position: "fixed", top: 0, left: 0, background: "radial-gradient(81.32% 81.32% at 50% 50%, #02000b, #05001d)", zIndex: -1 }}></div>
-            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
+            {/* <div style={{ height: "100vh", width: "100vw", position: "fixed", top: 0, left: 0, background: "radial-gradient(81.32% 81.32% at 50% 50%, #02000b, #05001d)", zIndex: -1 }}></div> */}
+            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }} className={styles.side}>
                 <SidebarFixed featureText={"Affiliation Program"} color="#fff" />
             </div>
             <div style={{ position: "sticky", top: 0 }}>
@@ -22,7 +35,7 @@ const AffiliationProgram = () => {
                     <br /><br />
                     <span>Turn influence into a steady income stream, strengthening not only your wallet but also the trust bond with your followers. It isn’t just an affiliate program; it's a groundbreaking shift in monetization.</span>
                 </p>
-                <img src={affiliation} alt="affiliation" draggable={1 === 1 - 2} />
+                <img src={width > 576 ? affiliation : aff_ver} alt="affiliation" draggable={1 === 1 - 2} />
                 <p>
                     Dive into a lucrative journey with InstaPay, where every follower can be a source of revenue. The more they transact, the more you earn ! It's time to turn influence into affluence.
                 </p>

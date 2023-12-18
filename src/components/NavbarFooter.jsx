@@ -2,8 +2,12 @@ import styles from "./styles/Navbar.module.css"
 import logo_black from "../assets/logo_color.svg"
 import logo_white from "../assets/white_lg.png"
 import { Link } from "react-router-dom"
+import feature from "../assets/feature.svg"
+import { useAppState } from "../context/AppContext"
+import { X } from "react-feather"
 
 const NavbarFooter = ({ theme = "light" }) => {
+    const { isMenuOpen, setIsMenuOpen } = useAppState()
     return (
         <header className={styles.header}>
             <nav className={styles.nav} style={{ background: theme === "light" ? "#fff" : "#02000b" }}>
@@ -11,8 +15,26 @@ const NavbarFooter = ({ theme = "light" }) => {
                     <img src={theme === "light" ? logo_black : logo_white} alt="Instapay" />
                 </a>
                 <div className={styles.cta}>
-                    <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} to={"/affiliation-program"}>Become an Affiliate.</Link>
-                    <a target="_blank" href="https://tivo-new.vercel.app/auth/login">SIGN IN / SIGN UP</a>
+                    <Link className={styles.cta_1} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} to={"/affiliation-program"}>Become an Affiliate.</Link>
+                    <a className={styles.cta_2} target="_blank" href="https://tivo-new.vercel.app/auth/login">SIGN IN / SIGN UP</a>
+                    {
+                        isMenuOpen
+                            ?
+                            <X size={30} color='black'
+                                onClick={() => {
+                                    setIsMenuOpen(!isMenuOpen)
+                                }}
+                            />
+                            :
+                            <img
+                                src={feature}
+                                alt="logo"
+                                style={{ height: "32px", width: "30px", objectFit: "contain" }}
+                                onClick={() => {
+                                    setIsMenuOpen(!isMenuOpen)
+                                }}
+                            />
+                    }
                 </div>
             </nav>
         </header>

@@ -26,8 +26,8 @@ const Reels = () => {
     ]
     return (
         <div>
-            <div style={{ height: "100vh", width: "100vw", position: "fixed", top: 0, left: 0, background: "radial-gradient(81.32% 81.32% at 50% 50%, #02000b, #05001d)", zIndex: -1 }}></div>
-            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
+            {/* <div style={{ height: "100vh", width: "100vw", position: "fixed", top: 0, left: 0, background: "radial-gradient(81.32% 81.32% at 50% 50%, #02000b, #05001d)", zIndex: -1 }}></div> */}
+            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }} className={styles.side}>
                 <SidebarFixed featureText={"Play Our Reels"} color="#fff" />
             </div>
             <div style={{ position: "sticky", top: 0 }}>
@@ -36,10 +36,11 @@ const Reels = () => {
             <main className={styles.content}>
                 <h4>Tutorial/informative videos</h4>
                 <h2>Play our reels.</h2>
-
-                <img src={banner} alt="InstaPay Banner" />
-                <h3>Watch Our Commercial Video</h3>
-                <p>Dive into a lucrative journey with InstaPay, where every follower can be a source of revenue. The more they transact, the more you earn ! It's time to turn influence into affluence.</p>
+                <div className={styles.top}>
+                    <img src={banner} alt="InstaPay Banner" />
+                    <h3>Watch Our Commercial Video</h3>
+                    <p>Dive into a lucrative journey with InstaPay, where every follower can be a source of revenue. The more they transact, the more you earn ! It's time to turn influence into affluence.</p>
+                </div>
 
                 <div className={styles.cards}>
                     {

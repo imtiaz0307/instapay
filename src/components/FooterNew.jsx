@@ -116,6 +116,34 @@ const FooterNew = () => {
           </div>
         </div>
       </div>
+
+      <div className={styles.mobile_wrapper}>
+        <div className={styles.m_links}>
+          {linksData.map((it) => (
+            <Link to={it.link} key={it.name} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>{it.name.toUpperCase()}</Link>
+          ))}
+        </div>
+        <div className={styles.m_about}>
+          <img src={logo} alt="Instapay" />
+          <div>
+            <h5>KEMIT KINGDOM (K2) SA</h5>
+            <p>ROUTE DES FELAISES 7,</p>
+            <p>2000 NEUChâTEL</p>
+            <p>SWITZERLAND</p>
+            <h5>VAT: CHE-260.546.812</h5>
+          </div>
+        </div>
+        <div className={styles.bottom}>
+          <div className={styles.m_socials}>
+            {links.map((link, index) => (
+              <a key={index} href={link.link} target="_blank">
+                {link.icon}
+              </a>
+            ))}
+          </div>
+          <span className={styles.m_rr}>® 2023 All rights reserved.</span>
+        </div>
+      </div>
     </footer>
   );
 };

@@ -1,5 +1,6 @@
 .content {
-    margin: 60px 100px 300px 250px;
+    padding: 60px 100px 300px 250px;
+    background: radial-gradient(81.32% 81.32% at 50% 50%, #02000b, #05001d);
 }
 
 .content>h4 {
@@ -22,7 +23,12 @@
     letter-spacing: -1.243px;
 }
 
-.content>img {
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.top>img {
     width: 100%;
     margin-top: 130px;
     aspect-ratio: 1526/633;
@@ -31,7 +37,7 @@
     margin-bottom: 50px;
 }
 
-.content>h3 {
+.top>h3 {
     color: #5926F0;
     font-family: var(--family-general);
     font-size: 42px;
@@ -41,7 +47,7 @@
     margin-bottom: 60px;
 }
 
-.content>p {
+.top>p {
     color: #C3C3C3;
     font-family: var(--family-general);
     font-size: 30px;
@@ -89,7 +95,7 @@
 
 @media screen and (max-width: 1650px) {
     .content {
-        margin-bottom: 200px;
+        padding-bottom: 200px;
     }
 
     .content>h4 {
@@ -125,5 +131,98 @@
 
     .card p {
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .content {
+        padding: 60px 60px 60px 130px;
+    }
+}
+
+@media screen and (max-width: 976px) {
+    .content {
+        padding: 60px 60px 60px 60px;
+    }
+
+    .content h4,
+    .content h2 {
+        margin-bottom: 0 !important;
+    }
+
+    .side {
+        display: none;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .top {
+        margin-top: 45px;
+    }
+
+    .top>img {
+        margin-top: 0;
+        order: 1;
+    }
+
+    .top>h3 {
+        font-size: 35px;
+    }
+
+    .top>p {
+        order: 2;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        padding: 40px 30px;
+    }
+
+    .content>h4 {
+        font-size: 11px !important;
+    }
+
+    .content h2 {
+        font-size: 34px !important;
+    }
+
+    .top>img {
+        border-radius: 10px;
+    }
+
+    .top>h3 {
+        font-size: 24px;
+        margin-bottom: 39px;
+    }
+
+    .top>img {
+        margin-bottom: 30px;
+    }
+
+    .top>p {
+        font-size: 12px;
+    }
+
+    .cards {
+        margin-top: 50px;
+    }
+
+    .card h4 {
+        font-size: 21px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .content {
+        padding: 40px 20px;
     }
 }

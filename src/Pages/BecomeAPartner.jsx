@@ -2,11 +2,12 @@ import React from 'react'
 import styles from "./styles/BecomeAPartner.module.css"
 import SidebarFixed from '../components/SidebarFixed'
 import NavbarFooter from '../components/NavbarFooter'
+import bap from "../assets/bap.png"
 
 const BecomeAPartner = () => {
     return (
         <div>
-            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
+            <div className={styles.side} style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
                 <SidebarFixed featureText={"Become A Partner"} color="#000" />
             </div>
             <div style={{ position: "sticky", top: 0 }}>
@@ -25,6 +26,32 @@ const BecomeAPartner = () => {
                     <div className={styles.details}>
                         <h5>Payment Service Providers:</h5>
                         <p>We're on a relentless quest to integrate diverse local payment methods, ensuring our users always have the top-up options they need. Partner with InstaPay and diversify your portfolio, expanding your reach into new territories and demographics. Together, we can amplify transaction volumes and redefine payments in the digital age. With InstaPay, it's not just about processing payments, but pioneering a seamless and unified experience for all.</p>
+                    </div>
+                    <img src={bap} alt="" />
+                </div>
+                <div className={styles.reach_out}>
+                    <h3>Reach Out to Our Sales Team</h3>
+                    <div className={styles.contact}>
+                        <div className={styles.inputs}>
+                            <input type="text" name="" placeholder="Your name" />
+                            <input type="text" name="" placeholder="Email" />
+                            <input
+                                type="text"
+                                name=""
+                                placeholder="Phone number (Optional)"
+                            />
+                        </div>
+                        <input type="text" placeholder='Name of your organization' />
+                        <textarea
+                            className={styles.textarea}
+                            placeholder="Type in your message"
+                            rows="8"
+                        />
+                    </div>
+                    <div
+                        className={styles.buttons}
+                    >
+                        <button>Send Message!</button>
                     </div>
                 </div>
             </main>
