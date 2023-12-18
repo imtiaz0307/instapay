@@ -51,7 +51,9 @@ const FeatureTwo = () => {
 
     return (
         <div className={styles.container}>
-            <NavbarSecondary />
+            <div className={styles.nav}>
+                <NavbarSecondary />
+            </div>
             <SidebarFixed featureText={"02 Features"} />
             <div className={styles.wrapper}>
                 <div className={styles.top}>
@@ -60,17 +62,23 @@ const FeatureTwo = () => {
                 </div>
                 <Swiper
                     className={styles.bottom}
-                    slidesPerView={3}
+                    slidesPerView={1}
                     spaceBetween={30}
                     onSwiper={e => setSwiper(e)}
                     loop={true}
+                    style={{
+                        maxWidth: "400px",
+                        minWidth: "300px",
+                        width: "100%"
+                    }}
                 >
                     {
                         cardsData.map((item, ind) => (
                             <SwiperSlide key={ind} style={{
                                 maxWidth: "400px",
+                                minWidth: "300px",
                                 color: "white",
-                                padding: ".85rem 1rem",
+                                padding: "1rem",
                                 background: "linear-gradient(180deg, rgba(109, 47, 241, 0.25) 0%, rgba(109, 47, 241, 0.00) 100%)",
 
                             }}>

@@ -140,3 +140,58 @@
         font-size: 1.1vw;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .container {
+        position: relative;
+        height: fit-content;
+        padding: 2rem;
+    }
+
+    .wrapper {
+        padding: 0;
+        transform: none;
+    }
+
+    .top {
+        width: 100%;
+        transform: none;
+    }
+
+    .top h2 {
+        font-size: 39px;
+        width: fit-content;
+        margin: 0 auto 1rem;
+    }
+
+    .top h2::before {
+        font-size: 70px;
+        left: -40px;
+    }
+
+    .top p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .bottom {
+        transform: none;
+    }
+
+    .bottom h3 {
+        font-size: 26px;
+    }
+
+    .bottom p {
+        font-size: 14px;
+    }
+
+    .navigators {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}

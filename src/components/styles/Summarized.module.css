@@ -8,6 +8,10 @@
     justify-content: space-between;
 }
 
+.mobile {
+    display: none;
+}
+
 .left>h3 {
     flex: 1;
     color: #000;
@@ -142,4 +146,101 @@
     .wrapper {
         padding-left: 9rem;
     }
+}
+
+@media screen and (max-width: 1250px) {
+    .right {
+        margin-right: 2rem;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .pc {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        background-color: white;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 100px 2rem;
+        gap: 45px;
+    }
+
+    .mobile h4 {
+        color: #000;
+        font-family: var(--family-general);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.4px;
+    }
+
+    .mobile h2 {
+        color: #000;
+        text-align: center;
+        font-family: var(--family-general);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.72px;
+    }
+
+    .mobile h2 span {
+        background: radial-gradient(902.45% 103.01% at 25.29% 0%, #E64067 0%, #5926F0 55.65%, #4828A0 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: var(--family-general);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.72px;
+    }
+
+    .mobile .timeline {
+        background: #FAFAFA;
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+
+    .timeline h3 {
+        color: #000;
+        font-family: var(--family-general);
+        font-size: 22.985px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.46px;
+    }
+
+    .timeline p {
+        color: #777;
+        font-feature-settings: 'liga' off;
+        font-family: var(--family-specific);
+        font-size: 11.492px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        /* 17.238px */
+    }
+
+    .timeline a {
+        color: #5926f0;
+        font-feature-settings: 'liga' off;
+        font-family: var(--family-specific);
+        font-size: 11.492px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        /* 17.238px */
+    }
+
 }

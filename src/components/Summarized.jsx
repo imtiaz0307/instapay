@@ -33,50 +33,86 @@ const Summarized = () => {
     ];
 
     return (
-        <div style={{ minHeight: '100vh', top: 0, zIndex: 100, background: 'white', width: '100vw', position: "relative" }}>
-            {/* <Navbar showPlay={false} /> */}
-            <NavbarFooter />
-            <SidebarFixed color="#000" />
-            <div className={styles.wrapper}>
-                <div className={styles.left}>
-                    <h3>HOW IT WORKS</h3>
-                    <h2>
-                        Simplicity in Every Step. <br />
-                        Experience the <span>InstaPay</span> Way!
-                    </h2>
-                    <div className={styles.timeline}>
-                        <VerticalTimeline animate={true} layout={"1-column"}>
-                            {fintechData.map((item, index) => (
-                                <VerticalTimelineElement
-                                    className="vertical-timeline-element--education"
-                                    key={index}
-                                    iconStyle={{
-                                        background: '#5926f0',
-                                        color: '#fff',
-                                        height: "22px",
-                                        width: "22px",
-                                        transform: "translateX(10px)"
-                                    }}
-                                    contentStyle={{
-                                        background: "transparent",
-                                        boxShadow: "none",
-                                        border: "none",
-                                        transform: "translateY(-30px)"
-                                    }}
-                                >
-                                    <h3>{item.title}</h3>
-                                    <p>{item.description}</p>
-                                    <a href="#">Learn more &rarr;</a>
-                                </VerticalTimelineElement>
-                            ))}
-                        </VerticalTimeline>
+        <>
+            <div style={{ minHeight: '100vh', top: 0, zIndex: 100, background: 'white', width: '100vw', position: "relative" }} className={styles.pc}>
+                {/* <Navbar showPlay={false} /> */}
+                <NavbarFooter />
+                <SidebarFixed color="#000" />
+                <div className={styles.wrapper}>
+                    <div className={styles.left}>
+                        <h3>HOW IT WORKS</h3>
+                        <h2>
+                            Simplicity in Every Step. <br />
+                            Experience the <span>InstaPay</span> Way!
+                        </h2>
+                        <div className={styles.timeline}>
+                            <VerticalTimeline animate={true} layout={"1-column"}>
+                                {fintechData.map((item, index) => (
+                                    <VerticalTimelineElement
+                                        className="vertical-timeline-element--education"
+                                        key={index}
+                                        iconStyle={{
+                                            background: '#5926f0',
+                                            color: '#fff',
+                                            height: "22px",
+                                            width: "22px",
+                                            transform: "translateX(10px)"
+                                        }}
+                                        contentStyle={{
+                                            background: "transparent",
+                                            boxShadow: "none",
+                                            border: "none",
+                                            transform: "translateY(-30px)"
+                                        }}
+                                    >
+                                        <h3>{item.title}</h3>
+                                        <p>{item.description}</p>
+                                        <a href="#">Learn more &rarr;</a>
+                                    </VerticalTimelineElement>
+                                ))}
+                            </VerticalTimeline>
+                        </div>
+                    </div>
+                    <div className={styles.right}>
+                        <video src={globe} autoPlay={true} loop={true} muted={true} controls={false}></video>
                     </div>
                 </div>
-                <div className={styles.right}>
-                    <video src={globe} autoPlay={true} loop={true} muted={true} controls={false}></video>
+            </div>
+
+            <div className={styles.mobile}>
+                <h4>HOW IT WORKS</h4>
+                <h2>Simplicity in Every Step. <br />
+                    Experience the <span>InstaPay </span> Way!</h2>
+
+                <div className={styles.timeline}>
+                    <VerticalTimeline animate={true} layout={"1-column"}>
+                        {fintechData.map((item, index) => (
+                            <VerticalTimelineElement
+                                className="vertical-timeline-element--education"
+                                key={index}
+                                iconStyle={{
+                                    background: '#5926f0',
+                                    color: '#fff',
+                                    height: "22px",
+                                    width: "22px",
+                                    transform: "translateX(10px)"
+                                }}
+                                contentStyle={{
+                                    background: "transparent",
+                                    boxShadow: "none",
+                                    border: "none",
+                                    transform: "translateY(-30px)"
+                                }}
+                            >
+                                <h3>{item.title}</h3>
+                                <p>{item.description}</p>
+                                <a href="#">Learn more &rarr;</a>
+                            </VerticalTimelineElement>
+                        ))}
+                    </VerticalTimeline>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
