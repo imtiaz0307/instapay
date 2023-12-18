@@ -18,7 +18,7 @@ import i_13 from "../assets/market_segments/13.png"
 const MarketSegments = () => {
     return (
         <div>
-            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }}>
+            <div style={{ position: "fixed", left: 0, height: "100vh", top: 0 }} className={styles.side}>
                 <SidebarFixed featureText={"Market Segments"} color="#000" />
             </div>
             <div style={{ position: "sticky", top: 0 }}>

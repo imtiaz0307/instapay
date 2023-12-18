@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 70px 80px;
+    backdrop-filter: blur(19px);
     /* background-color: white; */
 }
 
@@ -81,7 +82,7 @@
 
 @media screen and (max-width: 1000px) {
     .nav {
-        padding: 45px 1rem 0;
+        padding: 45px 1rem 1rem;
     }
 
     .logo img {

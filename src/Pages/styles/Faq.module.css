@@ -157,3 +157,73 @@
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 1140px) {
+  .content {
+    margin: 60px 60px 60px 130px;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .content {
+    margin: 60px 60px 60px 60px;
+  }
+
+  .content h4,
+  .content h2 {
+    margin-bottom: 0 !important;
+  }
+
+  .side {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    margin: 40px;
+  }
+
+  .content>h4 {
+    font-size: 11px !important;
+  }
+
+  .content h2 {
+    font-size: 26px !important;
+  }
+
+  .content h5 {
+    font-size: 13px !important;
+  }
+
+  .head h3 {
+    font-size: 16px !important;
+  }
+
+  .question_container .body {
+    margin-top: 20px;
+    padding: 0 1rem;
+  }
+
+  .question_container .body>h6 {
+    font-size: 14px !important;
+  }
+
+  .question_container .body div h5 {
+    font-size: 12px !important;
+  }
+
+  .question_container .body div h6 {
+    font-size: 11px !important;
+  }
+
+  .question_container .body ul li {
+    font-size: 11px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .content {
+    margin: 40px 20px;
+  }
+}

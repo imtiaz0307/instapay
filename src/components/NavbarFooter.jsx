@@ -10,7 +10,7 @@ const NavbarFooter = ({ theme = "light" }) => {
     const { isMenuOpen, setIsMenuOpen } = useAppState()
     return (
         <header className={styles.header}>
-            <nav className={styles.nav} style={{ background: theme === "light" ? "#fff" : "#02000b" }}>
+            <nav className={styles.nav} style={{ background: theme === "light" ? "rgba(255, 255, 255, 0.7)" : "rgba(2, 0, 11, 0.7)" }}>
                 <a href="/" className={styles.logo} style={{ position: "relative", zIndex: 11 }}>
                     <img src={theme === "light" ? logo_black : logo_white} alt="Instapay" />
                 </a>
