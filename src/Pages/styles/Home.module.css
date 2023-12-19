@@ -13,6 +13,8 @@
 
     .mobile {
         display: block;
+        width: 100vw;
+        overflow-x: hidden;
     }
 
     .nav {

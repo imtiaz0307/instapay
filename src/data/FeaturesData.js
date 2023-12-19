@@ -1,7 +1,7 @@
 import receive from "../assets/receive.png"
-import receive_m from "../assets/mob/receive.png"
+import receive_m from "../assets/mob/rec_new.png"
 import send from "../assets/send.png"
-import send_m from "../assets/mob/send.png"
+import send_m from "../assets/mob/send_new.png"
 import crypto from "../assets/crypto.png"
 import crypto_m from "../assets/mob/crypto.png"
 import send_quote from "../assets/send_quote.png"
@@ -9,7 +9,7 @@ import send_quote_m from "../assets/mob/send_quote.png"
 import address from "../assets/address.png"
 import address_m from "../assets/mob/address.png"
 import qr from "../assets/qr.png"
-import qr_m from "../assets/mob/qr.png"
+import qr_m from "../assets/qr.png"
 
 export const featuresData = [
     {
