@@ -255,7 +255,7 @@ const TermsAndConditions = () => {
                     <div className={styles.pt_sub}>
                         <h5>7.2 Professional Users:</h5>
                         <ul>
-                            <li>For commercial users, our liability is limited to the greater of: (a) transaction income in the 6 months prior to a complaint, or (b) CHF 500.</li>
+                            <li>For commercial users, our liability is limited to the greater of: (a) transaction income in the 6 months prior to a complaint, or (b) USD 500.</li>
                         </ul>
                     </div>
                 </div>
@@ -465,7 +465,7 @@ const TermsAndConditions = () => {
                             <li>Legal entitlement to our products and services.</li>
                         </ul>
                         <br />
-                        <p>Standard access offers limited application and Wallet features, with a monthly balance cap of CHF 150 (country-dependent, max CHF 250). For full feature access, an upgrade is required, with conditions outlined in Article 15.4.</p>
+                        <p>Standard access offers limited application and Wallet features, with a monthly balance cap of USD 150 (country-dependent, max USD 250). For full feature access, an upgrade is required, with conditions outlined in Article 15.4.</p>
                     </div>
                     <div className={styles.pt_sub}>
                         <h5>13.2 Eligibility for InstaPay Wallet service</h5>
@@ -508,8 +508,8 @@ const TermsAndConditions = () => {
                             <p style={{ fontWeight: 700 }}>Standard Account – SDD (Simplify Due Diligence)</p>
                             <ul>
                                 <li>Default Wallet currency based on home country.</li>
-                                <li>Maximum Wallet balance: CHF 250 per month.</li>
-                                <li>Maximum cumulative monthly funds: CHF 250.</li>
+                                <li>Maximum Wallet balance: USD 250 per month.</li>
+                                <li>Maximum cumulative monthly funds: USD 250.</li>
                                 <li>Restrictions on exceeding balance limits and money transfer transactions not allowed.</li>
                             </ul>
 
@@ -517,8 +517,8 @@ const TermsAndConditions = () => {
                             <br />
                             <p style={{ fontWeight: 700 }}>Silver Account – CDD (Customer Due Diligence):</p>
                             <ul>
-                                <li>Maximum Wallet balance: CHF 10,000 per month.</li>
-                                <li>Maximum cumulative monthly funds: CHF 10,000.</li>
+                                <li>Maximum Wallet balance: USD 10,000 per month.</li>
+                                <li>Maximum cumulative monthly funds: USD 10,000.</li>
                                 <li>Restrictions on exceeding balance limits and transaction frequencies.</li>
                             </ul>
                             <br />
@@ -526,7 +526,7 @@ const TermsAndConditions = () => {
                             <p style={{ fontWeight: 700 }}>Premium Account – EDD (Enhanced Due Diligence): </p>
                             <ul>
                                 <li>For legal entities, with no maximum balance.</li>
-                                <li>Maximum transaction amount: CHF 50,000 per transaction.</li>
+                                <li>Maximum transaction amount: USD 50,000 per transaction.</li>
                                 <li>Daily transaction limit: 3 transactions.</li>
                             </ul>
                         </div>
@@ -540,13 +540,13 @@ const TermsAndConditions = () => {
                                     Transaction limits for InstaPay Wallet
                                 </div>
                                 <div>Minimum Per txn. Amount</div>
-                                <div>CHF 1.00 or equivalent</div>
+                                <div>USD 1.00 or equivalent</div>
                                 <div>Maximum Per txn. Amount</div>
-                                <div>CHF 150 or equivalent</div>
+                                <div>USD 150 or equivalent</div>
                                 <div>Maximum daily Amount Limit</div>
-                                <div>CHF 150 or equivalent</div>
+                                <div>USD 150 or equivalent</div>
                                 <div>Maximum Monthly Amount Limit</div>
-                                <div>CHF 150 or equivalent</div>
+                                <div>USD 150 or equivalent</div>
                             </div>
                         </div>
                         <div className={styles.table_con}>
@@ -556,13 +556,13 @@ const TermsAndConditions = () => {
                                     Transaction limits for Silver Wallet
                                 </div>
                                 <div>Minimum Per txn. Amount</div>
-                                <div>CHF 1.00 or equivalent</div>
+                                <div>USD 1.00 or equivalent</div>
                                 <div>Maximum Per txn. Amount</div>
-                                <div>CHF 5000 or equivalent</div>
+                                <div>USD 5000 or equivalent</div>
                                 <div>Maximum daily Amount Limit</div>
-                                <div>CHF 3000 or equivalent</div>
+                                <div>USD 3000 or equivalent</div>
                                 <div>Maximum Monthly Amount Limit</div>
-                                <div>CHF 10,000 or equivalent</div>
+                                <div>USD 10,000 or equivalent</div>
                             </div>
                         </div>
                         <div className={styles.table_con}>
@@ -572,11 +572,11 @@ const TermsAndConditions = () => {
                                     Transaction limits for Silver Wallet
                                 </div>
                                 <div>Minimum Per txn. Amount</div>
-                                <div>CHF 1.00 or equivalent</div>
+                                <div>USD 1.00 or equivalent</div>
                                 <div>Maximum Per txn. Amount</div>
-                                <div>CHF 50,000</div>
+                                <div>USD 50,000</div>
                                 <div>Maximum daily Amount Limit</div>
-                                <div>CHF 200,000</div>
+                                <div>USD 200,000</div>
                             </div>
                         </div>
                     </div>
@@ -591,7 +591,7 @@ const TermsAndConditions = () => {
                         <p>13.6.2 Deposits with Kemit Kingdom do not accrue any interest.</p>
                         <br />
                         <br />
-                        <p>13.6.3 Deposits are not covered by the Swiss deposit guarantee of CHF 100,000 per client.</p>
+                        <p>13.6.3 Deposits are not covered by the Swiss deposit guarantee of USD 100,000 per client.</p>
                         <br />
                         <br />
                         <p>13.6.4 Deposits received in client Wallets are held in a segregated bank account (or client account) to ensure that, in the event of insolvency and/or legal proceedings against Kemit Kingdom, no creditor can claim the funds held in this segregated account (or client account).</p>
@@ -684,13 +684,13 @@ const TermsAndConditions = () => {
                         <div>CDD</div>
                         <div>EDD</div>
                         <div>Max Annual Load Limit - InstaPay Wallet</div>
-                        <div>CHF 150</div>
-                        <div>CHF 50,000</div>
-                        <div>CHF 500,000</div>
+                        <div>USD 150</div>
+                        <div>USD 50,000</div>
+                        <div>USD 500,000</div>
                         <div>Max Single Load Value - InstaPay Wallet</div>
-                        <div>CHF 150</div>
-                        <div>CHF 3,000</div>
-                        <div>CHF 50,000</div>
+                        <div>USD 150</div>
+                        <div>USD 3,000</div>
+                        <div>USD 50,000</div>
                         <div>Max Number of Single Loads Per Day - InstaPay Wallet</div>
                         <div>N/A</div>
                         <div>3</div>
@@ -700,9 +700,9 @@ const TermsAndConditions = () => {
                         <div>3</div>
                         <div>5</div>
                         <div>Max Monthly Amount Limit - InstaPay Wallet</div>
-                        <div>CHF 150</div>
-                        <div>CHF 10,000</div>
-                        <div>CHF 200,000</div>
+                        <div>USD 150</div>
+                        <div>USD 10,000</div>
+                        <div>USD 200,000</div>
                     </div>
                     <br />
                     <p>Note: The above limits are subject to change in the near future.</p>
